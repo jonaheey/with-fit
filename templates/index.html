@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class='wrap'>
+        <div class='explanation'>
+            <img src='/static/how2.gif' style='width=100%; height=100%; object-fit:contain;'></img>
+        </div>
+        <form action="{% url 'fitness:select' %}">
+            <div class='start'>
+                <button type='submit'>게임 시작</button>
+            </div>
+        </form>
+    </div>
+{% endblock %}

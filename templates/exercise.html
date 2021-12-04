@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+    <form method='POST'>
+        {% csrf_token %}
+        <div class="select_exercise">
+            <div class="exercise">
+                <img src="/static/push_up.gif">
+                <button type="submit" name="selected_e" value='푸시업'>푸시업</button>
+            </div>
+            <div class="exercise">
+                <img src="/static/side_lunge.gif">
+                <button type="submit" name="selected_e" value='사이드 런지'>사이드 런지</button>
+            </div>
+            <div class="exercise">
+                <img src="/static/standing_knee_up.gif">
+                <button type="submit" name="selected_e" value='스탠딩 니 업'>스탠딩 니 업</button>
+            </div>
+            <div class="exercise">
+                <img src="/static/step_forward_lunge.gif">
+                <button type="submit" name="selected_e" value='포워드 런지'>포워드 런지</button>
+            </div>
+        </div>
+    </form>
+{% endblock %}

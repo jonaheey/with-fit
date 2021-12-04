@@ -1,0 +1,117 @@
+body {
+    background-color: black;
+    align-content: center;
+    color: white;
+  }
+  
+/* AIDAM FITNESS */
+header a {
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    text-decoration: none;
+}
+
+.wrap {
+    text-align: center;
+}
+
+/* .explanation {
+    background-color: rgb(21, 133, 59);
+} */
+
+.explanation img {
+    max-width: 60%;
+    height: 60%;
+}
+  
+.start {
+    position: relative;
+    margin-top: 40px;
+}
+
+/* 운동 이미지, 운동 선택 버튼 */
+.select_exercise {
+    text-align: center;
+}
+    
+.select_exercise div {
+    display: inline-block;
+    padding: 20px;
+}
+
+
+.exercise {
+    width: 250px;
+    height: 300px;
+}
+
+.select_exercise img {
+    width: 250px;
+    height: 250px;
+}
+
+button {
+    font-family: 'Black Han Sans', sans-serif;
+    width: 130px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 20px;
+    color: orange;
+    background: black;
+    border: 2px solid orange;
+    border-radius: 20px;
+    box-shadow: 5px 5px 0 orange,
+    -5px -5px 0 orange,
+    -5px 5px 0 orange,
+    5px -5px 0 orange;
+    transition: 400ms ease-in-out;
+}
+
+button:hover {
+    box-shadow: 10px 5px 0 orange, -10px -5px 0 orange;
+}
+
+button:focus {
+    outline: none;
+}
+
+h2 {
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 40px;
+}
+
+.people {
+    /* display: inline-block;
+    padding: 20px; */
+    text-align: center;
+}
+
+.people div{
+    display: inline-block;
+    padding: 20px;
+}
+
+.nbsp {
+    margin: 20px;
+}
+
+.team {
+    text-align: center;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 50px;
+}
+
+input {
+    width: 200px;
+    height: 40px;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 50%;
+    text-align: center;
+}
+
+#timer {
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+}

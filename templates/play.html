@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div id='timer'></div>
+    <script>
+        {% comment %} window.onload = function() { {% endcomment %}
+            let time = 60; // 기준 시간
+    
+            // setInterval(함수, 시간) : 주기적인 실행
+            const timer = setInterval(function() {
+                document.getElementById('timer').style.fontSize = '40px';
+                document.getElementById('timer').innerHTML = time;
+                
+                if (time <= 10) {
+                    document.getElementById('timer').style.color = 'red';
+                }
+                
+                time--;
+    
+                // 타임아웃 시
+                if (time < 0) {
+                    clearInterval(timer); // setInterval() 실행을 끝냄
+                    document.getElementById('timer').innerHTML = '끝!';
+                }
+            }, 1000);
+        {% comment %} } {% endcomment %}
+    </script>
+    플레이 화면
+{% endblock %}
