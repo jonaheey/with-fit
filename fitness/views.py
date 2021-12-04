@@ -18,7 +18,7 @@ def select(request):
             exercise_img = 'push_up'
         elif exercise_name == '사이드 런지':
             exercise_img = 'side_lunge'
-        elif exercise_name == '스탠딩 니업':
+        elif exercise_name == '스탠딩 니 업':
             exercise_img = 'standing_knee_up'
         else:
             exercise_img = 'step_forward_lunge'
@@ -41,13 +41,17 @@ def select(request):
 def play(request):
     # 선택된 운동
     exercise_name = request.POST.get('exercise')
-    print(exercise_name)
+
     # 선택된 인원수
-    num_people = request.POST.get('selected_p')
-    print(num_people)
+    player = request.POST.get('selected_p')
+
+    # 팀 이름
+    team_name = request.POST.get('team_name')
+
+    print(exercise_name, player, team_name)
+
     # 플레이 화면
     return render(
         request,
         'play.html',
-        {'num_people' : num_people}
     )
