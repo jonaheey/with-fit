@@ -2,9 +2,10 @@ body {
     background-color: black;
     align-content: center;
     color: white;
+    font-family: 'Do Hyeon', sans-serif;
   }
   
-/* AIDAM FITNESS */
+/* base.html */
 header a {
     font-family: 'Orbitron', sans-serif;
     color: white;
@@ -13,6 +14,7 @@ header a {
     text-decoration: none;
 }
 
+/* index.html */
 .wrap {
     text-align: center;
 }
@@ -31,7 +33,7 @@ header a {
     margin-top: 40px;
 }
 
-/* 운동 이미지, 운동 선택 버튼 */
+/* exercise.html */
 .select_exercise {
     text-align: center;
 }
@@ -40,7 +42,6 @@ header a {
     display: inline-block;
     padding: 20px;
 }
-
 
 .exercise {
     width: 250px;
@@ -53,7 +54,7 @@ header a {
 }
 
 button {
-    font-family: 'Black Han Sans', sans-serif;
+    font-family: 'Do Hyeon', sans-serif;
     width: 130px;
     height: 50px;
     cursor: pointer;
@@ -63,9 +64,9 @@ button {
     border: 2px solid orange;
     border-radius: 20px;
     box-shadow: 5px 5px 0 orange,
-    -5px -5px 0 orange,
-    -5px 5px 0 orange,
-    5px -5px 0 orange;
+                -5px -5px 0 orange,
+                -5px 5px 0 orange,
+                5px -5px 0 orange;
     transition: 400ms ease-in-out;
 }
 
@@ -77,9 +78,9 @@ button:focus {
     outline: none;
 }
 
-h2 {
-    font-family: 'Black Han Sans', sans-serif;
-    font-size: 40px;
+/* people.html */
+h3 {
+    font-size: 30px;
 }
 
 .people {
@@ -93,24 +94,29 @@ h2 {
     padding: 20px;
 }
 
+p {
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 20px;
+}
+
 .nbsp {
     margin: 20px;
 }
 
 .team {
     text-align: center;
-    font-family: 'Black Han Sans', sans-serif;
     font-size: 50px;
 }
 
 input {
     width: 200px;
     height: 40px;
-    font-family: 'Black Han Sans', sans-serif;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 50%;
     text-align: center;
 }
 
+/* play.html */
 #timer {
     font-family: 'Orbitron', sans-serif;
     text-align: center;

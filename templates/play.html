@@ -1,28 +1,32 @@
 {% extends 'base.html' %}
 {% block content %}
+<div class='wrap'>
     <div id='timer'></div>
-    <script>
-        {% comment %} window.onload = function() { {% endcomment %}
-            let time = 60; // 기준 시간
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/AaDBwFnDUZY?start=50&autoplay=1&mute=1" allow="autoplay;" allowfullscreen></iframe>
+</div>
+<script>
+    let time = 60; // 기준 시간
     
-            // setInterval(함수, 시간) : 주기적인 실행
-            const timer = setInterval(function() {
-                document.getElementById('timer').style.fontSize = '40px';
-                document.getElementById('timer').innerHTML = time;
+    // setInterval(함수, 시간) : 주기적인 실행
+    const timer = setInterval(function() {
+        document.getElementById('timer').style.fontSize = '40px';
+        document.getElementById('timer').innerHTML = time;
                 
-                if (time <= 10) {
-                    document.getElementById('timer').style.color = 'red';
-                }
+        if (time <= 10) {
+            document.getElementById('timer').style.color = 'red';
+        }
                 
-                time--;
+        time--;
     
-                // 타임아웃 시
-                if (time < 0) {
-                    clearInterval(timer); // setInterval() 실행을 끝냄
-                    document.getElementById('timer').innerHTML = '끝!';
-                }
-            }, 1000);
-        {% comment %} } {% endcomment %}
-    </script>
-    플레이 화면
+        // 타임아웃 시
+        if (time < 0) {
+            clearInterval(timer); // setInterval() 실행을 끝냄
+            document.getElementById('timer').innerHTML = '끝!';
+        }
+    }, 1000);
+
+    {% comment %} window.onload = function() {
+
+    } {% endcomment %}
+</script>
 {% endblock %}

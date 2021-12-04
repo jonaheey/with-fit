@@ -2,247 +2,42 @@
 {% block content %}
 {% load static %}
 <style>
-{% comment %} 위 아래로 움직이는 코드 {% endcomment %}
-@keyframes dot-anim {
-    0% {
-        top: -4vw;
+    /* .radio {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    } */
+
+    .radio div {
+        display: inline-block;
+        margin: 20px;
     }
-    50% {
-        top: 4vw;
-    }
-    100% {
-        top: -4vw;
-    }
-}
-
-{% comment %} 노란색 선택 시 {% endcomment %}
-@keyframes checked-radio-3 {
-    0% {
-        top: -10vw;
-        transform: scale(0);
-    }
-    100% {
-        top: 0;
-        transform: scale(1);
-    }
-}
-
-
-{% comment %} 노란색 선택 해제 시 {% endcomment %}
-@keyframes unchecked-radio-3 {
-    0% {
-        bottom: 0;
-        transform: scale(1);
-    }
-    100% {
-        bottom: -10vw;
-        transform: scale(0);
-    }
-}
-
-{% comment %} 초록색 선택 시 {% endcomment %}
-@keyframes checked-radio-4 {
-    0% {
-        transform: rotate(0) translateY(-4.8vw) scale(.2);
-    }
-    83% {
-        transform: rotate(360deg) translateY(-2.5vw) scale(1);
-        transform-origin: 2vw;
-    }
-    88% {
-        transform: translateY(.6vw) scale(1);
-    }
-    93% {
-        transform: translateY(-.9vw) scale(1);
-    }
-    100% {
-        transform: translateY(0) scale(1);
-    }
-}
-
-{% comment %} 초록색 선택 해제 시 {% endcomment %}
-@keyframes unchecked-radio-4 {
-    25% {
-        top: -6.5vw;
-    }
-    50% {
-        top: 9vw;
-    }
-    75% {
-        top: -10vw;
-    }
-    100% {
-        top: -10vw;
-        transform: scale(0);
-    }
-}
-
-
-{% comment %} *, *:before, *:after {
-    margin: auto;
-    padding: 0;
-    outline: 0;
-    overflow: hidden;
-    box-sizing: border-box;
-} {% endcomment %}
-
-{% comment %} 버튼 위치 {% endcomment %}
-.container, label, label:before, label:after {
-    margin: auto;
-    padding: 0;
-    outline: 0;
-    overflow: hidden;
-    box-sizing: border-box;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
-.container {
-    width: 100%;
-    height: 100%;
-    animation: fade 1s;
-}
-
-label {
-    display: inline-block;
-    width: 10vw;
-    height: 10vw;
-    border-radius: 50%;
-    transition: all .2s ease-in-out;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-duration: 1.6s;
-    animation-name: dot-anim;
-}
-
-.radio:checked + label {
-    animation-play-state: paused;
-}
-
-label:before {
-    content: "";
-    position: absolute;
-    width: 5vw;
-    height: 5vw;
-    background: white;
-    border-radius: 50%;
-    box-shadow: rgba(0, 0, 0, 0.117647) 0 0 .8vw 0, rgba(0, 0, 0, 0.239216) 0 .8vw .8vw 0;
-    transition: all .2s;
-}
-
-label:hover:before {
-    box-shadow: rgba(0, 0, 0, 0.0784314) 0 0 1vw 0, rgba(0, 0, 0, 0.239216) 0 1vw 1vw 0;
-}
-
-label:after {
-    content: "";
-    position: absolute;
-    width: 10vw;
-    height: 10vw;
-    background: rgba(255, 255, 255, .5);
-    border-radius: 50%;
-    transform: scale(0);
-}
-
-.radio:checked + label:after {
-    background: transparent;
-    transition: all .5s;
-    transform: scale(1);
-}
-
-/**** BLUE Radio button code ****/
-#radio-1 + label {
-    left: -60vw;
-    background: #4285F4;
-    animation-delay: 0s;
-}
-
-#radio-1 + label:before {
-    transform: scale(0);
-}
-
-#radio-1:checked + label:before {
-    transform: scale(1);
-    transition: all .4s;
-}
-
-/**** RED radio button code ****/
-#radio-2 + label {
-    left: -20vw;
-    background: #EA4335;
-    border-color: #EA4335!important;
-    animation-delay: .2s;
-}
-
-#radio-2:checked + label {
-    background: white;
-    border: 1vw solid;
-    box-shadow: inset rgba(0, 0, 0, 0.117647) 0 0 .6vw 0, inset rgba(0, 0, 0, 0.239216) 0 .6vw .8vw 0;
-    transition: all .2s;
-}
-
-#radio-2:checked + label:before {
-    width: 5vw;
-    height: 5vw;
-    background: #EA4335;
-    transition: all .4s;
-}
-
-/* for IE */
-#radio-2:not(:checked) + label:before {
-    width: 8vw;
-    height: 8vw;
-    background: #EA4335;
-    box-shadow: none;
-}
-
-/**** YELLOW radio button code ****/
-#radio-3 + label {
-    left: 20vw;
-    background: #FBBC05;
-    animation-delay: .4s;
-}
-
-#radio-3 + label:before {
-    /* background: #E91E63; */
-    transform: scale(0);
-    animation-name: unchecked-radio-3;
-    animation-duration: .2s;
-    animation-timing-function: ease-in-out;
-}
-
-#radio-3:checked + label:before {
-    animation-name: checked-radio-3;
-    animation-duration: .4s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: both;
-}
     
-/**** GREEN radio button code ****/
-#radio-4 + label {
-    left: 60vw;
-    background: #34A853;
-    animation-delay: .6s;
-}
+    .radio input {
+        display: none;
+    }
+    
+    label {
+        cursor: pointer;
+        /* margin: 10px 10px; */
+    }
 
-#radio-4 + label:before {
-    /* background: #8BC34A; */
-    animation: unchecked-radio-4 .5s both;
-}
-
-#radio-4:checked + label:before {
-    animation-name: checked-radio-4;
-    animation-duration: .6s;
-    animation-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
-    animation-fill-mode: both;
-}
-
-[type="radio"] {
-    display: none;
-}
+    label:before {
+        content: '';
+        display: inline-block;
+        height: 30px;
+        width: 30px;
+        background: orange;
+        border-radius: 50%;
+        z-index: 2;
+        transition: box-shadow .4s ease, background .3s ease;
+    }
+    
+    input:checked + label:before {
+        /* 수평 그림자 / 수직 그림자 / 선명도 / 확산 거리 */
+        box-shadow: inset 0px 0px 0 3px orange;
+        background: black;
+    }
 </style>
 
 <form method='POST' action="{% url 'fitness:play' %}">
@@ -250,40 +45,38 @@ label:after {
     <div class="wrap">
         <img src="{% get_static_prefix %}{{exercise_img}}.gif" width='200px' height='200px'></img>
         {% if exercise_name %}
-            <h2>{{exercise_name}}</h2>
+            <h3>{{exercise_name}}</h3>
         {% endif %}
-        <div class='people'>
-            <button type="button" name='selected_p' value='1' class='nbsp'>1인</button> 
-            <button type="button" name='selected_p' value='2' class='nbsp'>2인</button> 
-            <button type="button" name='selected_p' value='3' class='nbsp'>3인</button> 
-            <button type="button" name='selected_p' value='4' class='nbsp'>4인</button>
+        <div class='radio'>
+            <div>
+                <input type="radio" id="rad1" name="selected_p" value='1'>
+                <label for="rad1"></label>
+                <p>1인</p>
+            </div>
+            <div>
+                <input type="radio" id="rad2" name="selected_p" value='2'>
+                <label for="rad2"></label>
+                <p>2인</p>
+            </div>
+            <div>
+                <input type="radio" id="rad3" name="selected_p" value='3'>
+                <label for="rad3"></label>
+                <p>3인</p>
+            </div>
+            <div>
+                <input type="radio" id="rad4" name="selected_p" value='4'>
+                <label for="rad4"></label>
+                <p>4인</p>
+            </div>
         </div>
-            {% comment %} #########동그란 버튼######### {% endcomment %}
-            {% comment %} <div class='container'>
-                <p>1인</p>
-                <input type="radio" class="radio" id="radio-1" name="group"/>
-                <label for="radio-1"></label>
-                <p>1인</p>
-                <input type="radio" class="radio" id="radio-2" name="group"/>
-                <label for="radio-2"></label>
-                <p>1인</p>
-                <input type="radio" class="radio" id="radio-3" name="group"/>
-                <label for="radio-3"></label>
-                <p>1인</p>
-                <input type="radio" class="radio" id="radio-4" name="group"/>
-                <label for="radio-4"></label>
-            </div> {% endcomment %}
         <br>
         <div class='team'>
             팀명<br>
-            <input type='text' placeholder='입력해주세요'></input>
+            <input type='text' placeholder='입력해주세요' name='team_name'></input>
         </div>
         <br><br>
         <button type='submit'>PLAY</button>
         <input type='hidden' name='exercise' value='{{exercise_name}}'></input>
     </div>
 </form>
-<script>
-    $(nbsp).click
-</script>
 {% endblock %}
