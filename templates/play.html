@@ -1,20 +1,8 @@
 {% extends 'base.html' %}
-{% block content %}
-<style>
-    #loading_image {
-        width: 1000px;
-        height: 1000px;
-        z-index: 10000;
-    }
-</style>
-<div class='wrap'>
-    <div id="loading">
-        <img id="loading_image" src="/static/loading.gif"/>
-    </div>
+{% block content %}<div class='wrap'>
     <div id='timer'></div>
-    <div>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/AaDBwFnDUZY?start=50&autoplay=1&mute=1" allow="autoplay;" allowfullscreen></iframe>
-    </div>
+    <img src="http://210.106.97.32:8000/withfit/webcam" width="640" height="480" />
+    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/AaDBwFnDUZY?start=50&autoplay=1&mute=1" allow="autoplay;" allowfullscreen></iframe> -->
 </div>
 <script>
     let time = 60; // 기준 시간
@@ -37,10 +25,11 @@
         }
     }, 1000);
 
-    window.onload = function() {
-        var parent = document.getElementById('loading');
-        var child = document.getElementById('loading_image');
-        parent.removeChild(child);
+    {% comment %} window.onload = function() {
+
+    } {% endcomment %}
+</script>
+.removeChild(child);
     }
    
 </script>
