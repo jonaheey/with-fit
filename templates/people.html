@@ -1,52 +1,14 @@
 {% extends 'base.html' %}
 {% block content %}
 {% load static %}
-<style>
-    /* .radio {
-        position: relative;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    } */
-
-    .radio div {
-        display: inline-block;
-        margin: 20px;
-    }
-    
-    .radio input {
-        display: none;
-    }
-    
-    label {
-        cursor: pointer;
-        /* margin: 10px 10px; */
-    }
-
-    label:before {
-        content: '';
-        display: inline-block;
-        height: 30px;
-        width: 30px;
-        background: orange;
-        border-radius: 50%;
-        z-index: 2;
-        transition: box-shadow .4s ease, background .3s ease;
-    }
-    
-    input:checked + label:before {
-        /* 수평 그림자 / 수직 그림자 / 선명도 / 확산 거리 */
-        box-shadow: inset 0px 0px 0 3px orange;
-        background: black;
-    }
-</style>
-
+<div class="wrapper">
 <form method='POST' action="{% url 'fitness:play' %}">
     {% csrf_token %}
     <div class="wrap">
         <img src="{% get_static_prefix %}{{exercise_img}}.gif" width='200px' height='200px'></img>
-        {% if exercise_name %}
+        {% comment %} {% if exercise_name %} {% endcomment %}
             <h3>{{exercise_name}}</h3>
-        {% endif %}
+        {% comment %} {% endif %} {% endcomment %}
         <div class='radio'>
             <div>
                 <input type="radio" id="rad1" name="selected_p" value='1'>
@@ -72,11 +34,12 @@
         <br>
         <div class='team'>
             팀명<br>
-            <input type='text' placeholder='입력해주세요' name='team_name'></input>
+            <input type='text' placeholder='입력해주세요' name='team_name' required></input>
         </div>
         <br><br>
         <button type='submit'>PLAY</button>
         <input type='hidden' name='exercise' value='{{exercise_name}}'></input>
     </div>
 </form>
+</div>
 {% endblock %}

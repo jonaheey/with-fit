@@ -1,8 +1,20 @@
 {% extends 'base.html' %}
 {% block content %}
+<style>
+    #loading_image {
+        width: 1000px;
+        height: 1000px;
+        z-index: 10000;
+    }
+</style>
 <div class='wrap'>
+    <div id="loading">
+        <img id="loading_image" src="/static/loading.gif"/>
+    </div>
     <div id='timer'></div>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/AaDBwFnDUZY?start=50&autoplay=1&mute=1" allow="autoplay;" allowfullscreen></iframe>
+    <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/AaDBwFnDUZY?start=50&autoplay=1&mute=1" allow="autoplay;" allowfullscreen></iframe>
+    </div>
 </div>
 <script>
     let time = 60; // 기준 시간
@@ -25,8 +37,12 @@
         }
     }, 1000);
 
-    {% comment %} window.onload = function() {
-
-    } {% endcomment %}
+    window.onload = function() {
+        var parent = document.getElementById('loading');
+        var child = document.getElementById('loading_image');
+        parent.removeChild(child);
+    }
+   
 </script>
+
 {% endblock %}

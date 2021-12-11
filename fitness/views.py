@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 # 메인
 def index(request):
@@ -22,7 +22,6 @@ def select(request):
             exercise_img = 'standing_knee_up'
         else:
             exercise_img = 'step_forward_lunge'
-        print(exercise_img)
         
         # 인원 수 선택 화면으로 넘어감
         return render(
@@ -39,19 +38,26 @@ def select(request):
 
 # 플레이
 def play(request):
-    # 선택된 운동
-    exercise_name = request.POST.get('exercise')
+    if request.method == 'POST':
+        # 선택된 운동
+        exercise_name = request.POST.get('exercise')
 
-    # 선택된 인원수
-    player = request.POST.get('selected_p')
+        # 선택된 인원수
+        player = request.POST.get('selected_p')
 
-    # 팀 이름
-    team_name = request.POST.get('team_name')
+        # 팀 이름
+        team_name = request.POST.get('team_name')
 
-    print(exercise_name, player, team_name)
+        print(exercise_name, player, team_name)
 
-    # 플레이 화면
-    return render(
-        request,
-        'play.html',
-    )
+        # 플레이 화면
+        return render(
+            request,
+            'play.html',
+        )
+
+    else:
+        return redirect(
+            'fitness:index'
+        )
+    
