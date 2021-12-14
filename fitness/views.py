@@ -1,17 +1,17 @@
 from django.shortcuts import render
 
-from django.views.decorators import gzip
-from django.http import StreamingHttpResponse
+# from django.views.decorators import gzip
+# from django.http import StreamingHttpResponse
 
-import cv2
-import threading
+# import cv2
+# import threading
 
-from utils import load_pretrain_model
-from model.Pose.pose_visualizer import TfPoseVisualizer
-from model.Action.recognizer import load_action_premodel, framewise_recognize
+# from utils import load_pretrain_model
+# from model.Pose.pose_visualizer import TfPoseVisualizer
+# from model.Action.recognizer import load_action_premodel, framewise_recognize
 
-estimator = load_pretrain_model('VGG_origin')
-action_classifier = load_action_premodel('model/Action/stnading_knee_scene/framewise_standing_knee_scene2.5.h5')
+# estimator = load_pretrain_model('VGG_origin')
+# action_classifier = load_action_premodel('model/Action/stnading_knee_scene/framewise_standing_knee_scene2.5.h5')
 
 # 메인
 def index(request):
@@ -72,58 +72,58 @@ def play(request):
 
 
 # ! model 추가
-def home(request):
-    context = {}
+# def home(request):
+#     context = {}
 
-    return render(request, "play.html", context)
+#     return render(request, "play.html", context)
 
-class VideoCamera(object):
-    def __init__(self):
-        self.video = cv2.VideoCapture(0)
-        (self.grabbed, self.frame) = self.video.read()
+# class VideoCamera(object):
+#     def __init__(self):
+#         self.video = cv2.VideoCapture(0)
+#         (self.grabbed, self.frame) = self.video.read()
 
-        self.player_list = []
-        # 임시 변수
-        self.player = 256
-        self.exercise = 0
+#         self.player_list = []
+#         # 임시 변수
+#         self.player = 256
+#         self.exercise = 0
 
-        for i in range(self.player):
-            self.player_list.append([i, self.exercise, 'now_pose', 0, False, False, False, False, False])
+#         for i in range(self.player):
+#             self.player_list.append([i, self.exercise, 'now_pose', 0, False, False, False, False, False])
 
-        threading.Thread(target=self.update, args=()).start()
+#         threading.Thread(target=self.update, args=()).start()
 
-    def __del__(self):
-        self.video.release()
+#     def __del__(self):
+#         self.video.release()
 
-    def get_frame(self):
-        image = self.frame
-        humans = estimator.inference(image)
-        pose = TfPoseVisualizer.draw_pose_rgb(image, humans)
-        image  = framewise_recognize(pose, action_classifier, self.player_list)
-        _, jpeg = cv2.imencode('.jpg', image)
-        return jpeg.tobytes()
+#     def get_frame(self):
+#         image = self.frame
+#         humans = estimator.inference(image)
+#         pose = TfPoseVisualizer.draw_pose_rgb(image, humans)
+#         image  = framewise_recognize(pose, action_classifier, self.player_list)
+#         _, jpeg = cv2.imencode('.jpg', image)
+#         return jpeg.tobytes()
 
-    def update(self):
-        while True:
-            (self.grabbed, self.frame) = self.video.read() 
-            # humans = estimator.inference(self.frame) 
-            # pose = TfPoseVisualizer.draw_pose_rgb(self.frame, humans)
-            # self.frame  = framewise_recognize(pose, self.player_list)
+#     def update(self):
+#         while True:
+#             (self.grabbed, self.frame) = self.video.read() 
+#             # humans = estimator.inference(self.frame) 
+#             # pose = TfPoseVisualizer.draw_pose_rgb(self.frame, humans)
+#             # self.frame  = framewise_recognize(pose, self.player_list)
 
-cam = VideoCamera()
+# cam = VideoCamera()
 
-def gen(camera):
-    while True:
-        frame = camera.get_frame()
+# def gen(camera):
+#     while True:
+#         frame = camera.get_frame()
         
-        yield(b'--frame\r\n'
-              b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n\r\n')
+#         yield(b'--frame\r\n'
+#               b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n\r\n')
 
-@gzip.gzip_page
-def webcam(request):
-    try:
-        return StreamingHttpResponse(gen(cam), content_type="multipart/x-mixed-replace;boundary=frame")
+# @gzip.gzip_page
+# def webcam(request):
+#     try:
+#         return StreamingHttpResponse(gen(cam), content_type="multipart/x-mixed-replace;boundary=frame")
     
-    except:  # This is bad! replace it with proper handling
-        print("에러입니다...")
-        pass
+#     except:  # This is bad! replace it with proper handling
+#         print("에러입니다...")
+#         pass

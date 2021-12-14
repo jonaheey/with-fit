@@ -1,5 +1,0 @@
-Linux/Mac 가상환경 실행
--> source venv/bin/activate
-
-/root/with-fit/venv/lib/python3.6/site-packages/tensorflow/python/keras/saving/hdf5_format.py
-주석 6개 변화
