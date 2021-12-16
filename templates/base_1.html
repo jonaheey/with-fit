@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>With Fitness</title>
+    
+    <link rel="stylesheet" href="/static/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="{% static 'fishpig.png' %}">
+    <style>
+        #title {
+            position: absolute;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="{% url 'fitness:index' %}">
+            <h2 id="title">With Fitness</h2>
+        </a>
+    </header>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
