@@ -119,7 +119,8 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: space-between;
   font-family: "Poppins", sans-serif;
-  color: rgba(70, 255, 154, 1);
+  /* color: rgba(70, 255, 154, 1); */
+  color: #fff;
   font-size: 15px;
   padding: 0 4px;
   white-space: nowrap;
@@ -149,7 +150,8 @@ h1, h2, h3, h4, h5, h6 {
   transform: scaleX(1);
 }
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  color: rgba(70, 255, 154, 1);
+  /* color: rgba(70, 255, 154, 1); */
+  color: #fff;
 }
 .navbar .dropdown ul {
   display: block;
@@ -302,11 +304,19 @@ h1, h2, h3, h4, h5, h6 {
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
-  width: 100%;
-  height: 100vh;
-  background: url("../img/main-bg2.gif") top center;
+  /* width: 100%; */
+  /* height: 100vh; */
+  padding: 0;
+  /* background: url("../img/main-bg.gif") top center;
   background-size: cover;
-  position: relative;
+  position: relative; */
+}
+#video-bgvid {
+  width: 100%;
+  /* height: 100vh; */
+  /* height: 100vh;
+  background-size: cover;
+  position: relative; */
 }
 #hero:before {
   content: "";
