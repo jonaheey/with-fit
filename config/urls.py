@@ -19,6 +19,6 @@ from django.conf.urls import include
 
 urlpatterns = [
     path('', include('fitness.urls')),
-    path('withfit/', include('fitness.urls'))
+    path('', include('user.urls'))
     # path('admin/', admin.site.urls)
 ]

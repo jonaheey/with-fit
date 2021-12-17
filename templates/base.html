@@ -32,7 +32,8 @@
   <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+  <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css">
+  <link href="{% static 'css/util.css' %}" rel="stylesheet" type="text/css" >
 
 </head>
 
@@ -44,7 +45,9 @@
 
       <!-- <h1 class="logo"><a href="{% url 'fitness:index' %}">With Fit</a></h1> -->
       <!-- Uncomment below if you prefer to use an image logo -->
-      <a href="/" class="logo"><img src="{% static 'img/logo.png' %}" alt="" class="img-fluid"></a>
+      <a href="/" class="logo">
+        <img src="{% static 'img/logo.png' %}" alt="with fit" class="img-fluid">
+      </a>
 
       <nav id="navbar" class="navbar">
         <ul>
