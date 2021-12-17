@@ -12,26 +12,40 @@
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
-    {% comment %} <link rel="shortcut icon" href="{% static 'favicon.png' %}"> {% endcomment %}
-    {% comment %} <link rel="shortcut icon" href="{% static 'pig.png' %}"> {% endcomment %}
-    <link rel="shortcut icon" href="{% static 'fishpig.png' %}">
-    <style>
-        #title {
-            {% comment %} margin: 3vmin; {% endcomment %}
-            position: absolute;
-            {% comment %} margin-left: 20px;
-            margin-top: 20px; {% endcomment %}
-            font-size: 20px;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="{% static '/style.css' %}"/>
+    <link rel="shortcut icon" href="{% static 'favicon.png' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
+
 <body>
     <header>
-        <a href="{% url 'fitness:index' %}">
-            <h2 id="title">With Fitness</h2>
-        </a>
+        <div style="position:absolute;">
+            <a href="{% url 'fitness:index' %}">
+                <h2 id="title">With Fitness</h2>
+            </a>
+        </div>
     </header>
+    <img id="audiobtn" src="/static/on.png" onclick="play_pause()"></img>
+    <div id="redbtn">
+        게임 시작
+    </div>
     {% block content %}
     {% endblock %}
 </body>
+
+<script>
+    // 배경 음악 재생/정지
+    function play_pause() {
+        if (count == 0) {
+            count = 1;
+            bgm.play();
+            document.getElementById('audiobtn').src = '/static/on.png';
+        }
+        else {
+            count = 0;
+            bgm.pause();
+            document.getElementById('audiobtn').src = '/static/off.png';
+        };
+    };
+</script>
 </html>

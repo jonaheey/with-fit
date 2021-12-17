@@ -1,12 +1,5 @@
 {% extends 'base.html' %}
 {% block content %}
-<style>
-    #loading_image {
-        width: 1000px;
-        height: 1000px;
-        z-index: 10000;
-    }
-</style>
 <div class='wrap'>
     <div id="loading">
         <img id="loading_image" src="/static/loading.gif"/>
@@ -17,6 +10,17 @@
     </div>
 </div>
 <script>
+    const bgm = new Audio();
+    bgm.src = "/static/inspiring-8-bit-563.mp3";
+    let count = 1;
+
+    window.onload = function() {
+        var parent = document.getElementById('loading');
+        var child = document.getElementById('loading_image');
+        parent.removeChild(child);
+        bgm.play();
+    }
+
     let time = 60; // 기준 시간
     
     // setInterval(함수, 시간) : 주기적인 실행
@@ -36,13 +40,5 @@
             document.getElementById('timer').innerHTML = '끝!';
         }
     }, 1000);
-
-    window.onload = function() {
-        var parent = document.getElementById('loading');
-        var child = document.getElementById('loading_image');
-        parent.removeChild(child);
-    }
-   
 </script>
-
 {% endblock %}

@@ -1,24 +1,80 @@
+@font-face {
+    font-family: '쉐도우9';
+    src: url('../static/쉐도우9.TTF');
+}
+
 html, body {
     width: 100%;
     height: 100%;
 }
 
 body {
-    background-color: black;
+    background-image: url('/static/game.gif');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /* background-color: black; */
     align-content: center;
     color: white;
-    font-family: 'Do Hyeon', sans-serif;
-    position: fixed;
+    /* font-family: 'Do Hyeon', sans-serif; */
+    font-family: '쉐도우9';
+    /* position: fixed; */
     overflow: hidden;
   }
   
 /* base.html */
 header a {
-    font-family: 'Orbitron', sans-serif;
+    /* font-family: 'Orbitron', sans-serif; */
+    font-family: '쉐도우9';
     color: white;
     /* text-align: center;
     font-size: 50px; */
     text-decoration: none;
+    /* display: inline-block;
+    width: 180px;
+    height: 45px;
+    position: absolute; */
+}
+
+#title {
+    /* margin: 3vmin; */
+    position: static;
+    /* margin-left: 20px;
+    margin-top: 20px; */
+    font-size: 25px;
+}
+
+#audiobtn {
+    position: relative;
+    top: 17%;
+    left: 13%;
+    width: 20px;
+}
+
+#redbtn {
+    width: 20px;
+    height: 5px;
+    color: red;
+    position: relative;
+    left: 78%;
+    top: 85%;
+    font-size: 10%;
+}
+
+input #btn {
+    font-family: '쉐도우9';
+    width: 130px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 20px;
+    color: orange;
+    background: black;
+    border: 2px solid orange;
+    border-radius: 20px;
+    box-shadow: 5px 5px 0 orange,
+                -5px -5px 0 orange,
+                -5px 5px 0 orange,
+                5px -5px 0 orange;
+    transition: 400ms ease-in-out;
 }
 
 /* index.html */
@@ -29,8 +85,10 @@ header a {
 .wrapper {
     /* flex */
     display: flex;
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
+    width: 90%;
+    height: 90%;
     justify-content: center; /* 가운데 정렬 */
     align-items: center; /* 세로 정렬 */
     margin: 0 auto; /* 가운데 정렬 */
@@ -67,7 +125,8 @@ header a {
 }
 
 button {
-    font-family: 'Do Hyeon', sans-serif;
+    /* font-family: 'Do Hyeon', sans-serif; */
+    font-family: '쉐도우9';
     width: 130px;
     height: 50px;
     cursor: pointer;
@@ -128,7 +187,7 @@ input:checked + label:before {
 }
 
 p {
-    font-family: 'Do Hyeon', sans-serif;
+    /* font-family: 'Do Hyeon', sans-serif; */
     font-size: 20px;
 }
 
@@ -144,7 +203,8 @@ p {
 input {
     width: 200px;
     height: 40px;
-    font-family: 'Do Hyeon', sans-serif;
+    /* font-family: 'Do Hyeon', sans-serif; */
+    font-family: '쉐도우9';
     font-size: 50%;
     text-align: center;
 }
@@ -153,4 +213,10 @@ input {
 #timer {
     font-family: 'Orbitron', sans-serif;
     text-align: center;
+}
+
+#loading_image {
+    width: 1000px;
+    height: 1000px;
+    z-index: 10000;
 }

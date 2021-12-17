@@ -1,6 +1,13 @@
 {% extends 'base.html' %}
 {% block content %}
 {% load static %}
+<script>
+    let bgm = new Audio();
+    bgm.src = "/static/upright-piano-arcade-instrumental-mix-1342.mp3";
+    bgm.play();
+
+    let count = 1;
+</script>
 <div class="wrapper">
 <form method='POST' action="{% url 'fitness:play' %}">
     {% csrf_token %}
