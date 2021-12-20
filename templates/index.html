@@ -16,13 +16,13 @@
     <div class='wrapper'>
         <div class='wrap'>
             <div class='explanation'>
-                <img src='/static/main7.gif'></img>
+                {% comment %} <img src='/static/main7.gif'></img> {% endcomment %}
             </div>
             {% comment %} <form action="{% url 'fitness:select' %}"> {% endcomment %}
             {% comment %} <form action="{% url 'fitness:exercise' %}"> {% endcomment %}
                 <div class='start'>
                     {% comment %} <button type='submit' value="게임 시작" onclick="getval(this.value)">게임 시작</button> {% endcomment %}
-                    <input type="button" value="게임 시작" id="btn" onclick="
+                    <input type="button" value="게임 시작" onclick="
                         fetch('exercise/').then(function(response){
                             response.text().then(function(text){
                                 document.querySelector('body').innerHTML = text;

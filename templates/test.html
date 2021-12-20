@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+{% block content %}
+<style>
+    {% comment %} .container {
+        position: relative;
+        width: 75%;
+        height: 65%;
+        background: pink;
+    }
+
+    .inin {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background: purple;
+        transform: translate(-50%, -50%);
+    } {% endcomment %}
+
+    .screen {
+        position: absolute;
+        width: 75%;
+        height: 65%;
+        top: 49%;
+        left: 50%;
+        background: purple;
+        transform: translate(-50%, -50%);
+        overflow: auto;
+    }
+
+    .test {
+        {% comment %} background-color: pink;
+        width: 75%;
+        height: 65%;
+        margin-top: 13%;
+        margin-left: 12%; {% endcomment %}
+        overflow: auto;
+        position: relative;
+        width: 75%;
+        height: 65%;
+        left: 50%;
+        top: 50%;
+        margin-left: -150px;
+        margin-top: -150px;
+    }
+</style>
+<div class="screen">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>1</div>
+        <div>2</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+</div>
+{% endblock %}

@@ -9,6 +9,7 @@ urlpatterns = [
     path('exercise/', views.exercise, name="exercise"),
     path('player/', views.player, name='player'),
     path('play/', views.play, name='play'), # 플레이
+    path('test/', views.test, name="test"),
 ]
 
 # https://dev-yakuza.posstree.com/ko/django/view/

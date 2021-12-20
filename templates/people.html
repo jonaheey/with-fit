@@ -8,26 +8,31 @@
 
     let count = 1;
 </script>
-<div class="wrapper">
+{% comment %} <div class="wrapper"> {% endcomment %}
 <form method='POST' action="{% url 'fitness:play' %}">
     {% csrf_token %}
-    <div class="wrap">
-        <img src="{% get_static_prefix %}{{exercise_img}}.gif" width='200px' height='200px'></img>
+    {% comment %} <div class="wrap"> {% endcomment %}
+    <div class="screen">
+        {% comment %} <img src="{% get_static_prefix %}{{exercise_img}}.gif" width='200px' height='200px'></img> {% endcomment %}
+        <img id="ex_img" src="" width='200px' height='200px'></img>
         {% comment %} {% if exercise_name %} {% endcomment %}
-            <h3>{{exercise_name}}</h3>
+            {% comment %} <h3 id="ex_name">{{exercise_name}}</h3> {% endcomment %}
+            <h3 id="ex_name"></h3>
         {% comment %} {% endif %} {% endcomment %}
         <div class='radio'>
             <div>
-                <input type="radio" id="rad1" name="selected_p" value='1'>
+                {% comment %} <input type="radio" id="rad1" name="selected_p" value='1' onclick="select_p(this)"> {% endcomment %}
+                <input type="radio" class="p_btn" id="rad1" name="selected_p" value='1'>
                 <label for="rad1"></label>
                 <p>1인</p>
             </div>
             <div>
-                <input type="radio" id="rad2" name="selected_p" value='2'>
+                {% comment %} <input type="radio" id="rad2" name="selected_p" value='2' onclick="select_p(this)"> {% endcomment %}
+                <input type="radio" class="p_btn" id="rad2" name="selected_p" value='2'>
                 <label for="rad2"></label>
                 <p>2인</p>
             </div>
-            <div>
+            {% comment %} <div>
                 <input type="radio" id="rad3" name="selected_p" value='3'>
                 <label for="rad3"></label>
                 <p>3인</p>
@@ -36,17 +41,18 @@
                 <input type="radio" id="rad4" name="selected_p" value='4'>
                 <label for="rad4"></label>
                 <p>4인</p>
-            </div>
+            </div> {% endcomment %}
         </div>
         <br>
-        <div class='team'>
+        {% comment %} <div class='team'>
             팀명<br>
-            <input type='text' placeholder='입력해주세요' name='team_name' required></input>
-        </div>
-        <br><br>
-        <button type='submit'>PLAY</button>
+            <input type='text' class="team_name" placeholder='입력해주세요' name='team_name' required></input>
+        </div> {% endcomment %}
+        {% comment %} <br><br> {% endcomment %}
+        {% comment %} <button type='submit' onclick="get_team_name()">PLAY</button> {% endcomment %}
+        <input type="button" value="play" onclick="game_play()"></input>
         <input type='hidden' name='exercise' value='{{exercise_name}}'></input>
     </div>
 </form>
-</div>
+{% comment %} </div> {% endcomment %}
 {% endblock %}

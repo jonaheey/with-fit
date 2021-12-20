@@ -7,51 +7,33 @@
     bgm.play();
 
     let count = 1;
-
-    {% comment %} function getval(value) {
-        let selected = value;
-        console.log(selected);
-    }; {% endcomment %}
-
-    function select_exercise(exercise) {
-        const selected_exercise = exercise;
-        console.log(selected_exercise);
-        fetch('/player/').then(function(response) {
-            response.text().then(function(text) {
-                document.querySelector('body').innerHTML = text;
-            })
-        })
-    };
 </script>
-<div class="wrapper">
+
+<div class="screen">
     <form method='POST'>
         {% csrf_token %}
         <div class="select_exercise">
             <div class="exercise">
                 <img src="/static/push_up.gif">
                 {% comment %} <button type="submit" name="selected_e" value='푸시업' onclick="select_exercise(this.value)">푸시업</button> {% endcomment %}
-                <input type="button" value="푸시업" onclick="select_exercise(this.value)"></input>
+                <input type="button" value="푸시업" onclick="select_exercise(this)"></input>
             </div>
             <div class="exercise">
                 <img src="/static/side_lunge.gif">
-                <button type="submit" name="selected_e" value='사이드 런지' onclick="select_exercise(this.value)">사이드 런지</button>
+                {% comment %} <button type="submit" name="selected_e" value='사이드 런지'>사이드 런지</button> {% endcomment %}
+                <input type="button" value="사이드 런지" onclick="select_exercise(this)"></input>
             </div>
             <div class="exercise">
                 <img src="/static/standing_knee_up.gif">
-                <button type="submit" name="selected_e" value='스탠딩 니 업' onclick="select_exercise(this.value)">스탠딩 니 업</button>
+                {% comment %} <button type="submit" name="selected_e" value='스탠딩 니 업'>스탠딩 니 업</button> {% endcomment %}
+                <input type="button" value="스탠딩 니 업" onclick="select_exercise(this)"></input>
             </div>
             <div class="exercise">
                 <img src="/static/step_forward_lunge.gif">
-                <button type="submit" name="selected_e" value='포워드 런지' onclick="select_exercise(this.value)">포워드 런지</button>
+                {% comment %} <button type="submit" name="selected_e" value='포워드 런지'>포워드 런지</button> {% endcomment %}
+                <input type="button" value="포워드 런지" onclick="select_exercise(this)"></input>
             </div>
         </div>
     </form>
 </div>
-
-{% comment %} <input type="button" value="게임 시작" id="btn" onclick="
-                        fetch('select/').then(function(response){
-                            response.text().then(function(text){
-                                document.querySelector('body').innerHTML = text;
-                            })
-                    })"> {% endcomment %}
 {% endblock %}
