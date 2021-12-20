@@ -1,14 +1,11 @@
 {% extends 'base.html' %}
 {% block content %}
-<div class='wrap'>
-    <div id="loading">
-        <img id="loading_image" src="/static/loading.gif"/>
-    </div>
-    <div id='timer'></div>
-    <div>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/AaDBwFnDUZY?start=50&autoplay=1&mute=1" allow="autoplay;" allowfullscreen></iframe>
-    </div>
-</div>
+{% load static %}
+<link rel="stylesheet" href="/static/css/style_g1.css">
+<link rel="stylesheet" type="text/css" href="{% static '/css/style_g1.css' %}"/>
+
+<script type="text/javascript" src="{% static 'js/sideknee_model_player1.js' %}"></script>
+<script type="text/javascript">init();</script>
 <script>
     const bgm = new Audio();
     bgm.src = "/static/inspiring-8-bit-563.mp3";
@@ -41,4 +38,25 @@
         }
     }, 1000);
 </script>
+<div class='screen'>
+    <div id='timer'></div>
+    <canvas id="canvas"></canvas>
+    <img id="monster" scr="img/monster-jelly_0.gif">
+    <canvas id="canvas_hp" style="left:59%; position:absolute;"></canvas>
+    <div id="label-container"></div>
+</div>
+
+{% comment %} <div class='screen'>
+    <div id="loading">
+        <img id="loading_image" src="/static/img/fitness/loading.gif"/>
+    </div>
+    
+</div> {% endcomment %}
+
+
+
+
+<script type="text/javascript" src="{% static 'js/health-bar.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/monster.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/index.js' %}"></script>
 {% endblock %}

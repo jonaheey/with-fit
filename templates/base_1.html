@@ -1,0 +1,111 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>With Fitness</title>
+    
+    <link rel="stylesheet" href="/static/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="{% static '/style.css' %}"/>
+    <link rel="shortcut icon" href="{% static 'fishpig.png' %}">
+
+    {% comment %} <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> {% endcomment %}
+</head>
+<body>
+    <header>
+        <div style="position:absolute;">
+            <a href="{% url 'fitness:index' %}">
+                <h2 id="title">With Fitness</h2>
+            </a>
+        </div>
+    </header>
+    <img id="audiobtn" src="/static/on.png" onclick="play_pause()"></img>
+    {% block content %}
+    {% endblock %}
+</body>
+<script>
+    // 배경 음악 재생/정지
+    function play_pause() {
+        if (count == 0) {
+            count = 1;
+            bgm.play();
+            document.getElementById('audiobtn').src = '/static/on.png';
+        }
+        else {
+            count = 0;
+            bgm.pause();
+            document.getElementById('audiobtn').src = '/static/off.png';
+        };
+    };
+
+    // exercise.html -> people.html
+    function select_exercise(exercise) {
+        const selected_exercise = exercise.value;
+        console.log(selected_exercise);
+        if (selected_exercise == "푸시업") {
+            exercise_img = "push_up";
+        } else if (selected_exercise == "사이드 런지") {
+            exercise_img = "side_lunge";
+        } else if (selected_exercise == "스탠딩 니 업") {
+            exercise_img = "standing_knee_up";
+        } else {
+            exercise_img = "step_forward_lunge";
+        };
+        console.log(exercise_img);
+        fetch('player/').then(function(response) {
+            response.text().then(function(text) {
+                document.querySelector('body').innerHTML = text;
+                document.getElementById('ex_img').src = "/static/" + exercise_img + ".gif";
+                document.getElementById('ex_name').innerHTML = selected_exercise;
+            })
+        })
+    };
+
+    {% comment %} $("p_btn").click(function() {
+        let selected_p = $(this).value();
+        console.log(selected_p);
+    }); {% endcomment %}
+
+    {% comment %} document.querySelector("p_btn").click(function() {
+        let selected_p = this.value;
+        console.log(selected_p);
+    }); {% endcomment %}
+
+    function get_p(p) {
+        let selected_p = p.value;
+        console.log(selected_p);
+    };
+
+    document.querySelector("p_btn")
+    .addEventListener("click", get_p(this));
+
+    {% comment %} function select_p(p) {
+        const selected_p = p.value;
+        console.log(selected_p);
+        return selected_p;
+    }; {% endcomment %}
+
+    function get_team_name() {
+        let team_name = document.querySelector('team_name').value;
+        console.log(team_name);
+    };
+
+    function game_play() {
+        fetch('play/').then(function(response) {
+            response.text().then(function(text) {
+                document.querySelector('body').innerHTML = text;
+            })
+        })
+    };
+</script>
+</html>

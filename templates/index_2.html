@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<script>
+    let bgm = new Audio();
+    bgm.src = "/static/upright-piano-arcade-instrumental-mix-1342.mp3";
+    bgm.play();
+
+    let count = 1;
+
+    function getval(value) {
+        let selected = value;
+        console.log(selected);
+    };
+</script>
+    <div class='wrapper'>
+        <div class='wrap'>
+            <form action="{% url 'fitness:select' %}">
+                <div class='start'>
+                    {% comment %} <button type='submit'>게임 시작</button> {% endcomment %}
+                    <input type="button" value="게임 시작" onclick="
+                        fetch('exercise/').then(function(response){
+                            response.text().then(function(text){
+                                document.querySelector('body').innerHTML = text;
+                            })
+                        })">
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}

@@ -1,6 +1,10 @@
 {% extends 'base.html' %}
 {% block content %}
 {% load static %}
+<link rel="stylesheet" href="/static/css/style_g1.css">
+<link rel="stylesheet" type="text/css" href="{% static '/css/style_g1.css' %}"/>
+<link rel="shortcut icon" href="{% static '/img/favicon2.png' %}">
+
 <script>
     let bgm = new Audio();
     bgm.src = "/static/upright-piano-arcade-instrumental-mix-1342.mp3";
@@ -9,6 +13,7 @@
     let count = 1;
 </script>
 {% comment %} <div class="wrapper"> {% endcomment %}
+<img id="audiobtn" src="/static/on.png" onclick="play_pause()"></img>
 <form method='POST' action="{% url 'fitness:play' %}">
     {% csrf_token %}
     {% comment %} <div class="wrap"> {% endcomment %}
@@ -17,31 +22,21 @@
         <img id="ex_img" src="" width='200px' height='200px'></img>
         {% comment %} {% if exercise_name %} {% endcomment %}
             {% comment %} <h3 id="ex_name">{{exercise_name}}</h3> {% endcomment %}
-            <h3 id="ex_name"></h3>
+        <h3 id="ex_name"></h3>
         {% comment %} {% endif %} {% endcomment %}
         <div class='radio'>
             <div>
-                {% comment %} <input type="radio" id="rad1" name="selected_p" value='1' onclick="select_p(this)"> {% endcomment %}
-                <input type="radio" class="p_btn" id="rad1" name="selected_p" value='1'>
+                <input type="radio" id="rad1" name="selected_p" value='1'>
+                {% comment %} <input type="radio" class="p_btn" id="rad1" name="selected_p" value='1'> {% endcomment %}
                 <label for="rad1"></label>
                 <p>1인</p>
             </div>
             <div>
-                {% comment %} <input type="radio" id="rad2" name="selected_p" value='2' onclick="select_p(this)"> {% endcomment %}
-                <input type="radio" class="p_btn" id="rad2" name="selected_p" value='2'>
+                <input type="radio" id="rad2" name="selected_p" value='2'>
+                {% comment %} <input type="radio" class="p_btn" id="rad2" name="selected_p" value='2'> {% endcomment %}
                 <label for="rad2"></label>
                 <p>2인</p>
             </div>
-            {% comment %} <div>
-                <input type="radio" id="rad3" name="selected_p" value='3'>
-                <label for="rad3"></label>
-                <p>3인</p>
-            </div>
-            <div>
-                <input type="radio" id="rad4" name="selected_p" value='4'>
-                <label for="rad4"></label>
-                <p>4인</p>
-            </div> {% endcomment %}
         </div>
         <br>
         {% comment %} <div class='team'>
@@ -49,8 +44,8 @@
             <input type='text' class="team_name" placeholder='입력해주세요' name='team_name' required></input>
         </div> {% endcomment %}
         {% comment %} <br><br> {% endcomment %}
-        {% comment %} <button type='submit' onclick="get_team_name()">PLAY</button> {% endcomment %}
-        <input type="button" value="play" onclick="game_play()"></input>
+        <button type='submit'>PLAY</button>
+        {% comment %} <input type="button" value="play"></input> {% endcomment %}
         <input type='hidden' name='exercise' value='{{exercise_name}}'></input>
     </div>
 </form>

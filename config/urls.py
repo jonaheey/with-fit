@@ -18,6 +18,7 @@ from django.urls import path
 from django.conf.urls import include
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('withfit/', include('fitness.urls'))
+    path('', include('fitness.urls')),
+    path('', include('user.urls'))
+    # path('admin/', admin.site.urls)
 ]
