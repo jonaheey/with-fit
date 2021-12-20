@@ -1,14 +1,29 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block content %}
+<script>
+    let bgm = new Audio();
+    bgm.src = "/static/upright-piano-arcade-instrumental-mix-1342.mp3";
+    bgm.play();
+
+    let count = 1;
+
+    function getval(value) {
+        let selected = value;
+        console.log(selected);
+    };
+</script>
     <div class='wrapper'>
         <div class='wrap'>
-            <div class='explanation'>
-                {% comment %} <img src='/static/main.gif' style='width=100%; height=100%; object-fit:contain;'></img> {% endcomment %}
-                <img src='/static/main7.gif'></img>
-            </div>
             <form action="{% url 'fitness:select' %}">
                 <div class='start'>
-                    <button type='submit'>게임 시작</button>
+                    {% comment %} <button type='submit'>게임 시작</button> {% endcomment %}
+                    <input type="button" value="게임 시작" onclick="
+                        fetch('exercise/').then(function(response){
+                            response.text().then(function(text){
+                                document.querySelector('body').innerHTML = text;
+                            })
+                        })">
                 </div>
             </form>
         </div>
