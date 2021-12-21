@@ -1,7 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
 {% load static %}
-{% comment %} <link rel="stylesheet" href="/static/css/style_g1.css"> {% endcomment %}
 <link rel="stylesheet" type="text/css" href="{% static '/css/style_g1.css' %}"/>
 <link rel="shortcut icon" href="{% static '/img/favicon2.png' %}">
 
@@ -45,42 +44,30 @@
     // withfit.html -> people.html
     function select_exercise(exercise) {
         const selected_exercise = exercise.value;
-        let youtube;
         let guide;
         console.log(selected_exercise);
 
         if (selected_exercise == "푸시업") {
             exercise_img = "push_up";
-            youtube = "";
-            // youtube = "https://youtu.be/_l3ySVKYVJ8";
             guide = "양 손은 바닥에 어깨너비로 벌리고 팔을 뻗고 시작합니다. 가슴과 허벅지를 땅에 내립니다. 몸을 곧게 펴고 팔꿈치는 어깨보다 엉덩이에 가깝게 움직입니다.";
         } else if (selected_exercise == "사이드 런지") {
             exercise_img = "side_lunge";
-            youtube = "";
             guide = "옆으로 런지를 한다.";
         } else if (selected_exercise == "스탠딩 니 업") {
             exercise_img = "standing_knee_up";
-            youtube = "";
-            // youtube = <iframe src="https://www.youtube.com/embed/WKEQ1ONTS8s?controls=0&amp;start=20" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>;
             guide = "똑바로 선 후 양 무릎을 번갈아가며 들어올린다.";
         } else {
             exercise_img = "step_forward_lunge";
-            youtube = "";
             guide = "앞으로 런지를 한다.";
         };
         console.log(exercise_img);
-
-        if (youtube == "") {
-            youtube = `/static/img/fitness/${exercise_img}.gif`;
-        };
         
         fetch('/player/').then(function(response) {
             response.text().then(function(text) {
                 document.querySelector('body').innerHTML = text;
-                document.getElementById('ex_img').src = youtube;
+                document.getElementById('ex_img').src = exercise_img;
                 document.getElementById("explain").innerHTML = guide;
                 document.getElementById('ex_name').innerHTML = selected_exercise;
-                console.log('주소' + document.referrer);
             })
         })
     };
@@ -102,13 +89,13 @@
     //    })
     //};
 </script>
-<section id="select">
-<img id="back" src="/static/back.png" onclick="go_main()"></img>
-<img id="audiobtn" src="/static/on.png" onclick="play_pause()"></img>
-{% comment %} <iframe src="/static/silence.mp3" allow="autoplay" id="audio" style="display:none;"></iframe>
-<audio id="audio" autoplay><source src="/static/upright-piano-arcade-instrumental-mix-1342.mp3"></audio> {% endcomment %}
-<div class="screen">
-    <h3>운동 선택</h3><br><br><br>
+<!-- <section id="select"> -->
+    {% comment %} <iframe src="/static/silence.mp3" allow="autoplay" id="audio" style="display:none;"></iframe>
+    <audio id="audio" autoplay><source src="/static/upright-piano-arcade-instrumental-mix-1342.mp3"></audio> {% endcomment %}
+    <div class="screen">
+        <img id="back" src="/static/back.png" onclick="go_main()"></img>
+        <h3>운동 선택</h3>
+        <img id="audiobtn" src="/static/on.png" onclick="play_pause()"></img>
     <form method='POST'>
         {% csrf_token %}
         <div class="select_exercise">
@@ -135,5 +122,5 @@
         </div>
     </form>
 </div>
-</section>
+<!-- </section> -->
 {% endblock %}
