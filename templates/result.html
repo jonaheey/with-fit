@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/style_Result.css' %}"/>
+<body>
+<div class='screen'>
+    <p>결과 화면</p>
+    {% comment %} 본인 스코어값 DB에서 불러오기 {% endcomment %}
+    {% comment %} 랭킹 DB 불러오기 {% endcomment %}
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <input type="button" value="CONTINUE" onclick = "location.href = '../withfit'"></input>
+    <input type="button" value="CLOSE"  onclick = "location.href = '../'"></input>
+</div>
+    
+</body>
+{% endblock %}

@@ -92,6 +92,13 @@ def play(request):
     else:
         return HttpResponseRedirect('fitness:index')
 
+
+# 결과화면
+def result(request):
+    return render(
+        request,
+        'result.html'
+    )
 # def play(request):
 #     return render(
 #         request,

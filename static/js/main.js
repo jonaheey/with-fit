@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /**
 * Template Name: Tempo - v4.7.0
 * Template URL: https://bootstrapmade.com/tempo-free-onepage-bootstrap-theme/
