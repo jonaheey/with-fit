@@ -1,15 +1,12 @@
 const canvas = document.getElementById("canvas_hp");
 const context = canvas.getContext("2d");
-const width = canvas.width = 320;
-const height = canvas.height = 240;
+const width = canvas.width = 100;
+const height = canvas.height = 30;
 
-canvas.style.marginTop = window.innerHeight / 2 - height / 2 + "px"; 
-
-let status = 0;
 let health = 100;
 var monster_status = true;
 
-const healthBarWidth = 200;
+const healthBarWidth = 100;
 const healthBarHeight = 30;
 const x = width / 2 - healthBarWidth / 2;
 const y = height / 2 - healthBarHeight / 2;
