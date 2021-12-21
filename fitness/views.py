@@ -91,9 +91,3 @@ def play(request):
 
     else:
         return HttpResponseRedirect('fitness:index')
-
-# def play(request):
-#     return render(
-#         request,
-#         'play.html'
-#     )
