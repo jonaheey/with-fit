@@ -8,8 +8,13 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+@font-face {
+  font-family: shadow9;
+  src: url('../font/shadow9.TTF');
+}
+
 body {
-  font-family: 'NeoDunggeunmo';
+  font-family: shadow9, Arial, Helvetica, sans-serif;
   color: #444444;
 }
 
@@ -70,15 +75,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 #header.header-scrolled, #header.header-inner-pages {
   background: rgba(255, 255, 255, 0.8);
-  /* padding: 12px 0; */
+  padding: 8px 0;
 }
 #header.header-scrolled .logo a {
-  color: #111
+  color: #000
 }
 #header.header-scrolled .navbar a {
-  color: #111
+  color: #000
 }
-
+#header.header-scrolled .mobile-nav-toggle {
+  color: #000;
+}
+header-scrolled
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -200,7 +208,7 @@ h1, h2, h3, h4, h5, h6 {
 */
 .mobile-nav-toggle {
   color: #fff;
-  font-size: 28px;
+  font-size: 30px;
   cursor: pointer;
   display: none;
   line-height: 0;
@@ -227,7 +235,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(45, 37, 38, 0.9);
+  background: rgba(45, 37, 38, 0.5);
   transition: 0.3s;
   z-index: 999;
 }
@@ -239,10 +247,10 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-mobile ul {
   display: block;
   position: absolute;
-  top: 55px;
-  right: 15px;
-  bottom: 15px;
-  left: 15px;
+  width: 50vh;
+  top: 50px;
+  right: 5px;
+  bottom: 50px;
   padding: 10px 0;
   background-color: #fff;
   overflow-y: auto;
@@ -296,40 +304,19 @@ h1, h2, h3, h4, h5, h6 {
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
-<<<<<<< HEAD
-  /* width: 100%; */
-  /* height: 100vh; */
   padding: 0;
-  /* background: url("../img/main-bg.gif") top center;
-  background-size: cover;
-  position: relative; */
 }
-#video-bgvid {
+#bgvid {
   width: 100%;
-  /* height: 100vh; */
-  /* height: 100vh;
-=======
-  /* width: 100%;
-  height: 100vh;
+}
+/* #filter-box {
+  width: 100%;
+  height: 80%;
   padding: 0;
-  background: url("../img/hero-bg.gif") top center;
->>>>>>> 4833ae45a7d8d8b334dbbb04d235592bf0370a60
-  background-size: cover;
-  position: relative; */
-}
-#hero:before {
-  content: "";
-<<<<<<< HEAD
-  /* background: rgba(0, 0, 0, 0.6); */
-=======
-  background: rgba(0, 0, 0, 0.1);
->>>>>>> 4833ae45a7d8d8b334dbbb04d235592bf0370a60
+  background: rgba(0, 0, 0, 0.7);
   position: absolute;
-  bottom: 0;
   top: 0;
-  left: 0;
-  right: 0;
-}
+} */
 #hero .hero-container {
   position: absolute;
   bottom: 0;
@@ -397,7 +384,7 @@ h1, h2, h3, h4, h5, h6 {
   border: 2px solid #c833ff;
 }
 @media (min-width: 1024px) {
-  #hero {
+  #bgvid {
     background-attachment: fixed;
   }
 }
@@ -447,17 +434,10 @@ section {
   padding-bottom: 30px;
 }
 .section-title h2 {
-<<<<<<< HEAD
   font-size: 20px;
   letter-spacing: 1px;
   font-weight: 700;
   padding: 8px 20px;
-=======
-  font-size: 28px;
-  letter-spacing: 1px;
-  font-weight: 700;
-  padding: 14px 30px;
->>>>>>> 4833ae45a7d8d8b334dbbb04d235592bf0370a60
   line-height: 1;
   margin: 0;
   background: #c833ff;
@@ -1761,47 +1741,31 @@ section {
 /*--------------------------------------------------------------
 # Signup
 --------------------------------------------------------------*/
-<<<<<<< HEAD
-
-=======
 #signup {
   width: 100%;
   height: 100vh;
   padding: 0;
-  /* background: url("../img/hero-bg.png") top center; */
-  /* background-size: cover; */
+  background: url("../img/main-bg.png") top center;
+  background-size: cover;
   position: relative;
 }
->>>>>>> 4833ae45a7d8d8b334dbbb04d235592bf0370a60
 
 /*--------------------------------------------------------------
 # Signin
 --------------------------------------------------------------*/
 #signin {
-<<<<<<< HEAD
-  /* width: 70%;
-  height: 600px;
-  margin: 10vh auto;
-  padding: 0; */
-  background: url("../img/main-bg.gif") top center;
-  background-size: cover;
-  /* position: relative; */
-=======
   width: 100%;
   height: 100vh;
   padding: 0;
-  /* background: url("../img/sub-bg.png") top center; */
-  /* background-size: cover; */
+  background: url("../img/main-bg.png") top center;
+  background-size: cover;
   position: relative;
->>>>>>> 4833ae45a7d8d8b334dbbb04d235592bf0370a60
 }
 #signin {
   height: 100%;
-  font-family: Poppins-Regular, sans-serif;
 }
 
 #signin a {
-	font-family: Poppins-Regular;
 	font-size: 14px;
 	line-height: 1.7;
 	color: #666666;
@@ -1817,7 +1781,6 @@ section {
 }
 
 #signin p {
-	font-family: Poppins-Regular;
 	font-size: 14px;
 	line-height: 1.7;
 	color: #666666;
@@ -1825,7 +1788,6 @@ section {
 }
 
 p {
-	font-family: Poppins-Regular;
 	font-size: 14px;
 	line-height: 1.7;
 	color: #666666;
@@ -1889,19 +1851,13 @@ iframe {
 /*//////////////////////////////////////////////////////////////////
 [ Utility ]*/
 .txt1 {
-  font-family: Poppins-Regular;
   font-size: 14px;
   line-height: 1.5;
   color: #666666;
 }
 
 .txt2 {
-  font-family: Poppins-Regular;
-<<<<<<< HEAD
   font-size: 14px;
-=======
-  font-size: 18px;
->>>>>>> 4833ae45a7d8d8b334dbbb04d235592bf0370a60
   line-height: 1.5;
   color: #333333;
   text-transform: uppercase;
@@ -1931,22 +1887,14 @@ iframe {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-<<<<<<< HEAD
   padding: 15px;
-=======
-  padding: 0;
->>>>>>> 4833ae45a7d8d8b334dbbb04d235592bf0370a60
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .wrap-login100 {
-<<<<<<< HEAD
   width: 500px;
-=======
-  width: 400px;
->>>>>>> 4833ae45a7d8d8b334dbbb04d235592bf0370a60
   background: #fff;
   border-radius: 10px;
   overflow: hidden;
@@ -1962,7 +1910,6 @@ iframe {
 
 .login100-form-title {
   display: block;
-  font-family: Poppins-Bold;
   font-size: 39px;
   color: #333333;
   line-height: 1.2;
@@ -1981,7 +1928,6 @@ iframe {
 }
 
 .label-input100 {
-  font-family: Poppins-Regular;
   font-size: 14px;
   color: #333333;
   line-height: 1.5;
@@ -1989,14 +1935,12 @@ iframe {
 }
 
 .input100 {
-  font-family: Poppins-Medium;
   font-size: 16px;
   color: #333333;
   line-height: 1.2;
-
   display: block;
   width: 100%;
-  height: 55px;
+  height: 50px;
   background: transparent;
   padding: 0 7px 0 43px;
 }
@@ -2031,11 +1975,7 @@ iframe {
   bottom: 0;
   left: 0;
   padding-left: 13px;
-<<<<<<< HEAD
-  padding-top: 3px;
-=======
-  padding-bottom: 20px;
->>>>>>> 4833ae45a7d8d8b334dbbb04d235592bf0370a60
+  padding-bottom: 18px;
 }
 
 .focus-input100::before {
@@ -2119,7 +2059,6 @@ iframe {
 }
 
 .login100-form-btn {
-  font-family: Poppins-Medium;
   font-size: 16px;
   color: #fff;
   line-height: 1.2;
@@ -2166,7 +2105,6 @@ iframe {
   right: 2px;
   pointer-events: none;
 
-  font-family: Poppins-Regular;
   color: #c80000;
   font-size: 13px;
   line-height: 1.4;

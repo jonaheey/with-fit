@@ -8,24 +8,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>With Fitness</title>
-  <!-- <meta content="" name="description">
-  <meta content="" name="keywords"> -->
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
   <!-- Favicons -->
   <link href="{% static 'img/favicon2.png' %}" rel="icon">
   <!-- <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
 
-  <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
-
-  <!-- Neo둥근모 -->
+  <!-- font: Neo둥근모 -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/neodgm/neodgm-webfont@1.521/neodgm/style.css">
-  <!-- Neo둥근모 Code -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/neodgm/neodgm-webfont@1.521/neodgm_code/style.css">
 
   <!-- Vendor CSS Files -->
@@ -36,7 +27,7 @@
   <link href="{% static 'vendor/remixicon/remixicon.css' %}" rel="stylesheet">
   <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
+  <!-- CSS File -->
   <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css">
   <link href="{% static 'css/util.css' %}" rel="stylesheet" type="text/css" >
 
@@ -63,15 +54,16 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">홈</a></li>
+          <li><a class="nav-link scrollto " href="#portfolio">About</a></li>
           <li><a class="nav-link scrollto" href="#about">소식</a></li>
           <li><a class="nav-link scrollto" href="#services">랭킹</a></li>
-          <li><a class="nav-link scrollto " href="#portfolio">About</a></li>
-          <li><a class="nav-link scrollto" href="#team">FAQ</a></li>
-          <li><a href="/signin">로그인</a></li>
-          <li class="dropdown"><a href=""><span>운동</span> <i class="bi bi-chevron-down"></i></a>
+          {% if request.session.email %}
+          <li class="dropdown"><a href=""><span>{{ request.session.name }} 님</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="#">Deep Drop 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+              <li><a href="#">내정보</a></li>
+              <li><a href="#">계정설정</a></li>
+              <li><a href="{% url 'user:signout' %}">로그아웃</a></li>
+              <!-- <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
                   <li><a href="#">Deep Drop Down 1</a></li>
                   <li><a href="#">Deep Drop Down 2</a></li>
@@ -79,12 +71,12 @@
                   <li><a href="#">Deep Drop Down 4</a></li>
                   <li><a href="#">Deep Drop Down 5</a></li>
                 </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
+              </li> -->
             </ul>
           </li>
+          {% else %}
+          <li><a href="/signin">로그인</a></li>
+          {% endif %}
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>

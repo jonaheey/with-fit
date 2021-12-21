@@ -1,19 +1,6 @@
 from django.shortcuts import render, redirect
 from django.http.response import HttpResponseRedirect
 
-# from django.views.decorators import gzip
-# from django.http import StreamingHttpResponse
-
-# import cv2
-# import threading
-
-# from utils import load_pretrain_model
-# from model.Pose.pose_visualizer import TfPoseVisualizer
-# from model.Action.recognizer import load_action_premodel, framewise_recognize
-
-# estimator = load_pretrain_model('VGG_origin')
-# action_classifier = load_action_premodel('model/Action/stnading_knee_scene/framewise_standing_knee_scene2.5.h5')
-
 # 메인
 def index(request):
     return render(
