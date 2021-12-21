@@ -10,11 +10,12 @@
 --------------------------------------------------------------*/
 @font-face {
   font-family: shadow9;
-  src: url('../font/shadow9.TTF');
+  src: url('../font/shadow9.TTF'),
+  ;
 }
 
 body {
-  font-family: shadow9, Arial, Helvetica, sans-serif;
+  font-family: 'NeoDunggeunmo', Arial, Helvetica, sans-serif;
   color: #444444;
 }
 
@@ -415,6 +416,18 @@ header-scrolled
   #hero {
     height: 150vh;
   }
+}
+
+#coin {
+  background-color: rgba(0, 0, 0, 0);
+  width: 30%;
+  height: 5%;
+  z-index: 1;
+  position: absolute;
+  left: 50%;
+  margin-top: -15%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
 }
 
 /*--------------------------------------------------------------
@@ -1787,6 +1800,27 @@ section {
 	margin: 0px;
 }
 
+/*--------------------------------------------------------------
+# select
+--------------------------------------------------------------*/
+/* body {
+  background-image: url('/static/img/main-bg.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  align-content: center;
+  color: white;
+  font-family: 'shadow9';
+  overflow: hidden;
+} */
+
+
+
+
+
+
+
+
+
 p {
 	font-size: 14px;
 	line-height: 1.7;
@@ -1857,7 +1891,7 @@ iframe {
 }
 
 .txt2 {
-  font-size: 14px;
+  font-size: 20px;
   line-height: 1.5;
   color: #333333;
   text-transform: uppercase;

@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static '/css/style_g1.css' %}"/>
+
+<script>
+    let bgm = new Audio();
+    bgm.src = "/static/upright-piano-arcade-instrumental-mix-1342.mp3";
+    bgm.play();
+
+    let count = 1;
+</script>
+<img id="back" src="/static/img/back.png" onclick="go_select()">
+<img id="audiobtn" src="/static/img/on.png" onclick="play_pause()">
+<form method='POST' action="{% url 'fitness:play' %}">
+    {% csrf_token %}
+    <div class="screen">
+        <p></p>
+        <h3 id="ex_name"></h3>
+        <div id="left">
+            <img id="ex_img" src="" width='200px' height='200px'>
+        </div>
+        <div id="right">
+            <div id="explain"></div>
+            <div class='radio'>
+                <div>
+                    <input type="radio" id="rad1" name="selected_p" value='1' required>
+                    <label for="rad1"></label>
+                    <p>1인</p>
+                </div>
+                <div>
+                    <input type="radio" id="rad2" name="selected_p" value='2'>
+                    <label for="rad2"></label>
+                    <p>2인</p>
+                </div>
+            </div>
+            <button type='submit' id="playbtn">PLAY</button>
+        </div>
+        <br>
+        <input type='hidden' id="exercise" name='exercise'>
+    </div>
+</form>
+{% endblock %}
