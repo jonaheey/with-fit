@@ -140,6 +140,11 @@ input[type="radio"]:checked + label:before {
     background: black;
 }
 
+.msg-text{
+    position: absolute;
+    top:2%;
+}
+
 p {
     font-family: 'shadow9';
     font-size: 20px;
@@ -178,3 +183,4 @@ input[type="text"] {
     height: 1000px;
     z-index: 10000;
 }
+

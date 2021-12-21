@@ -9,6 +9,7 @@ urlpatterns = [
     path('withfit/', views.withfit),
     path('player/', views.player, name='player'),
     path('play/', views.play, name='play'), # 플레이
+    path('play2P/', views.play2P, name='play2P'), # 2P 플레이
     path('result/', views.result, name='result'), # 결과화면
 ]
 

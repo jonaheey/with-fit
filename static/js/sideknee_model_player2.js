@@ -3,6 +3,7 @@
 let status = 0;
     // the link to your model provided by Teachable Machine export panel
     async function init() {
+        
         LoadingWithMask('../static/img/pacman.gif');
         const modelURL = "../static/json/model.json";
         const metadataURL = "../static/json/metadata.json";
@@ -18,6 +19,7 @@ let status = 0;
         // Note: the pose library adds a tmPose object to your window (window.tmPose)
         model = await tmPose.load(modelURL, metadataURL);
         maxPredictions = model.getTotalClasses();
+        maxPredictions2 = model.getTotalClasses();
 
         sign_model = await tmPose.load(sign_modelURL, sign_metadataURL);
         sign_maxPredictions = sign_model.getTotalClasses();
@@ -49,6 +51,11 @@ let status = 0;
         labelContainer = document.getElementById("label-container");
         for (let i = 0; i < maxPredictions; i++) { // and class labels
             labelContainer.appendChild(document.createElement("div"));
+            }
+        
+        labelContainer2 = document.getElementById("label-container2");
+        for (let i = 0; i < maxPredictions2; i++) { // and class labels
+            labelContainer2.appendChild(document.createElement("div"));
             }
         
 
@@ -87,8 +94,11 @@ let status = 0;
     async function predict() {
         // Prediction #1: run input through posenet
         // estimatePose can take in an image, video or canvas html element
-        
-        const pose_player1 = await model.estimatePose(webcam.canvas);
+        webcam_player1 = crop(webcam.canvas, {x: 0, y: 0}, {x: 300, y: 600});
+        webcam_player2 = crop(webcam.canvas, {x: 300, y: 0}, {x: 600, y: 600});
+
+        const pose_player1 = await model.estimatePose(webcam_player1);
+        const pose_player2 = await model.estimatePose(webcam_player2);
         //console.log(pose_player1.pose.keypoints)
 
         // Prediction 2: run input through teachable machine classification model
@@ -98,39 +108,56 @@ let status = 0;
             labelContainer.childNodes[i].innerHTML = classPrediction;
         }
 
+        const prediction2 = await model.predict(pose_player2.posenetOutput);
+        for (let i = 0; i < maxPredictions2; i++) {
+            const classPrediction2 = prediction2[i].className + ": " + prediction2[i].probability.toFixed(2);
+            labelContainer2.childNodes[i].innerHTML = classPrediction2;
+        }
+
         pose_detect(prediction);
+        pose_detect(prediction2);
 
         // finally draw the poses
-        drawPose(pose_player1.pose);
+        drawPose(pose_player1.pose, pose_player2.pose);
     }
 
     async function sign_predict() {
         // Prediction #1: run input through posenet
         // estimatePose can take in an image, video or canvas html element
-        
-        const sign_pose_player1 = await sign_model.estimatePose(webcam.canvas);
-        //console.log(pose_player1.pose.keypoints)
+        webcam_player1 = crop(webcam.canvas, {x: 0, y: 0}, {x: 300, y: 600});
+        webcam_player2 = crop(webcam.canvas, {x: 300, y: 0}, {x: 600, y: 600});
+
+        const sign_pose_player1 = await sign_model.estimatePose(webcam_player1);
+        const sign_pose_player2 = await sign_model.estimatePose(webcam_player2);
 
         // Prediction 2: run input through teachable machine classification model
-        const sign_prediction = await sign_model.predict(sign_pose_player1.posenetOutput);
+        const sign_prediction1 = await sign_model.predict(sign_pose_player1.posenetOutput);
+        const sign_prediction2 = await sign_model.predict(sign_pose_player2.posenetOutput);
+        console.log('현재실행')
 
-        if (sign_prediction[0].probability.toFixed(2) >= 0.99){
+        if (sign_prediction1[0].probability.toFixed(2) >= 0.99 || sign_prediction2[0].probability.toFixed(2) >= 0.99){
             sign_switch = 0;
-            console.log(sign_prediction[0])
-            $(".msg-text").text("준비가 완료되면 🙆");
-        } else if (sign_prediction[2].probability.toFixed(2) >= 0.60 || sign_prediction[3].probability.toFixed(2) >= 0.60){
+            console.log(sign_prediction1[0])
+            $(".msg-text").text("서로 준비가 완료되면 화면을 보고 🙆");
+        } else if (sign_prediction1[2].probability.toFixed(2) >= 0.60 || sign_prediction1[3].probability.toFixed(2) >= 0.60 && sign_prediction2[2].probability.toFixed(2) >= 0.60 || sign_prediction2[3].probability.toFixed(2) >= 0.60){
             sign_switch = 1;
-            $(".msg-text").text("자리를 잡아주세요.");
+            $(".msg-text").text("1P & 2P 자리를 잡아주세요.");
+        } else if (sign_prediction1[2].probability.toFixed(2) >= 0.60 || sign_prediction1[3].probability.toFixed(2) >= 0.60){
+            sign_switch = 1;
+            $(".msg-text").text("1P 자리를 잡아주세요.");
+        } else if (sign_prediction2[2].probability.toFixed(2) >= 0.60 || sign_prediction2[3].probability.toFixed(2) >= 0.60){
+            sign_switch = 1;
+            $(".msg-text").text("2P 자리를 잡아주세요.");
         }
-
-        if (sign_prediction[1].probability.toFixed(2) >= 0.99 && sign_switch == 0)
+        
+        if (sign_prediction1[1].probability.toFixed(2) >= 0.99 && sign_prediction2[1].probability.toFixed(2) >= 0.99 && sign_switch == 0)
         {   
             $(".msg-text").text("");
             game_switch = 1;
         }
         
         // finally draw the poses
-        drawPose(sign_pose_player1.pose);
+        drawPose(sign_pose_player1.pose, sign_pose_player2.pose);
     }
 
     function pose_detect(prediction) {
@@ -174,15 +201,20 @@ let status = 0;
         window.location.href = '../result';
     }
 
-    function drawPose(pose) {
+    function drawPose(pose, pose2) {
      
         if (webcam.canvas) {
             ctx.drawImage(webcam.canvas, 0, 0);
             // draw the keypoints and skeleton
-            if (pose) {
+            if (pose && pose2) {
                 const minPartConfidence = 0.5;
+                for (i=0; i < pose2.keypoints.length; i++){
+                    pose2.keypoints[i].position.x = pose2.keypoints[i].position.x + 300;
+                }
                 tmPose.drawKeypoints(pose.keypoints, minPartConfidence, ctx);
                 tmPose.drawSkeleton(pose.keypoints, minPartConfidence, ctx);
+                tmPose.drawKeypoints(pose2.keypoints, minPartConfidence, ctx);
+                tmPose.drawSkeleton(pose2.keypoints, minPartConfidence, ctx);
             }
         }
     }

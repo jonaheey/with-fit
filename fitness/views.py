@@ -69,6 +69,25 @@ def player(request):
         'people.html'
     )
 
+def play2P(request):
+    if request.method == 'POST':
+        # 선택된 운동
+        exercise_name = request.POST.get('exercise')
+
+        # 선택된 인원수
+        player = request.POST.get('selected_p')
+
+        # 팀 이름
+        # team_name = request.POST.get('team_name')
+
+        print(exercise_name, player)
+
+        # 플레이 화면
+        return render(
+            request,
+            'play2P.html',
+        )
+
 # 플레이
 def play(request):
     if request.method == 'POST':
@@ -86,7 +105,7 @@ def play(request):
         # 플레이 화면
         return render(
             request,
-            'play.html',
+            'play2P.html',
         )
 
     else:

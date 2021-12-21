@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/style_SD.css' %}"/>
+<script type="text/javascript" src="{% static 'js/loading.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/sideknee_model_player2.js' %}"></script>
+<script type="text/javascript">init();</script>
+
+<script>
+    // Damage Values
+    let result_score = 0;
+    let game_switch = 0; // 0 - 시작전 , 1 - 시작 , 2 - 종료
+    let sign_switch = 2; // 0 - Stand(준비상태) , 1 - Left or Right, 2 - 포즈 실행전
+
+    const bgm = new Audio();
+
+    let count = 1;
+    let time = 120; // 기준 시간
+    
+
+    bgm.src = "/static/inspiring-8-bit-563.mp3";
+    window.onload = function() {
+        bgm.play();
+    }
+</script>
+
+<div class='screen'>
+    <span class="msg-text">이것은 테스트메시지입니다</span>
+    <div id='timer'></div>
+    <canvas id="canvas"></canvas>
+    <img id="monster" scr="img/monster-jelly_0.gif">
+    <canvas id="canvas_hp"></canvas>
+    <div id="label-container"></div>
+    <div id="label-container2"></div>
+</div>
+
+<script type="text/javascript" src="{% static 'js/health-bar.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/monster.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/index.js' %}"></script>
+{% endblock %}
