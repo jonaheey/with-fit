@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'shadow9';
-    src: url('/static/shadow9.TTF');
+    src: url('/static/font/shadow9.TTF');
 }
 
 html, body {
@@ -9,20 +9,34 @@ html, body {
 }
 
 body {
-    background-image: url('/static/img/sub-bg.png');
+    background-image: url('/static/img/main-bg.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     align-content: center;
     color: white;
     font-family: 'shadow9';
     overflow: hidden;
-  }
+}
+
+#back {
+    position: relative;
+    top: 19%;
+    left: 13%;
+    width: 30px;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+h3 {
+    font-family: 'shadow9';
+}
 
 #audiobtn {
     position: relative;
-    top: 17%;
-    left: 13%;
-    width: 20px;
+    top: 19%;
+    right: -82%;
+    width: 30px;
+    cursor: pointer;
 }
 
 .screen {
@@ -33,7 +47,7 @@ body {
     top: 49%;
     left: 50%;
     transform: translate(-50%, -50%);
-    overflow: auto;
+    /* overflow: auto; */
     /* background-color: thistle; */
     padding: 6px;
 }
@@ -76,12 +90,43 @@ input[type="button"] {
 }
 
 input[type="button"]:hover {
-    color: red;
+    color: #17ec91;
 }
 
 /* people.html */
 h3 {
     font-size: 30px;
+}
+
+#left {
+    float: left;
+    margin-left: 5%;
+    width: 40%;
+    height: 70%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#right {
+    float: right;
+    margin-right: 5%;
+    width: 40%;
+    height: 70%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#right div {
+    margin-top: 30px;
+}
+
+#explain {
+    font-size: 1.3em;
 }
 
 .radio div {
@@ -121,11 +166,19 @@ p {
     color: white;
 }
 
-.nbsp {
-    margin: 20px;
+#playbtn {
+    border: 5px;
+    border-color: orange;
+    background-color: rgba(0, 0, 0, 0);
+    color: orange;
+    font-size: 2em;
 }
 
-.team {
+#playbtn:hover {
+    color: #17ec91;
+}
+
+/* .team {
     text-align: center;
     font-size: 50px;
 }
@@ -133,11 +186,10 @@ p {
 input[type="text"] {
     width: 200px;
     height: 40px;
-    /* font-family: 'Do Hyeon', sans-serif; */
     font-family: 'shadow9';
     font-size: 50%;
     text-align: center;
-}
+} */
 
 /* play.html */
 #timer {

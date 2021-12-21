@@ -3,7 +3,7 @@
 let status = 0;
     // the link to your model provided by Teachable Machine export panel
     async function init() {
-        LoadingWithMask('../static/img/pacman.gif');
+        LoadingWithMask('../static/img/fitness/loading-pacman.gif');
         const modelURL = "../static/json/model.json";
         const metadataURL = "../static/json/metadata.json";
 
@@ -11,7 +11,6 @@ let status = 0;
         const sign_metadataURL = "../static/json/OkModel/metadata.json";
 
         let error_point = 0
-        
         
         // load the model and metadata
         // Refer to tmImage.loadFromFiles() in the API to support files from a file picker
@@ -151,14 +150,23 @@ let status = 0;
         }
         result_score += score;
         if (time <= 0) {
-            gameover()
+            setInterval.setTimeout(gameover(), 10000)
         }
         console.log(status, result_score);
     }
 
     function gameover(){
-        // DB에서 Best_score/Id를 불러와서
-        // if (Best_score < result_score){ DB result_score값 저장 }
+        console.log(result_score);
+        console.log(result_score);
+        console.log(result_score);
+        console.log(result_score);
+        console.log(result_score);
+        console.log(result_score);
+        console.log(result_score);
+        console.log(result_score);
+
+        
+        
             
         window.location.href = '../result';
     }

@@ -16,8 +16,7 @@
     let count = 1;
     let time = 10; // 기준 시간
     
-
-    bgm.src = "/static/inspiring-8-bit-563.mp3";
+    bgm.src = "/static/sound/inspiring-8-bit-563.mp3";
     window.onload = function() {
         bgm.play();
     }
@@ -26,7 +25,7 @@
 <div class='screen'>
     <div id='timer'></div>
     <canvas id="canvas"></canvas>
-    <img id="monster" scr="img/monster-jelly_0.gif">
+    <img id="monster" scr="{% static 'img/fitness/enemy/monster-jelly_0.gif' %}">
     <canvas id="canvas_hp"></canvas>
     <div id="label-container"></div>
 </div>

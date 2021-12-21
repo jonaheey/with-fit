@@ -14,7 +14,7 @@ function LoadingWithMask(gif) {
     loadingImg += "</div>";
     
     loadingImg2 += "<div id='loadingImg2'>";
-    loadingImg2 += "<img src='../static/img/webcam.png' style='position: relative; z-index:9000; display: block; margin: auto;'/>";
+    loadingImg2 += "<img src='../static/img/fitness/loading.png' style='position: relative; z-index:9000; display: block; margin: auto;'/>";
     loadingImg2 += "</div>";
   
     //화면에 레이어 추가
