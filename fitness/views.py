@@ -1,6 +1,9 @@
 from django.shortcuts import render, redirect
 from django.http.response import HttpResponseRedirect
 
+from user.models import User
+from rank.models import Rank
+from fitness.models import Fitness
 
 
 def index(request):
@@ -9,17 +12,15 @@ def index(request):
 
 
 def select(request):
-
   return render(request, 'fitness/select.html')
 
 
 
 def player(request):
-
   return render(request, 'fitness/player.html')
 
 
-
+ 
 def play(request):
   if request.method == 'POST':
     exercise = request.POST.get('exercise')
@@ -37,34 +38,47 @@ def play(request):
 
 
 def result(request):
-  return render(request, 'fitness/result.html')
+  if request.method == 'POST':
+    score = int(request.POST.get('score'))
+    option = request.POST.get('option')
+    fitness_name = request.POST.get('fitness_name')
+    user_name = request.POST.get('user_name')
+    fitness_index = int(request.POST.get('fitness_index'))
+    user_index = int(request.POST.get('user_index'))
+    user_index = request.POST.get('user_index')
+    stage = int(request.POST.get('stage'))
+    
+    rank = Rank(rank_score=score,
+                option=option,
+                rank_fitness_name=fitness_name,
+                rank_user_name=user_name,
+                fitness_index=Fitness.objects.get(fitness_index=fitness_index),
+                user_index=User.objects.get(user_index=user_index),
+                stage=stage
+                )
+    rank.save()
+
+    return render(request, 'fitness/result.html')
+
+    # 플레이 화면
+  # try:
+  #   rank_score = request.GET.get('rank_score')
+  #   option = request.GET.get('option')
+  #   rank_fitness_name = request.GET.get('fitness_name')
+  #   rank_user_name = request.GET.get('user_name')
+  #   stage = request.GET.get('stage')
+  #   fitness_index = request.GET.get('fitness_name')
+  #   user_index = request.GET.get('user_index')
+    
+
+  #   rank = Rank(rank_score=rank_score, option=option, rank_fitness_name=rank_fitness_name,
+  #                 rank_user_name=rank_user_name, stage=stage, fitness_index=fitness_index, user_index=user_index)
+  #   rank.save()
+
+  #   Rank.objects.get()
 
 
-# 운동, 인원수 선택
-# def select(request):
-#     # 운동 선택 후
-#     if request.method == 'POST':
-#         # 선택된 운동 값
-#         exercise_name = request.POST.get('selected_e')
+  #   # 플레이 화면
+  #   return JsonResponse(result)
 
-#         if exercise_name == '푸시업':
-#             exercise_img = 'push_up'
-#         elif exercise_name == '사이드 런지':
-#             exercise_img = 'side_lunge'
-#         elif exercise_name == '스탠딩 니 업':
-#             exercise_img = 'standing_knee_up'
-#         else:
-#             exercise_img = 'step_forward_lunge'
-
-#         # 인원 수 선택 화면으로 넘어감
-#         return render(
-#             request,
-#             'people.html',
-#             {'exercise_name' : exercise_name,
-#              'exercise_img' : exercise_img}
-#         )
-#     # 운동 선택 화면
-#     return render(
-#         request,
-#         'exercise.html'
-#     )
+  # return render(request, 'fitness/result.html')

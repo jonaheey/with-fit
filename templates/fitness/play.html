@@ -1,10 +1,14 @@
 {% extends 'base.html' %}
-{% block content %}
 {% load static %}
+{% block content %}
 <link rel="stylesheet" type="text/css" href="{% static 'css/style_SD.css' %}"/>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script type="text/javascript" src="{% static 'js/loading.js' %}"></script>
 <script type="text/javascript" src="{% static 'js/sideknee_model_player1.js' %}"></script>
-<script type="text/javascript">init();</script>
+<script type="text/javascript">
+    init();
+</script>
+
 
 <script>
     // Damage Values
@@ -14,7 +18,7 @@
     const bgm = new Audio();
 
     let count = 1;
-    let time = 10; // 기준 시간
+    let time = 3; // 기준 시간
     
     bgm.src = "/static/sound/inspiring-8-bit-563.mp3";
     window.onload = function() {
@@ -25,12 +29,25 @@
 <div class='screen'>
     <div id='timer'></div>
     <canvas id="canvas"></canvas>
-    <img id="monster" scr="{% static 'img/fitness/enemy/monster-jelly_0.gif' %}">
+    <img id="monster" src="{% static 'img/fitness/enemy/monster-jelly_0.gif' %}">
     <canvas id="canvas_hp"></canvas>
     <div id="label-container"></div>
 </div>
 
+<form name="score_form" method="post" action="/result/">
+    {% csrf_token %}
+    <input type="hidden" id="score" name="score">
+    <input type="hidden" id="option" name="option">
+    <input type="hidden" id="fitness_name" name="fitness_name">
+    <input type="hidden" id="user_name" name="user_name" value="{{ request.session.name }}">
+    <input type="hidden" id="fitness_index" name="fitness_index">
+    <input type="hidden" id="user_index" name="user_index" value="{{ request.session.user_index }}">
+    <input type="hidden" id="stage" name="stage">
+
+</form>
+
 <script type="text/javascript" src="{% static 'js/health-bar.js' %}"></script>
 <script type="text/javascript" src="{% static 'js/monster.js' %}"></script>
 <script type="text/javascript" src="{% static 'js/index.js' %}"></script>
+
 {% endblock %}

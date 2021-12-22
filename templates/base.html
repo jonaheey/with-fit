@@ -59,7 +59,7 @@
           <li><a class="nav-link scrollto active" href="#hero">홈</a></li>
           <li><a class="nav-link scrollto " href="#portfolio">About</a></li>
           <li><a class="nav-link scrollto" href="#about">소식</a></li>
-          <li><a class="nav-link scrollto" href="#services">랭킹</a></li>
+          <li><a class="nav-link scrollto" href="#services">{{request.session.user_index}}랭킹</a></li>
           {% if request.session.email %}
           <li class="dropdown"><a href=""><span>{{ request.session.name }} 님</span> <i class="bi bi-chevron-down"></i></a>
             <ul>

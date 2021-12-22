@@ -1,7 +1,7 @@
 from django.db import models
 
 class Fitness(models.Model):
-  fitness_index = models.IntegerField(primary_key=True)
+  fitness_index = models.BigAutoField(primary_key=True)
   fitness_name = models.CharField(max_length=100)
   guide = models.TextField(default="")
   video = models.CharField(max_length=1000, null=True)
