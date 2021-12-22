@@ -1,5 +1,4 @@
 from django.shortcuts import render, redirect
-from django.http.response import HttpResponseRedirect
 
 # from django.views.decorators import gzip
 # from django.http import StreamingHttpResponse
@@ -23,10 +22,17 @@ def index(request):
 
 # 게임 시작
 def withfit(request):
-    return render(
-        request,
-        'withfit.html'
-    )
+    # logined = request.session['email']
+    logined = True
+    print(logined)
+    
+    if logined:
+        return render(
+            request,
+            'exercise.html'
+        )
+    else:
+        return redirect('fitness:index')
 
 # 운동, 인원수 선택
 # def select(request):
@@ -57,11 +63,20 @@ def withfit(request):
 #         'exercise.html'
 #     )
 
-def exercise(request):
-    return render(
-        request,
-        'exercise.html'
-    )
+# def exercise(request):
+#     logined = request.session['email']
+#     print(logined)
+    
+#     if logined:
+#         return render(
+#             request,
+#             'exercise.html'
+#         )
+#     else:
+#         return render(
+#         request,
+#         'index.html'
+#     )
 
 def player(request):
     return render(
@@ -78,9 +93,6 @@ def play(request):
         # 선택된 인원수
         player = request.POST.get('selected_p')
 
-        # 팀 이름
-        # team_name = request.POST.get('team_name')
-
         print(exercise_name, player)
 
         # 플레이 화면
@@ -90,4 +102,4 @@ def play(request):
         )
 
     else:
-        return HttpResponseRedirect('fitness:index')
+        return redirect('fitness:index')

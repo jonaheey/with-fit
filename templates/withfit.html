@@ -1,9 +1,10 @@
 {% extends "base.html" %}
-{% block content %}
 {% load static %}
+{% block content %}
 <link rel="stylesheet" type="text/css" href="{% static '/css/style_g1.css' %}"/>
 <link rel="shortcut icon" href="{% static '/img/favicon2.png' %}">
-
+{% comment %} <script tpye="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> {% endcomment %}
+<script tpye="text/javascript"  src="{% static 'js/main.js' %}"></script>
 <script>
     // main으로 이동
     function go_main() {
@@ -15,7 +16,7 @@
     function go_select() {
         fetch('/withfit/').then(function(response) {
             response.text().then(function(text) {
-                document.querySelector('body').innerHTML = text;
+                document.querySelector('section').innerHTML = text;
             })
         })
     };
@@ -49,53 +50,39 @@
 
         if (selected_exercise == "푸시업") {
             exercise_img = "push_up";
-            guide = "양 손은 바닥에 어깨너비로 벌리고 팔을 뻗고 시작합니다. 가슴과 허벅지를 땅에 내립니다. 몸을 곧게 펴고 팔꿈치는 어깨보다 엉덩이에 가깝게 움직입니다.";
+            guide = "바닥에 엎드려서 양 손을 어깨너비로 벌리고 팔을 뻗고 시작합니다.<br>가슴이 바닥에 닿을 때까지 몸을 숙입니다.<br>잠깐 멈추었다가 다시 일어나는 것을 반복합니다.";
         } else if (selected_exercise == "사이드 런지") {
             exercise_img = "side_lunge";
-            guide = "옆으로 런지를 한다.";
+            guide = "손을 모으고 어깨를 폅니다.<br>한 다리를 바깥으로 움직입니다.<br>반대쪽 다리를 곧게 펴고 살짝 앉은 후 제자리로 돌아갑니다.<br>반대쪽도 반복합니다.";
         } else if (selected_exercise == "스탠딩 니 업") {
             exercise_img = "standing_knee_up";
-            guide = "똑바로 선 후 양 무릎을 번갈아가며 들어올린다.";
+            guide = "발을 어깨너비로 하고 섭니다.<br>무릎을 최대한 높이 들어 올리기 위해 복근을 긴장시킵니다.<br>양 쪽 무릎을 번갈아가며 운동합니다.";
         } else {
             exercise_img = "step_forward_lunge";
-            guide = "앞으로 런지를 한다.";
+            guide = "발을 엉덩이 너비로 벌리고 서서 한 쪽 다리를 크게 앞으로 움직입니다.<br>허벅지가 바닥과 평행하고 정강이와 수직이 될 때까지 앉습니다.<br>제자리로 돌아갑니다.";
         };
         console.log(exercise_img);
         
         fetch('/player/').then(function(response) {
             response.text().then(function(text) {
-                document.querySelector('body').innerHTML = text;
-                document.getElementById('ex_img').src = exercise_img;
+                document.querySelector('section').innerHTML = text;
+                document.getElementById('ex_img').src = `/static/img/fitness/${exercise_img}.gif`;
                 document.getElementById("explain").innerHTML = guide;
                 document.getElementById('ex_name').innerHTML = selected_exercise;
+                document.getElementById('exercise').value = selected_exercise;
             })
         })
     };
-
-    //function select_p(p) {
-    //    let selected_p = p.value;
-    //    //console.log(selected_p);
-    //    return selected_p;
-    //};
-
-    //var np = selected_p();
-    //console.log(np);
-
-    //function game_play() {
-    //    fetch('/play/').then(function(response) {
-    //        response.text().then(function(text) {
-    //            document.querySelector('body').innerHTML = text;
-    //        })
-    //    })
-    //};
 </script>
-<!-- <section id="select"> -->
+<section id="select">
     {% comment %} <iframe src="/static/silence.mp3" allow="autoplay" id="audio" style="display:none;"></iframe>
     <audio id="audio" autoplay><source src="/static/upright-piano-arcade-instrumental-mix-1342.mp3"></audio> {% endcomment %}
-    <div class="screen">
+<div class="screen">
+    <div>
         <img id="back" src="/static/back.png" onclick="go_main()"></img>
-        <h3>운동 선택</h3>
+        <h3 style="display:inline;">운동 선택</h3>
         <img id="audiobtn" src="/static/on.png" onclick="play_pause()"></img>
+    </div><br><br>
     <form method='POST'>
         {% csrf_token %}
         <div class="select_exercise">
@@ -122,5 +109,5 @@
         </div>
     </form>
 </div>
-<!-- </section> -->
+</section>
 {% endblock %}
