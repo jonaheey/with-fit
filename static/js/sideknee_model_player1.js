@@ -43,8 +43,10 @@ let status = 0;
         
         // append/get elements to the DOM
         const canvas = document.getElementById("canvas");
+        const context = canvas.getContext("2d");
         canvas.width = size; canvas.height = size;
         ctx = canvas.getContext("2d");
+        
         
         labelContainer = document.getElementById("label-container");
         for (let i = 0; i < maxPredictions; i++) { // and class labels
@@ -183,6 +185,19 @@ let status = 0;
                 const minPartConfidence = 0.5;
                 tmPose.drawKeypoints(pose.keypoints, minPartConfidence, ctx);
                 tmPose.drawSkeleton(pose.keypoints, minPartConfidence, ctx);
+                itemEquip(pose, ctx); 
+            }
+        }
+    }
+
+    function itemEquip(pose, ctx) {
+        for (let i = 0; i < pose.keypoints.length; i++) {
+            if (pose.keypoints[i].part === "rightEar"){
+                ctx.drawImage(maskimg, pose.keypoints[i].position.x - 20, pose.keypoints[i].position.y - (maskimg.width / 2 + 30));
+            } else if (pose.keypoints[i].part === "rightWrist") {
+                ctx.drawImage(handimg, pose.keypoints[i].position.x - handimg.width / 2, pose.keypoints[i].position.y - handimg.height / 2);
+            } else if (pose.keypoints[i].part === "leftWrist") {
+                ctx.drawImage(handimg, pose.keypoints[i].position.x - handimg.width / 2, pose.keypoints[i].position.y - handimg.height / 2);
             }
         }
     }

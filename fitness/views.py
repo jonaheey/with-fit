@@ -97,16 +97,12 @@ def play(request):
         # 선택된 인원수
         player = request.POST.get('selected_p')
 
-        # 팀 이름
-        # team_name = request.POST.get('team_name')
-
         print(exercise_name, player)
-
-        # 플레이 화면
-        return render(
-            request,
-            'play2P.html',
-        )
+        
+        if player == '1':
+            return render(request,'play.html')
+        elif player == '2':
+            return render(request, 'play2P.html')
 
     else:
         return HttpResponseRedirect('fitness:index')

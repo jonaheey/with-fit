@@ -4,7 +4,19 @@
 <link rel="stylesheet" type="text/css" href="{% static 'css/style_SD.css' %}"/>
 <script type="text/javascript" src="{% static 'js/loading.js' %}"></script>
 <script type="text/javascript" src="{% static 'js/sideknee_model_player1.js' %}"></script>
-<script type="text/javascript">init();</script>
+<script type="text/javascript">
+    //  이미지
+    //  얼굴
+    let maskimg = new Image();
+    maskimg.src = "../static/img/items/ironman_sm.png"
+
+    // 손
+    let handimg = new Image();
+    handimg.src = "../static/img/items/ironman_Hand.png"
+
+    init();
+
+</script>
 
 <script>
     // Damage Values
@@ -28,7 +40,7 @@
     <span class="msg-text">이것은 테스트메시지입니다.</span>
     <div id='timer'></div>
     <canvas id="canvas"></canvas>
-    <img id="monster" scr="img/monster-jelly_0.gif">
+    <img id="monster" src="img/monster-jelly_0.gif">
     <canvas id="canvas_hp"></canvas>
     <div id="label-container"></div>
 </div>
