@@ -12,6 +12,7 @@ async function init() {
 
     let error_point = 0
 
+
     // load the model and metadata
     // Refer to tmImage.loadFromFiles() in the API to support files from a file picker
     // Note: the pose library adds a tmPose object to your window (window.tmPose)
@@ -35,7 +36,6 @@ async function init() {
 
     // 웹캠 에러가 발생하지 않은 경우에만 실행
     if (error_point == 0) {
-        console.log('정상')
         setTimeout("closeLoadingWithMask()", 3000);
     }
 
@@ -43,8 +43,10 @@ async function init() {
 
     // append/get elements to the DOM
     const canvas = document.getElementById("canvas");
+    const context = canvas.getContext("2d");
     canvas.width = size; canvas.height = size;
     ctx = canvas.getContext("2d");
+
 
     labelContainer = document.getElementById("label-container");
     for (let i = 0; i < maxPredictions; i++) { // and class labels
@@ -54,32 +56,33 @@ async function init() {
 
     // setInterval(함수, 시간) : 주기적인 실행
     const timer = setInterval(function () {
-        document.getElementById('timer').style.fontSize = '40px';
-        document.getElementById('timer').innerHTML = time;
+        if (game_switch == 1) {
+            document.getElementById('timer').style.fontSize = '40px';
+            document.getElementById('timer').innerHTML = time;
 
-        if (time <= 10) {
-            document.getElementById('timer').style.color = 'red';
+            if (time <= 10) {
+                document.getElementById('timer').style.color = 'red';
+            }
+
+            time--;
+
+            // 타임아웃 시
+            if (time < 0) {
+                clearInterval(timer); // setInterval() 실행을 끝냄
+                document.getElementById('timer').innerHTML = '끝!';
+            }
         }
 
-        time--;
-
-        // 타임아웃 시
-        if (time < 0) {
-            clearInterval(timer); // setInterval() 실행을 끝냄
-            document.getElementById('timer').innerHTML = '끝!';
-        }
     }, 1000);
 }
 
 async function loop(timestamp) {
     webcam.update();
-
     if (game_switch == 0) {
         await sign_predict();
     } else if (game_switch == 1) {
         await predict();
     }
-
     window.requestAnimationFrame(loop);
 }
 
@@ -113,7 +116,17 @@ async function sign_predict() {
     // Prediction 2: run input through teachable machine classification model
     const sign_prediction = await sign_model.predict(sign_pose_player1.posenetOutput);
 
-    if (sign_prediction[1].probability.toFixed(2) <= 100) {
+    if (sign_prediction[0].probability.toFixed(2) >= 0.99) {
+        sign_switch = 0;
+        console.log(sign_prediction[0])
+        $(".msg-text").text("준비가 완료되면 🙆");
+    } else if (sign_prediction[2].probability.toFixed(2) >= 0.60 || sign_prediction[3].probability.toFixed(2) >= 0.60) {
+        sign_switch = 1;
+        $(".msg-text").text("자리를 잡아주세요.");
+    }
+
+    if (sign_prediction[1].probability.toFixed(2) >= 0.99 && sign_switch == 0) {
+        $(".msg-text").text("");
         game_switch = 1;
     }
 
@@ -122,7 +135,7 @@ async function sign_predict() {
 }
 
 function pose_detect(prediction) {
-    const attack = 10;
+    const attack = 50;
     let score = 0;
     var audio_pose = new Audio('../static/sound/Kommy_BasicAttack_Hit.wav');
     var audio_set = new Audio('../static/sound/Kommy_BasicAttack.wav');
@@ -148,22 +161,16 @@ function pose_detect(prediction) {
         audio_set.play();
     }
     result_score += score;
-
-    if (time <= 0) {
-        gameover();
+    console.log(monster_index)
+    if (time <= 0 || monster_index == 4) {
+        gameover()
     }
+    console.log(status, result_score);
 }
 
 function gameover() {
     document.getElementById("score").value = result_score;
-    document.getElementById("option").value = 1;
-    document.getElementById("fitness_name").value = "푸시업";
-    document.getElementById("fitness_index").value = "1";
-    document.getElementById("stage").value = "3";
-
     document.score_form.submit();
-
-    // window.location.href = '../result';
 }
 
 function drawPose(pose) {
@@ -175,6 +182,19 @@ function drawPose(pose) {
             const minPartConfidence = 0.5;
             tmPose.drawKeypoints(pose.keypoints, minPartConfidence, ctx);
             tmPose.drawSkeleton(pose.keypoints, minPartConfidence, ctx);
+            itemEquip(pose, ctx);
+        }
+    }
+}
+
+function itemEquip(pose, ctx) {
+    for (let i = 0; i < pose.keypoints.length; i++) {
+        if (pose.keypoints[i].part === "rightEar") {
+            ctx.drawImage(maskimg, pose.keypoints[i].position.x - 20, pose.keypoints[i].position.y - (maskimg.width / 2 + 30));
+        } else if (pose.keypoints[i].part === "rightWrist") {
+            ctx.drawImage(handimg, pose.keypoints[i].position.x - handimg.width / 2, pose.keypoints[i].position.y - handimg.height / 2);
+        } else if (pose.keypoints[i].part === "leftWrist") {
+            ctx.drawImage(handimg, pose.keypoints[i].position.x - handimg.width / 2, pose.keypoints[i].position.y - handimg.height / 2);
         }
     }
 }
@@ -197,6 +217,4 @@ function crop(can, a, b) {
 
     return newCan;
 }
-
-
 

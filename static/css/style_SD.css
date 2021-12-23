@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'shadow9';
-    src: url('/static/shadow9.TTF');
+    src: url('../font/shadow9.TTF');
 }
 
 html, body {
@@ -9,7 +9,7 @@ html, body {
 }
 
 body {
-    background-image: url('/static/img/fitness/play-bg.png');
+    background-image: url('../img/fitness/play-bg.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     align-content: center;
@@ -138,6 +138,11 @@ input[type="radio"]:checked + label:before {
     /* 수평 그림자 / 수직 그림자 / 선명도 / 확산 거리 */
     box-shadow: inset 0px 0px 0 5px orange;
     background: black;
+}
+
+.msg-text{
+    position: absolute;
+    top:2%;
 }
 
 p {

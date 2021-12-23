@@ -6,6 +6,16 @@
 <script type="text/javascript" src="{% static 'js/loading.js' %}"></script>
 <script type="text/javascript" src="{% static 'js/sideknee_model_player1.js' %}"></script>
 <script type="text/javascript">
+    //  이미지ß
+    //  얼굴
+    let maskimg = new Image();
+    // maskimg.src = "../static/img/item/ironman_sm.png"
+    maskimg.src = "{% static 'img/item/ironman_sm.png' %}"
+
+    // 손
+    let handimg = new Image();
+    handimg.src = "../static/img/item/ironman_Hand.png"
+
     init();
 </script>
 
@@ -13,12 +23,13 @@
 <script>
     // Damage Values
     let result_score = 0;
-    let game_switch = 0; // 0 - 시작전 , 1 - 시작 , 2 - 종료
+    let game_switch = 1; // 0 - 시작전 , 1 - 시작 , 2 - 종료
+    let sign_switch = 2; // 0 - Stand(준비상태) , 1 - Left or Right, 2 - 포즈 실행전
 
     const bgm = new Audio();
 
     let count = 1;
-    let time = 3; // 기준 시간
+    let time = 2; // 기준 시간
     
     bgm.src = "/static/sound/inspiring-8-bit-563.mp3";
     window.onload = function() {
@@ -27,9 +38,10 @@
 </script>
 
 <div class='screen'>
+    <span class="msg-text">이것은 테스트메시지입니다.</span>
     <div id='timer'></div>
     <canvas id="canvas"></canvas>
-    <img id="monster" src="{% static 'img/fitness/enemy/monster-jelly_0.gif' %}">
+    <img id="monster" src="{% static 'img/monster/monster-jelly_0.gif' %}">
     <canvas id="canvas_hp"></canvas>
     <div id="label-container"></div>
 </div>
@@ -37,13 +49,12 @@
 <form name="score_form" method="post" action="/result/">
     {% csrf_token %}
     <input type="hidden" id="score" name="score">
-    <input type="hidden" id="option" name="option">
-    <input type="hidden" id="fitness_name" name="fitness_name">
+    <input type="hidden" id="option" name="option" value="{{ player }}">
+    <input type="hidden" id="fitness_name" name="fitness_name" value="{{ exercise_name }}">
     <input type="hidden" id="user_name" name="user_name" value="{{ request.session.name }}">
-    <input type="hidden" id="fitness_index" name="fitness_index">
+    <input type="hidden" id="fitness_index" name="fitness_index" value="{{ fitness_index }}">
     <input type="hidden" id="user_index" name="user_index" value="{{ request.session.user_index }}">
     <input type="hidden" id="stage" name="stage">
-
 </form>
 
 <script type="text/javascript" src="{% static 'js/health-bar.js' %}"></script>

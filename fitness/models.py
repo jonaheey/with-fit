@@ -11,15 +11,15 @@ class Fitness(models.Model):
     db_table = 'fitness'
 
 
-class Enemy(models.Model):
-  enemy_index = models.BigAutoField(primary_key=True)
-  enemy_name = models.CharField(max_length=100)
-  health = models.IntegerField()
-  enemy_filename = models.CharField(max_length=300)
+class Monster(models.Model):
+  monster_index = models.BigAutoField(primary_key=True)
+  monster_name = models.CharField(max_length=100)
+  monster_health = models.IntegerField()
+  # monster_filename = models.CharField(max_length=300)
 
   class Meta:
     managed = True
-    db_table = 'enemy'
+    db_table = 'monster'
 
 
 class Item(models.Model):
