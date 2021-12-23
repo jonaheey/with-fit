@@ -14,7 +14,7 @@ body {
     background-repeat: no-repeat;
     align-content: center;
     color: white;
-    font-family: 'shadow9';
+    font-family: 'NeoDunggeunmo';
     /* overflow: hidden; */
   }
 
@@ -97,7 +97,7 @@ input[type="button"] {
     background-color: rgba(0, 0, 0, 0);
     color: orange;
     font-size: 2em;
-    font-family: 'shadow9';
+    font-family: 'NeoDunggeunmo';
 }
 
 input[type="button"]:hover {
@@ -141,7 +141,6 @@ input[type="radio"]:checked + label:before {
 }
 
 p {
-    font-family: 'shadow9';
     font-size: 20px;
     color: white;
 }

@@ -9,7 +9,6 @@
     //  이미지ß
     //  얼굴
     let maskimg = new Image();
-    // maskimg.src = "../static/img/item/ironman_sm.png"
     maskimg.src = "{% static 'img/item/ironman_sm.png' %}"
 
     // 손
@@ -28,22 +27,27 @@
 
     const bgm = new Audio();
 
+    var audio_pose = new Audio('../static/sound/Kommy_BasicAttack_Hit.wav');
+    var audio_set = new Audio('../static/sound/Kommy_BasicAttack.wav');
+
     let count = 1;
-    let time = 2; // 기준 시간
+    let time = 5; // 기준 시간
     
     bgm.src = "/static/sound/inspiring-8-bit-563.mp3";
+    bgm.volume = 0.5;
     window.onload = function() {
         bgm.play();
     }
 </script>
 
 <div class='screen'>
-    <span class="msg-text">이것은 테스트메시지입니다.</span>
+    <span class="msg-text"></span>
+    <span class="score-text">0 점</span>
     <div id='timer'></div>
     <canvas id="canvas"></canvas>
     <img id="monster" src="{% static 'img/monster/monster-jelly_0.gif' %}">
     <canvas id="canvas_hp"></canvas>
-    <div id="label-container"></div>
+    <div id="label-container" style='right: 0%; width: 29.5%;'></div>
 </div>
 
 <form name="score_form" method="post" action="/result/">

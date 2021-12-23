@@ -8,7 +8,11 @@
     Sorry, your browser does not support HTML5 video.
   </video>
   <!-- <div id="filter-box"></div> -->
-  <a href="/select"><div id="coin"></div></a>
+  {% if request.session.name %}
+    <a href="/select"><div id="coin"></div></a>
+  {% else %}
+    <a href="/signin"><div id="coin"></div></a>
+  {% endif %}
 </section>
 <!-- End Hero -->
 
@@ -314,7 +318,7 @@
       <a href="https://github.com/jonaheey/with-fit" target='_blank' class="github"><i class="bx bxl-github"></i></a>
       <a href="https://youtu.be/69CtWnb1tpU" target='_blank' class="youtube"><i class="bx bxl-youtube"></i></a>
       <a href="https://blog.naver.com/redbabo67/222601398359" target='_blank' class="blogger"><i class="bx bxl-blogger"></i></a>
-      <a href="https://www.twitch.tv/directory/game/Apex%20Legends" target='_blank' class="twitch"><i class="bx bxl-twitch"></i></a>
+      <a href="https://www.twitch.tv/BuRRuGoon" target='_blank' class="twitch"><i class="bx bxl-twitch"></i></a>
     </div>
   </div>
 </footer><!-- End Footer -->
@@ -337,7 +341,7 @@
 <script>
   const get_rank = () => {
     const rank = axios({
-      url: 'http://192.168.0.23:8000/get_rank/',
+      url: 'https://withfit.ml:8000/get_rank/',
       method: 'get'
     });
     rank.then((context) => {

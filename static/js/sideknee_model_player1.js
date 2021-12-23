@@ -137,8 +137,6 @@ async function sign_predict() {
 function pose_detect(prediction) {
     const attack = 50;
     let score = 0;
-    var audio_pose = new Audio('../static/sound/Kommy_BasicAttack_Hit.wav');
-    var audio_set = new Audio('../static/sound/Kommy_BasicAttack.wav');
 
     if (prediction[0].probability.toFixed(2) >= 0.80 && status == 0) {
         status = 1;
@@ -160,16 +158,18 @@ function pose_detect(prediction) {
         damage(attack);
         audio_set.play();
     }
-    result_score += score;
     console.log(monster_index)
-    if (time <= 0 || monster_index == 4) {
+    result_score += score;
+    $(".score-text").text(result_score + " 점");
+    if ((time <= 0 || monster_index == 4) && game_switch == 1) {
+        game_switch = 2;
         gameover()
     }
-    console.log(status, result_score);
 }
 
 function gameover() {
     document.getElementById("score").value = result_score;
+    document.getElementById('stage').value = monster_index + 1;
     document.score_form.submit();
 }
 

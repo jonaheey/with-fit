@@ -10,14 +10,17 @@
 
     let count = 1;
 </script>
-<img id="back" src="/static/img/select-back.png" onclick="go_select()">
-<img id="audiobtn" src="/static/img/sound-on.png" onclick="play_pause()">
+
+
 
 <form method='POST' action="{% url 'fitness:play' %}">
     {% csrf_token %}
     <div class="screen">
-        <p></p>
-        <h3 id="ex_name"></h3>
+        <div>
+            <img id="back" src="/static/img/select-back.png" onclick="go_select()">
+            <h3 id="ex_name" style="display:inline;"></h3>
+            <img id="audiobtn" src="/static/img/sound-on.png" onclick="play_pause()">
+        </div><br><br>
         <div id="left">
             <img id="ex_img" src="" width='200px' height='200px'>
         </div>
@@ -37,7 +40,6 @@
             </div>
             <button type='submit' id="playbtn">PLAY</button>
         </div>
-        <br>
         <input type='hidden' id="exercise" name='exercise'>
     </div>
 </form>

@@ -15,7 +15,12 @@ django 설치
 nvidia 그래픽카드 확인
 > nvidia-smi
 
+(venv) 서버 시작 명령어
+> python manage.py runsslserver 0.0.0.0:8000 --certificate aidam.crt --key aidam.key
 
+포트 죽이기
+> fuser -k 8000/tcp
+> kill -9 {}
 
 >>>>>>> 모델 변화로 인한 셋팅 취소 <<<<<<
 

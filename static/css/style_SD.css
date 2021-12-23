@@ -45,9 +45,17 @@ body {
 #label-container {
     position: absolute;
     bottom: 15%;
-    right: 0.4%;
+    right: 15%;
     height: 5%;
-    width: 29.5%;
+    width: 15.5%;
+}
+
+#label-container2 {
+    position: absolute;
+    bottom: 15%;
+    right: 0%;
+    height: 5%;
+    width: 15.5%;
 }
 
 .screen {
@@ -140,9 +148,17 @@ input[type="radio"]:checked + label:before {
     background: black;
 }
 
+.score-text{
+    position: absolute;
+    font-size: xx-large;
+    left: 5%;
+    top: 0%;
+}
+
 .msg-text{
     position: absolute;
     top:2%;
+    font-size: xx-large;
 }
 
 p {

@@ -15,43 +15,37 @@ body {
     align-content: center;
     color: white;
     font-family: 'shadow9';
-    overflow: hidden;
+}
+
+#back {
+    float: left;
+    margin-left: 2%;
+    width: 30px;
+    z-index: 2;
+    cursor: pointer;
 }
 
 h3 {
     font-family: 'shadow9';
 }
 
-
-#back {
-    position: relative;
-    top: 19%;
-    left: 13%;
-    width: 30px;
-    z-index: 1000;
-    cursor: pointer;
-}
-
-
 #audiobtn {
-    position: relative;
-    top: 19%;
-    right: -82%;
+    float: right;
+    margin-right: 2%;
     width: 30px;
-    z-index: 1001;
+    z-index: 2;
     cursor: pointer;
 }
 
 .screen {
     text-align: center;
     position: absolute;
-    width: 74%;
+    width: 76%;
     height: 60%;
     top: 49%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* overflow: auto; */
-    /* background-color: thistle; */
+    overflow: auto;
     padding: 6px;
 }
 
@@ -110,6 +104,12 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 3px solid white;
+    border-radius: 20px;
+}
+
+#left img {
+    min-width: 40px;
 }
 
 #right {
@@ -129,7 +129,7 @@ h3 {
 }
 
 #explain {
-    font-size: 1.3em;
+    font-size: 1.3rem;
 }
 
 .radio div {
@@ -143,7 +143,6 @@ h3 {
 
 label {
     cursor: pointer;
-    /* margin: 10px 10px; */
 }
 
 label:before {
@@ -181,27 +180,8 @@ p {
     color: #17ec91;
 }
 
-/* .team {
-    text-align: center;
-    font-size: 50px;
-}
-
-input[type="text"] {
-    width: 200px;
-    height: 40px;
-    font-family: 'shadow9';
-    font-size: 50%;
-    text-align: center;
-} */
-
 /* play.html */
 #timer {
     font-family: 'Orbitron', sans-serif;
     text-align: center;
-}
-
-#loading_image {
-    width: 1000px;
-    height: 1000px;
-    z-index: 10000;
 }

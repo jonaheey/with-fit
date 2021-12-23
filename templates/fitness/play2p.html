@@ -10,6 +10,9 @@
     let maskimg = new Image();
     maskimg.src = "../static/img/item/ironman_sm.png"
 
+    var audio_pose = new Audio('../static/sound/Kommy_BasicAttack_Hit.wav');
+    var audio_set = new Audio('../static/sound/Kommy_BasicAttack.wav');
+
     // 손
     let handimg = new Image();
     handimg.src = "../static/img/item/ironman_Hand.png"
@@ -20,23 +23,25 @@
 <script>
     // Damage Values
     let result_score = 0;
-    let game_switch = 1; // 0 - 시작전 , 1 - 시작 , 2 - 종료
+    let game_switch = 0; // 0 - 시작전 , 1 - 시작 , 2 - 종료
     let sign_switch = 2; // 0 - Stand(준비상태) , 1 - Left or Right, 2 - 포즈 실행전
 
     const bgm = new Audio();
 
     let count = 1;
-    let time = 1; // 기준 시간
+    let time = 60; // 기준 시간
     
 
     bgm.src = "/static/sound/inspiring-8-bit-563.mp3";
+    bgm.volume = 0.5;
     window.onload = function() {
         bgm.play();
     }
 </script>
 
 <div class='screen'>
-    <span class="msg-text">이것은 테스트메시지입니다</span>
+    <span class="msg-text"></span>
+    <span class="score-text">0 점</span>
     <div id='timer'></div>
     <canvas id="canvas"></canvas>
     <img id="monster" scr="img/monster-jelly_0.gif">

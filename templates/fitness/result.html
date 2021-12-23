@@ -4,9 +4,9 @@
 <link rel="stylesheet" type="text/css" href="{% static 'css/style_Result.css' %}" />
 <body>
     <div class='screen'>
-        <p style='color:white'>결과 화면</p> <br>
+        <p style='color:white; font-size: xx-large;'>결과 화면</p> <br>
         <table id='tb-result' class="table table-borderless">
-            <thead style="color:white">
+            <thead style="color:white; font-size: x-large;">
                 <tr>
                     <th>등수</th>
                     <th>이름</th>
@@ -16,8 +16,9 @@
                     <th>점수</th>
                 </tr>
             </thead>
-            <tbody style="color:white">
+            <tbody style="color:white; font-size: large;">
                 {% for i in '1234567' %}
+                {% if i != '4' %}
                 <tr>
                     <td class="row_num">{{ i }}</td>
                     <td class="rank_user_name"></td>
@@ -26,6 +27,16 @@
                     <td class="option"></td>
                     <td class="rank_score"></td>
                 </tr>
+                {% else %}
+                <tr style="color:red;">
+                    <td class="row_num">{{ i }}</td>
+                    <td class="rank_user_name"></td>
+                    <td class="rank_fitness_name"></td>
+                    <td class="stage"></td>
+                    <td class="option"></td>
+                    <td class="rank_score"></td>
+                </tr>
+                {% endif %}
                 {% endfor %}
             </tbody>
 
@@ -40,12 +51,16 @@
 <script>
     const get_result = () => {
         const result = axios({
-            url: 'http://192.168.0.23:8000/get_result/',
+            url: 'https://withfit.ml:8000/get_result/',
             method: 'get'
         });
         result.then((context) => {
             const data = context.data;
-            const user_index = "{{ user_index }}";
+            // const user_index = "{{ user_index }}"; 
+
+            // for (let i = 0; i < data.result_data.length; i++) {
+            //     data.result_data[i].pk;
+            // }
 
             rank_user_name = document.getElementsByClassName('rank_user_name');
             rank_fitness_name = document.getElementsByClassName('rank_fitness_name');

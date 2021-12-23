@@ -1,6 +1,9 @@
 from django.shortcuts import render, redirect
 from django.http.response import HttpResponseRedirect, JsonResponse
 
+from django.db.models.expressions import Window
+from django.db.models.functions import RowNumber
+from django.db.models import F
 from django.core import serializers
 
 from user.models import User
@@ -75,8 +78,7 @@ def result(request):
     user_name = request.POST.get('user_name')
     fitness_index = int(request.POST.get('fitness_index'))
     user_index = int(request.POST.get('user_index'))
-    # stage = request.POST.get('stage')
-    stage = 3
+    stage = request.POST.get('stage')
 
     try:
       rank = Rank.objects.get(user_index=user_index, fitness_index=fitness_index)
@@ -103,8 +105,15 @@ def result(request):
   return HttpResponseRedirect('fitness:index')
 
 def get_result(request):
-  result_rank = Rank.objects.all().order_by('-rank_score')
+  # result_rank = Rank.objects.annotate(
+  #   row_number=Window(
+  #     expression=RowNumber(),
+  #     partition_by=[F('rank_index')],
+  #     order_by=F('rank_score').desc()
+  #   )).order_by('row_number', 'rank_score')
 
+  result_rank = Rank.objects.order_by('-rank_score')
+  
   result_data = serializers.serialize('json', result_rank, fields={'rank_user_name', 'rank_score', 'rank_fitness_name', 'stage', 'option'})
   result_data = json.loads(result_data)
   result_data = [{**item['fields'], **{'pk': item['pk']}} for item in result_data]

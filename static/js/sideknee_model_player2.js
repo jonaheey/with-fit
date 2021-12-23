@@ -49,14 +49,19 @@ let status1, status2 = 0;
         ctx = canvas.getContext("2d");
         
         labelContainer = document.getElementById("label-container");
+        labelContainer.appendChild(document.createElement("div"));
         for (let i = 0; i < maxPredictions; i++) { // and class labels
             labelContainer.appendChild(document.createElement("div"));
             }
         
         labelContainer2 = document.getElementById("label-container2");
+        labelContainer2.appendChild(document.createElement("div"));
         for (let i = 0; i < maxPredictions2; i++) { // and class labels
             labelContainer2.appendChild(document.createElement("div"));
             }
+
+        labelContainer.childNodes[0].innerHTML = '1P';
+        labelContainer2.childNodes[0].innerHTML = '2P';
         
 
         // setInterval(함수, 시간) : 주기적인 실행
@@ -105,13 +110,13 @@ let status1, status2 = 0;
         const prediction = await model.predict(pose_player1.posenetOutput);
         for (let i = 0; i < maxPredictions; i++) {
             const classPrediction = prediction[i].className + ": " + prediction[i].probability.toFixed(2);
-            labelContainer.childNodes[i].innerHTML = classPrediction;
+            labelContainer.childNodes[i+1].innerHTML = classPrediction;
         }
 
         const prediction2 = await model.predict(pose_player2.posenetOutput);
         for (let i = 0; i < maxPredictions2; i++) {
             const classPrediction2 = prediction2[i].className + ": " + prediction2[i].probability.toFixed(2);
-            labelContainer2.childNodes[i].innerHTML = classPrediction2;
+            labelContainer2.childNodes[i+1].innerHTML = classPrediction2;
         }
 
         pose_detect(prediction, 1);
@@ -163,8 +168,6 @@ let status1, status2 = 0;
     function pose_detect(prediction, player) {
         const attack = 50;
         let score = 0;
-        var audio_pose = new Audio('../static/sound/Kommy_BasicAttack_Hit.wav');
-        var audio_set = new Audio('../static/sound/Kommy_BasicAttack.wav');
         if (player == 1){
             if (prediction[0].probability.toFixed(2) >= 0.80 && status1 == 0) {
                     status1 = 1;
@@ -210,16 +213,23 @@ let status1, status2 = 0;
         }
 
         result_score += score;
-        console.log(monster_index)
-        if (time <= 0 || monster_index == 4) {
+        
+        if (!(result_score == 0)) {
+            $(".score-text").text(result_score / 2," 점");
+        } else {
+            $(".score-text").text(result_score + " 점");
+        }
+
+        if ((time <= 0 || monster_index == 4) && game_switch == 1) {
+            game_switch = 2;
             gameover()
         }
-        console.log(status1, status2, result_score);
     }
 
     function gameover(){
-        result_score = result_score / 2
+        result_score = result_score / 2;
         document.getElementById("score").value = result_score;
+        document.getElementById('stage').value = monster_index + 1;
         document.score_form.submit();
     }
 
