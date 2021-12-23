@@ -4,6 +4,7 @@ const width = canvas.width = 100;
 const height = canvas.height = 30;
 
 let health = 100;
+let monster_index = 0;
 var monster_status = true;
 
 const healthBarWidth = 100;
@@ -25,16 +26,49 @@ const frame = function() {
 function damage(attack) {
   health -= attack;
   healthBar.updateHealth(health);
-
-  if (health > 50 && monster_status == true){
-    monster.changeImageGreen();
-    monster_status = false;
-  } else if (health <= 50 && health > 20 && monster_status == false){
-    monster.changeImageYellow();
-    monster_status = true;
-  } else if (health <= 20 && health >= 0 && monster_status == true) {
-    monster.changeImageRed()
-    monster_status = false;
+  if (monster_index == 0) {
+    if (health > 50 && monster_status == true){
+      monster.changeImageGreen();
+      monster_status = false;
+    } else if (health <= 50 && health > 20 && monster_status == false){
+      monster.changeImageYellow();
+      monster_status = true;
+    } else if (health <= 20 && health > 0 && monster_status == true) {
+      monster.changeImageRed()
+      monster_status = false;
+    } else if(health <= 0) {
+      monster_index += 1;
+      health = 100;
+      healthBar.updateHealth(health);
+      monster.changeImageGreen2();
+      monster_status == true;
+    }
+  } else if (monster_index == 1) {
+      if (health <= 50 && health > 20 && monster_status == false){
+        monster.changeImageYellow2();
+        console.log(monster_index);
+        monster_status = true;
+      } else if (health <= 20 && health > 0 && monster_status == true) {
+        monster.changeImageRed2();
+        monster_status = false;
+      } else if(health <= 0) {
+        monster_index += 1;
+        health = 100;
+        healthBar.updateHealth(health);
+        monster.changeImageGreen3();
+        monster_status == true;
+      }
+  } else if (monster_index == 2) {
+    if (health <= 50 && health > 20 && monster_status == false){
+      monster.changeImageYellow3();
+      console.log(monster_index);
+      monster_status = true;
+    } else if (health <= 20 && health > 0 && monster_status == true) {
+      monster.changeImageRed3();
+      monster_status = false;
+    } else if(health <= 0) {
+      monster_index = 4;  // 게임이 종료됨
+    }
   }
 };
 

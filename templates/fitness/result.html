@@ -1,16 +1,68 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-<link rel="stylesheet" type="text/css" href="{% static 'css/style_Result.css' %}"/>
+<link rel="stylesheet" type="text/css" href="{% static 'css/style_Result.css' %}" />
 <body>
-<div class='screen'>
-    <p>결과 화면</p>
-    <!-- 본인 스코어값 DB에서 불러오기 -->
-    <!-- 랭킹 DB 불러오기 -->
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <input type="button" value="CONTINUE" onclick = "location.href = '../withfit'"></input>
-    <input type="button" value="CLOSE"  onclick = "location.href = '../'"></input>
-</div>
+    <div class='screen'>
+        <p style='color:white'>결과 화면</p> <br>
+        <table id='tb-result' class="table table-borderless">
+            <thead style="color:white">
+                <tr>
+                    <th>등수</th>
+                    <th>이름</th>
+                    <th>운동</th>
+                    <th>스테이지</th>
+                    <th>1인/2인</th>
+                    <th>점수</th>
+                </tr>
+            </thead>
+            <tbody style="color:white">
+                {% for i in '1234567' %}
+                <tr>
+                    <td class="row_num">{{ i }}</td>
+                    <td class="rank_user_name"></td>
+                    <td class="rank_fitness_name"></td>
+                    <td class="stage"></td>
+                    <td class="option"></td>
+                    <td class="rank_score"></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+
+        </table>
+        <br>
+        <input type="button" value="CONTINUE" onclick="location.href = '../select'"></input>
+        <input type="button" value="CLOSE" onclick="location.href = '../'"></input>
+    </div>
 
 </body>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+    const get_result = () => {
+        const result = axios({
+            url: 'http://192.168.0.23:8000/get_result/',
+            method: 'get'
+        });
+        result.then((context) => {
+            const data = context.data;
+            const user_index = "{{ user_index }}";
+
+            rank_user_name = document.getElementsByClassName('rank_user_name');
+            rank_fitness_name = document.getElementsByClassName('rank_fitness_name');
+            stage = document.getElementsByClassName('stage');
+            option = document.getElementsByClassName('option');
+            rank_score = document.getElementsByClassName('rank_score');
+
+            for (let i = 0; i < 7; i++) {
+                rank_user_name[i].innerHTML = data.result_data[i].rank_user_name;
+                rank_fitness_name[i].innerHTML = data.result_data[i].rank_fitness_name;
+                stage[i].innerHTML = data.result_data[i].stage;
+                option[i].innerHTML = data.result_data[i].option + "인";
+                rank_score[i].innerHTML = data.result_data[i].rank_score + "점";
+            }
+        });
+    }
+    get_result();
+</script>
+
 {% endblock %}

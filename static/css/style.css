@@ -1,17 +1,6 @@
-/**
-* Template Name: Tempo - v4.7.0
-* Template URL: https://bootstrapmade.com/tempo-free-onepage-bootstrap-theme/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
 @font-face {
-  font-family: shadow9;
-  src: url('../font/shadow9.TTF'),
-  ;
+  font-family: 'shadow9';
+  src: url('../font/shadow9.TTF');
 }
 
 body {
@@ -535,7 +524,7 @@ section {
   padding-bottom: 30px;
 }
 .services .icon-box {
-  padding: 60px 30px;
+  padding: 30px 30px;
   position: relative;
   overflow: hidden;
   background: #fff;
@@ -545,30 +534,25 @@ section {
   z-index: 1;
   text-align: center;
 }
-.services .icon-box::before {
-  content: "";
-  position: absolute;
-  background: #17ec91;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  top: 100%;
-  transition: all 0.4s;
-  z-index: -1;
-}
-.services .icon-box:hover::before {
-  background: #17ec91;
-  top: 0;
-  border-radius: 0px;
-}
 .services .icon {
   margin-bottom: 15px;
 }
 .services .icon i {
-  font-size: 48px;
   line-height: 1;
   color: #c833ff;
   transition: all 0.3s ease-in-out;
+}
+.services .icon:nth-of-type(1){
+  font-size: 48px;
+}
+.services .icon:nth-of-type(2){
+  font-size: 40px;
+}
+.services .icon:nth-of-type(3){
+  font-size: 32px;
+}
+.services .icon:nth-of-type(4){
+  font-size: 24px;
 }
 .services .title {
   font-weight: 700;
@@ -583,13 +567,6 @@ section {
   line-height: 28px;
   margin-bottom: 0;
 }
-.services .icon-box:hover .title a, .services .icon-box:hover .description {
-  color: #fff;
-}
-.services .icon-box:hover .icon i {
-  color: #fff;
-}
-
 /*--------------------------------------------------------------
 # Features
 --------------------------------------------------------------*/
@@ -1812,14 +1789,6 @@ section {
   font-family: 'shadow9';
   overflow: hidden;
 } */
-
-
-
-
-
-
-
-
 
 p {
 	font-size: 14px;

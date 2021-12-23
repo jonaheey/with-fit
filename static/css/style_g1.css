@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'shadow9';
-    src: url('/static/font/shadow9.TTF');
+    src: url('../font/shadow9.TTF');
 }
 
 html, body {
@@ -9,7 +9,7 @@ html, body {
 }
 
 body {
-    background-image: url('/static/img/main-bg.png');
+    background-image: url('../img/main-bg.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     align-content: center;
@@ -17,6 +17,11 @@ body {
     font-family: 'shadow9';
     overflow: hidden;
 }
+
+h3 {
+    font-family: 'shadow9';
+}
+
 
 #back {
     position: relative;
@@ -27,15 +32,13 @@ body {
     cursor: pointer;
 }
 
-h3 {
-    font-family: 'shadow9';
-}
 
 #audiobtn {
     position: relative;
     top: 19%;
     right: -82%;
     width: 30px;
+    z-index: 1001;
     cursor: pointer;
 }
 

@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'shadow9';
-    src: url('/static/shadow9.TTF');
+    src: url('../font/shadow9.TTF');
 }
 
 html, body {
@@ -9,7 +9,7 @@ html, body {
 }
 
 body {
-    background-image: url('/static/img/main-bg.png');
+    background-image: url('../img/main-bg.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     align-content: center;

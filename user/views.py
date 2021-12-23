@@ -14,7 +14,7 @@ def signup(request):
     password = request.POST.get('password')
     name = request.POST.get('name')
 
-    user = User(email=email, password=password, name=name, user_create=timezone.now() )
+    user = User(email=email, password=password, name=name, user_create=timezone.now())
     user.save()
 
     return HttpResponseRedirect('/signin')
@@ -32,6 +32,7 @@ def signin(request):
       user = User.objects.get(email=email, password=password)
       request.session['email'] = user.email
       request.session['name']= user.name
+      request.session['user_index']= user.user_index
 
       return HttpResponseRedirect('/')
     except:

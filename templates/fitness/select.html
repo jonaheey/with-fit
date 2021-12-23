@@ -12,7 +12,7 @@
 
     // 운동 선택으로 이동
     function go_select() {
-        fetch('/withfit/').then(function(response) {
+        fetch('/select/').then(function(response) {
             response.text().then(function(text) {
                 document.querySelector('body').innerHTML = text;
             })
@@ -28,29 +28,28 @@
 
     // bgm play, pause
     function play_pause() {
+        console.log("play pause load")
         if (count == 0) {
             count = 1;
             bgm.play();
-            document.getElementById('audiobtn').src = '/static/img/on.png';
+            document.getElementById('audiobtn').src = '/static/img/sound-on.png';
         }
         else {
             count = 0;
             bgm.pause();
-            document.getElementById('audiobtn').src = '/static/img/off.png';
+            document.getElementById('audiobtn').src = '/static/img/sound-off.png';
         };
     };
 
     // withfit.html -> people.html
     function select_exercise(exercise) {
         const selected_exercise = exercise.value;
-        let youtube;
+        let exercise_img;
         let guide;
         console.log(selected_exercise);
 
         if (selected_exercise == "푸시업") {
             exercise_img = "push_up";
-            youtube = "";
-            // youtube = "https://youtu.be/_l3ySVKYVJ8";
             guide = "양 손은 바닥에 어깨너비로 벌리고 팔을 뻗고 시작합니다. 가슴과 허벅지를 땅에 내립니다. 몸을 곧게 펴고 팔꿈치는 어깨보다 엉덩이에 가깝게 움직입니다.";
         } else if (selected_exercise == "사이드 런지") {
             exercise_img = "side_lunge";
@@ -58,7 +57,6 @@
             guide = "옆으로 런지를 한다.";
         } else if (selected_exercise == "스탠딩 니 업") {
             exercise_img = "standing_knee_up";
-            // youtube = <iframe src="https://www.youtube.com/embed/WKEQ1ONTS8s?controls=0&amp;start=20" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>;
             guide = "똑바로 선 후 양 무릎을 번갈아가며 들어올린다.";
         } else {
             exercise_img = "step_forward_lunge";
@@ -66,15 +64,11 @@
             guide = "앞으로 런지를 한다.";
         };
         console.log(exercise_img);
-
-        if (youtube == "") {
-            youtube = `/static/img/fitness/fitness-git/${exercise_img}.gif`;
-        };
         
         fetch('/player/').then(function(response) {
             response.text().then(function(text) {
                 document.querySelector('body').innerHTML = text;
-                document.getElementById('ex_img').src = youtube;
+                document.getElementById('ex_img').src = `/static/img/fitness/${exercise_img}.gif`;
                 document.getElementById("explain").innerHTML = guide;
                 document.getElementById('ex_name').innerHTML = selected_exercise;
                 document.getElementById('exercise').value = selected_exercise;
@@ -82,48 +76,31 @@
             })
         })
     };
-
-    //function select_p(p) {
-    //    let selected_p = p.value;
-    //    //console.log(selected_p);
-    //    return selected_p;
-    //};
-
-    //var np = selected_p();
-    //console.log(np);
-
-    //function game_play() {
-    //    fetch('/play/').then(function(response) {
-    //        response.text().then(function(text) {
-    //            document.querySelector('body').innerHTML = text;
-    //        })
-    //    })
-    //};
-
-
 </script>
-<img id="back" src="/static/img/back.png" onclick="go_main()"></img>
-<img id="audiobtn" src="/static/img/on.png" onclick="play_pause()"></img>
+
+<img id="back" src="/static/img/select-back.png" onclick="go_main()">
+<img id="audiobtn" src="/static/img/sound-on.png" onclick="play_pause()">
+
 <div class="screen">
     <h3>운동 선택</h3>
     <form method='POST'>
         {% csrf_token %}
         <div class="select_exercise">
             <div class="exercise">
-                <img src="/static/img/fitness/fitness-git/push_up.gif">
-                <input type="button" value="푸시업" onclick="select_exercise(this)"></input>
+                <img src="/static/img/fitness/push_up.gif">
+                <input type="button" value="푸시업" onclick="select_exercise(this)">
             </div>
             <div class="exercise">
-                <img src="/static/img/fitness/fitness-git/side_lunge.gif">
-                <input type="button" value="사이드 런지" onclick="select_exercise(this)"></input>
+                <img src="/static/img/fitness/side_lunge.gif">
+                <input type="button" value="사이드 런지" onclick="select_exercise(this)">
             </div>
             <div class="exercise">
-                <img src="/static/img/fitness/fitness-git/standing_knee_up.gif">
-                <input type="button" value="스탠딩 니 업" onclick="select_exercise(this)"></input>
+                <img src="/static/img/fitness/standing_knee_up.gif">
+                <input type="button" value="스탠딩 니 업" onclick="select_exercise(this)">
             </div>
             <div class="exercise">
-                <img src="/static/img/fitness/fitness-git/step_forward_lunge.gif">
-                <input type="button" value="포워드 런지" onclick="select_exercise(this)"></input>
+                <img src="/static/img/fitness/step_forward_lunge.gif">
+                <input type="button" value="포워드 런지" onclick="select_exercise(this)">
             </div>
         </div>
     </form>

@@ -55,37 +55,25 @@
       </div>
 
       <div class="row">
-        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bxl-dribbble"></i></div>
-            <h4 class="title"><a href="">서정동 강사</a></h4>
-            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+        
+        {% for i in '1234' %}
+        <div class="col-md-6 col-lg-3 align-items-stretch mb-5 mb-lg-0">
+          <div class="icon-box rank-box">
+            <div class="icon">
+              {% if i == '1' or i == '3'%}
+              <i class="bx bx-trophy"></i>
+              {% else %}
+              <i class="bx bxs-trophy"></i>
+              {% endif %}
+            </div>
+            <h4>{{ i }} 위</h4>
+            <h4 class="rank_user_name"></h4>
+            <p class="rank_score description"></p>
+            <p class="rank_fitness_name description"></p>
+            <p class="option description"></p>
           </div>
         </div>
-
-        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-file"></i></div>
-            <h4 class="title"><a href="">김순동</a></h4>
-            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-tachometer"></i></div>
-            <h4 class="title"><a href="">강원석</a></h4>
-            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-world"></i></div>
-            <h4 class="title"><a href="">보안관</a></h4>
-            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-          </div>
-        </div>
+        {% endfor %}
 
       </div>
 
@@ -94,88 +82,10 @@
 
   <!-- ======= Features Section ======= -->
   <section id="features" class="features">
-    <div class="container">
-
-      <div class="row">
-        <div class="col-lg-3 col-md-4 col-6 col-6">
-          <div class="icon-box">
-            <i class="ri-store-line" style="color: #ffbb2c;"></i>
-            <h3><a href="">스파이</a></h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-6">
-          <div class="icon-box">
-            <i class="ri-bar-chart-box-line" style="color: #5578ff;"></i>
-            <h3><a href="">말썽쟁이</a></h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-6 mt-4 mt-md-0">
-          <div class="icon-box">
-            <i class="ri-calendar-todo-line" style="color: #e80368;"></i>
-            <h3><a href="">민기한</a></h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-6 mt-4 mt-lg-0">
-          <div class="icon-box">
-            <i class="ri-paint-brush-line" style="color: #e361ff;"></i>
-            <h3><a href="">imjong</a></h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-6 mt-4">
-          <div class="icon-box">
-            <i class="ri-database-2-line" style="color: #47aeff;"></i>
-            <h3><a href="">vinsu</a></h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-6 mt-4">
-          <div class="icon-box">
-            <i class="ri-gradienter-line" style="color: #ffa76e;"></i>
-            <h3><a href="">22g1</a></h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-6 mt-4">
-          <div class="icon-box">
-            <i class="ri-file-list-3-line" style="color: #11dbcf;"></i>
-            <h3><a href="">빽종원</a></h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-6 mt-4">
-          <div class="icon-box">
-            <i class="ri-price-tag-2-line" style="color: #4233ff;"></i>
-            <h3><a href="">놀부</a></h3>
-          </div>
-        </div>
-        <!-- <div class="col-lg-3 col-md-4 col-6 mt-4">
-            <div class="icon-box">
-              <i class="ri-anchor-line" style="color: #b2904f;"></i>
-              <h3><a href="">Dirada Pack</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 mt-4">
-            <div class="icon-box">
-              <i class="ri-disc-line" style="color: #b20969;"></i>
-              <h3><a href="">Moton Ideal</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 mt-4">
-            <div class="icon-box">
-              <i class="ri-base-station-line" style="color: #ff5828;"></i>
-              <h3><a href="">Verdo Park</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 mt-4">
-            <div class="icon-box">
-              <i class="ri-fingerprint-line" style="color: #29cc61;"></i>
-              <h3><a href="">Flavor Nivelanda</a></h3>
-            </div>
-          </div> -->
-      </div>
-
-    </div>
   </section><!-- End Features Section -->
 
   <!-- ======= Team Section ======= -->
-  <section id="team" class="team">
+  <!-- <section id="team" class="team">
     <div class="container">
 
       <div class="section-title">
@@ -261,7 +171,7 @@
       </div>
 
     </div>
-  </section>
+  </section> -->
   <!-- End Team Section -->
 
   <!-- ======= Contact Section ======= -->
@@ -301,27 +211,23 @@
               <h4>Call:</h4>
               <p>+82 31 970 3799</p>
             </div>
-
           </div>
-
         </div>
-
         <div class="col-lg-8 mt-5 mt-lg-0">
-
           <form action="forms/contact.php" method="post" role="form" class="php-email-form">
             <div class="row">
               <div class="col-md-6 form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                <input type="text" name="name" class="form-control" id="name" placeholder="이름" required>
               </div>
               <div class="col-md-6 form-group mt-3 mt-md-0">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                <input type="email" class="form-control" name="email" id="email" placeholder="이메일" required>
               </div>
             </div>
             <div class="form-group mt-3">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="지참 보드게임 이름" required>
             </div>
             <div class="form-group mt-3">
-              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              <textarea class="form-control" name="message" rows="5" placeholder="보사모 지원동기 및 입단후포부를 경험에 빗대어 설명하시오 (500자이내)" required></textarea>
             </div>
             <div class="my-3">
               <div class="loading">Loading</div>
@@ -344,7 +250,7 @@
 <!-- ======= Footer ======= -->
 <footer id="footer">
 
-  <div class="footer-top">
+  <!-- <div class="footer-top">
     <div class="container">
       <div class="row">
 
@@ -387,7 +293,7 @@
           <form action="" method="post">
             <input type="email" name="email"><input type="submit" value="Subscribe">
           </form>
-        </div>
+        </div> -->
 
       </div>
     </div>
@@ -396,20 +302,19 @@
   <div class="container d-md-flex py-4">
 
     <div class="me-md-auto text-center text-md-start">
+      <h3>Team Aidam</h3>
       <div class="copyright">
         &copy; Copyright <strong><span>Aidam</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
-        Designed by <a href="https://bootstrapmade.com/">Aidam</a>
+        Designed by <a href="#">Aidam</a>
       </div>
     </div>
-    <div class="social-links text-center text-md-right pt-3 pt-md-0">
+    <div class="social-links text-center text-md-right pt-3">
       <a href="https://github.com/jonaheey/with-fit" target='_blank' class="github"><i class="bx bxl-github"></i></a>
-      <a href="joanheey@gmail.com" class="google"><i class="bx bxl-google"></i></a>
-      <a href="#" class="blog"><i class="bx bxl-githubio"></i></a>
-      <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-      <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-      <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      <a href="https://youtu.be/69CtWnb1tpU" target='_blank' class="youtube"><i class="bx bxl-youtube"></i></a>
+      <a href="https://blog.naver.com/redbabo67/222601398359" target='_blank' class="blogger"><i class="bx bxl-blogger"></i></a>
+      <a href="https://www.twitch.tv/directory/game/Apex%20Legends" target='_blank' class="twitch"><i class="bx bxl-twitch"></i></a>
     </div>
   </div>
 </footer><!-- End Footer -->
@@ -426,5 +331,32 @@
 
 <!-- Template Main JS File -->
 <script src="{% static 'js/main.js' %}"></script>
+
+<!-- Ajax -->
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+  const get_rank = () => {
+    const rank = axios({
+      url: 'http://192.168.0.23:8000/get_rank/',
+      method: 'get'
+    });
+    rank.then((context) => {
+      const data = context.data;
+
+      rank_user_name = document.getElementsByClassName('rank_user_name');
+      rank_score = document.getElementsByClassName('rank_score');
+      rank_fitness_name = document.getElementsByClassName('rank_fitness_name');
+      option = document.getElementsByClassName('option');
+
+      for (let i = 0; i < data.num; i++) {
+        rank_user_name[i].innerHTML = data.rank_data[i].rank_user_name;
+        rank_score[i].innerHTML = "점수 : " + data.rank_data[i].rank_score;
+        rank_fitness_name[i].innerHTML = "운동 : " + data.rank_data[i].rank_fitness_name;
+        option[i].innerHTML = "인원수 : " + data.rank_data[i].option + "인";
+      }
+    });
+  }
+  get_rank();
+</script>
 
 {% endblock %}
