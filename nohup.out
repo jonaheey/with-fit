@@ -1,0 +1,2455 @@
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+[23/Dec/2021 18:16:20] "GET /select HTTP/1.1" 301 0
+[23/Dec/2021 18:16:20] "GET /select/ HTTP/1.1" 200 8431
+[23/Dec/2021 18:16:20] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+[23/Dec/2021 18:16:20] "GET /static/vendor/remixicon/remixicon.css HTTP/1.1" 200 110438
+[23/Dec/2021 18:16:20] "GET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 73271
+[23/Dec/2021 18:16:20] "GET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1" 200 15563
+[23/Dec/2021 18:16:20] "GET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1" 200 13785
+[23/Dec/2021 18:16:20] "GET /static/vendor/boxicons/css/boxicons.min.css HTTP/1.1" 200 63781
+[23/Dec/2021 18:16:20] "GET /static/css/style.css HTTP/1.1" 200 43816
+[23/Dec/2021 18:16:20] "GET /static/css/util.css HTTP/1.1" 200 83821
+[23/Dec/2021 18:16:20] "GET /static/css/style_g1.css HTTP/1.1" 200 2972
+[23/Dec/2021 18:16:20] "GET /static/js/main.js HTTP/1.1" 200 5049
+[23/Dec/2021 18:16:20] "GET /static/img/logo.png HTTP/1.1" 200 16267
+[23/Dec/2021 18:16:21] "GET /static/img/select-back.png HTTP/1.1" 200 2815
+[23/Dec/2021 18:16:21] "GET /static/img/sound-on.png HTTP/1.1" 200 34288
+[23/Dec/2021 18:16:21] "GET /static/img/fitness/push_up.gif HTTP/1.1" 200 160055
+[23/Dec/2021 18:16:21] "GET /static/img/fitness/side_lunge.gif HTTP/1.1" 200 295703
+[23/Dec/2021 18:16:21] "GET /static/img/main-bg.png HTTP/1.1" 200 189097
+[23/Dec/2021 18:16:21] "GET /static/img/fitness/step_forward_lunge.gif HTTP/1.1" 200 386780
+[23/Dec/2021 18:16:21] "GET /static/img/fitness/standing_knee_up.gif HTTP/1.1" 200 443097
+[23/Dec/2021 18:16:21] "GET /static/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2?a74547b2f0863226942ff8ded57db345 HTTP/1.1" 200 92004
+[23/Dec/2021 18:16:21] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[23/Dec/2021 18:16:21] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+[23/Dec/2021 18:16:22] "GET / HTTP/1.1" 200 18394
+[23/Dec/2021 18:16:22] "GET /static/vendor/glightbox/js/glightbox.min.js HTTP/1.1" 200 56222
+[23/Dec/2021 18:16:22] "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+[23/Dec/2021 18:16:22] "GET /static/vendor/isotope-layout/isotope.pkgd.min.js HTTP/1.1" 200 35445
+[23/Dec/2021 18:16:22] "GET /static/vendor/php-email-form/validate.js HTTP/1.1" 200 2527
+[23/Dec/2021 18:16:22] "GET /static/vendor/swiper/swiper-bundle.min.js HTTP/1.1" 200 135617
+[23/Dec/2021 18:16:22] "GET /static/vendor/remixicon/remixicon.woff2?t=1590207869815 HTTP/1.1" 200 125268
+[23/Dec/2021 18:16:22] "GET /static/vendor/boxicons/fonts/boxicons.woff2 HTTP/1.1" 200 102988
+[23/Dec/2021 18:16:22] "GET /get_rank/ HTTP/1.1" 200 561
+[23/Dec/2021 18:16:22] "GET /static/img/hero-bg.mp4 HTTP/1.1" 200 5841045
+[23/Dec/2021 18:16:26] "GET /static/sound/upright-piano-arcade-instrumental-mix-1342.mp3 HTTP/1.1" 200 1708032
+[23/Dec/2021 18:16:33] "GET / HTTP/1.1" 200 18394
+[23/Dec/2021 18:16:33] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+[23/Dec/2021 18:16:33] "GET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1" 200 13785
+[23/Dec/2021 18:16:33] "GET /static/css/style.css HTTP/1.1" 200 43816
+[23/Dec/2021 18:16:33] "GET /static/vendor/boxicons/css/boxicons.min.css HTTP/1.1" 200 63781
+[23/Dec/2021 18:16:33] "GET /static/css/util.css HTTP/1.1" 200 83821
+[23/Dec/2021 18:16:33] "GET /static/vendor/remixicon/remixicon.css HTTP/1.1" 200 110438
+[23/Dec/2021 18:16:33] "GET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1" 200 15563
+[23/Dec/2021 18:16:33] "GET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 73271
+[23/Dec/2021 18:16:33] "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+[23/Dec/2021 18:16:33] "GET /static/vendor/glightbox/js/glightbox.min.js HTTP/1.1" 200 56222
+[23/Dec/2021 18:16:33] "GET /static/vendor/isotope-layout/isotope.pkgd.min.js HTTP/1.1" 200 35445
+[23/Dec/2021 18:16:33] "GET /static/img/logo.png HTTP/1.1" 200 16267
+[23/Dec/2021 18:16:33] "GET /static/vendor/php-email-form/validate.js HTTP/1.1" 200 2527
+[23/Dec/2021 18:16:33] "GET /static/js/main.js HTTP/1.1" 200 5049
+[23/Dec/2021 18:16:33] "GET /static/vendor/swiper/swiper-bundle.min.js HTTP/1.1" 200 135617
+[23/Dec/2021 18:16:33] "GET /static/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2?a74547b2f0863226942ff8ded57db345 HTTP/1.1" 200 92004
+[23/Dec/2021 18:16:33] "GET /static/vendor/boxicons/fonts/boxicons.woff2 HTTP/1.1" 200 102988
+[23/Dec/2021 18:16:33] "GET /static/vendor/remixicon/remixicon.woff2?t=1590207869815 HTTP/1.1" 200 125268
+[23/Dec/2021 18:16:33] "GET /get_rank/ HTTP/1.1" 200 561
+[23/Dec/2021 18:16:33] "GET /static/img/hero-bg.mp4 HTTP/1.1" 200 5841045
+[23/Dec/2021 20:34:28] "GET / HTTP/1.1" 200 17645
+[23/Dec/2021 20:34:28] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+[23/Dec/2021 20:34:28] "GET /static/vendor/boxicons/css/boxicons.min.css HTTP/1.1" 200 63781
+[23/Dec/2021 20:34:28] "GET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1" 200 15563
+[23/Dec/2021 20:34:28] "GET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 73271
+[23/Dec/2021 20:34:28] "GET /static/css/style.css HTTP/1.1" 200 43816
+[23/Dec/2021 20:34:28] "GET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1" 200 13785
+[23/Dec/2021 20:34:28] "GET /static/vendor/remixicon/remixicon.css HTTP/1.1" 200 110438
+[23/Dec/2021 20:34:28] "GET /static/css/util.css HTTP/1.1" 200 83821
+[23/Dec/2021 20:34:28] "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+[23/Dec/2021 20:34:28] "GET /static/vendor/glightbox/js/glightbox.min.js HTTP/1.1" 200 56222
+[23/Dec/2021 20:34:28] "GET /static/vendor/php-email-form/validate.js HTTP/1.1" 200 2527
+[23/Dec/2021 20:34:28] "GET /static/img/logo.png HTTP/1.1" 200 16267
+[23/Dec/2021 20:34:28] "GET /static/js/main.js HTTP/1.1" 200 5049
+[23/Dec/2021 20:34:28] "GET /static/vendor/isotope-layout/isotope.pkgd.min.js HTTP/1.1" 200 35445
+[23/Dec/2021 20:34:28] "GET /static/vendor/swiper/swiper-bundle.min.js HTTP/1.1" 200 135617
+[23/Dec/2021 20:34:29] "GET /static/vendor/boxicons/fonts/boxicons.woff2 HTTP/1.1" 200 102988
+[23/Dec/2021 20:34:29] "GET /static/vendor/remixicon/remixicon.woff2?t=1590207869815 HTTP/1.1" 200 125268
+[23/Dec/2021 20:34:29] "GET /static/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2?a74547b2f0863226942ff8ded57db345 HTTP/1.1" 200 92004
+[23/Dec/2021 20:34:29] "GET /get_rank/ HTTP/1.1" 200 561
+[23/Dec/2021 20:34:29] "GET /static/img/hero-bg.mp4 HTTP/1.1" 200 5841045
+[23/Dec/2021 20:36:13] "GET /signin HTTP/1.1" 200 5304
+[23/Dec/2021 20:36:13] "GET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1" 200 13785
+[23/Dec/2021 20:36:13] "GET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 73271
+[23/Dec/2021 20:36:13] "GET /static/vendor/boxicons/css/boxicons.min.css HTTP/1.1" 200 63781
+[23/Dec/2021 20:36:13] "GET /static/vendor/remixicon/remixicon.css HTTP/1.1" 200 110438
+[23/Dec/2021 20:36:13] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+[23/Dec/2021 20:36:13] "GET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1" 200 15563
+[23/Dec/2021 20:36:13] "GET /static/css/util.css HTTP/1.1" 200 83821
+[23/Dec/2021 20:36:13] "GET /static/css/style.css HTTP/1.1" 200 43816
+[23/Dec/2021 20:36:13] "GET /static/img/main-bg.png HTTP/1.1" 200 189097
+[23/Dec/2021 20:36:20] "GET /signin HTTP/1.1" 200 5304
+[23/Dec/2021 20:36:21] "GET /signup HTTP/1.1" 200 5354
+[23/Dec/2021 20:36:57] "POST /signup HTTP/1.1" 302 0
+[23/Dec/2021 20:36:57] "GET /signin HTTP/1.1" 200 5304
+[23/Dec/2021 20:37:05] "POST /signin HTTP/1.1" 302 0
+[23/Dec/2021 20:37:06] "GET / HTTP/1.1" 200 18397
+[23/Dec/2021 20:37:06] "GET /static/vendor/php-email-form/validate.js HTTP/1.1" 200 2527
+[23/Dec/2021 20:37:06] "GET /static/vendor/isotope-layout/isotope.pkgd.min.js HTTP/1.1" 200 35445
+[23/Dec/2021 20:37:06] "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+[23/Dec/2021 20:37:06] "GET /static/vendor/glightbox/js/glightbox.min.js HTTP/1.1" 200 56222
+[23/Dec/2021 20:37:06] "GET /static/vendor/swiper/swiper-bundle.min.js HTTP/1.1" 200 135617
+[23/Dec/2021 20:37:06] "GET /static/js/main.js HTTP/1.1" 200 5049
+[23/Dec/2021 20:37:06] "GET /get_rank/ HTTP/1.1" 200 561
+[23/Dec/2021 20:37:06] "GET /static/img/hero-bg.mp4 HTTP/1.1" 200 5841045
+[23/Dec/2021 20:37:32] "GET /select HTTP/1.1" 301 0
+[23/Dec/2021 20:37:32] "GET /select/ HTTP/1.1" 200 8434
+[23/Dec/2021 20:37:32] "GET /static/css/style_g1.css HTTP/1.1" 200 2972
+[23/Dec/2021 20:37:32] "GET /static/img/select-back.png HTTP/1.1" 200 2815
+[23/Dec/2021 20:37:32] "GET /static/img/sound-on.png HTTP/1.1" 200 34288
+[23/Dec/2021 20:37:32] "GET /static/img/fitness/push_up.gif HTTP/1.1" 200 160055
+[23/Dec/2021 20:37:32] "GET /static/img/fitness/step_forward_lunge.gif HTTP/1.1" 200 386780
+[23/Dec/2021 20:37:32] "GET /static/img/fitness/standing_knee_up.gif HTTP/1.1" 200 443097
+[23/Dec/2021 20:37:32] "GET /static/img/fitness/side_lunge.gif HTTP/1.1" 200 295703
+[23/Dec/2021 20:37:32] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+[23/Dec/2021 20:37:32] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[23/Dec/2021 20:37:32] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[23/Dec/2021 20:37:52] "GET /player/ HTTP/1.1" 200 5235
+[23/Dec/2021 20:37:52] "GET /static/css/style_g1.css HTTP/1.1" 200 2972
+[23/Dec/2021 20:37:52] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[23/Dec/2021 20:38:12] "POST /play/ HTTP/1.1" 200 6069
+[23/Dec/2021 20:38:12] "GET /static/sound/upright-piano-arcade-instrumental-mix-1342.mp3 HTTP/1.1" 200 9056256
+[23/Dec/2021 20:38:12] "GET /static/js/loading.js HTTP/1.1" 200 1550
+[23/Dec/2021 20:38:12] "GET /static/css/style_SD.css HTTP/1.1" 200 3202
+[23/Dec/2021 20:38:13] "GET /static/js/monster.js HTTP/1.1" 200 1402
+[23/Dec/2021 20:38:13] "GET /static/js/health-bar.js HTTP/1.1" 200 909
+[23/Dec/2021 20:38:13] "GET /static/js/sideknee_model_player2.js HTTP/1.1" 200 12570
+[23/Dec/2021 20:38:13] "GET /static/js/index.js HTTP/1.1" 200 2389
+[23/Dec/2021 20:38:13] "GET /static/img/fitness/play-bg.png HTTP/1.1" 200 89914
+[23/Dec/2021 20:38:13] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[23/Dec/2021 20:38:13] "GET /static/json/model.json HTTP/1.1" 200 1435
+[23/Dec/2021 20:38:13] "GET /static/img/item/ironman_sm.png HTTP/1.1" 200 31881
+[23/Dec/2021 20:38:13] "GET /static/img/fitness/loading-pacman.gif HTTP/1.1" 200 35634
+[23/Dec/2021 20:38:13] "GET /static/img/fitness/loading.png HTTP/1.1" 200 5010
+[23/Dec/2021 20:38:13] "GET /static/img/item/ironman_Hand.png HTTP/1.1" 200 17421
+[23/Dec/2021 20:38:13] "GET /static/sound/Kommy_BasicAttack_Hit.wav HTTP/1.1" 200 110984
+[23/Dec/2021 20:38:13] "GET /static/sound/Kommy_BasicAttack.wav HTTP/1.1" 200 200688
+[23/Dec/2021 20:38:13] "GET /static/img/monster/monster-jelly_0.gif HTTP/1.1" 200 88200
+[23/Dec/2021 20:38:13] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+[23/Dec/2021 20:38:15] "GET /static/json/weights.bin HTTP/1.1" 200 5897200
+[23/Dec/2021 20:38:15] "GET /static/json/metadata.json HTTP/1.1" 200 343
+[23/Dec/2021 20:38:17] "GET /static/json/OkModel/model.json HTTP/1.1" 200 1441
+[23/Dec/2021 20:38:18] "GET /static/json/OkModel/weights.bin HTTP/1.1" 200 5897600
+[23/Dec/2021 20:38:19] "GET /static/json/OkModel/metadata.json HTTP/1.1" 200 348
+[23/Dec/2021 20:39:23] "GET /static/sound/inspiring-8-bit-563.mp3 HTTP/1.1" 200 7631098
+[23/Dec/2021 20:41:40] "GET /result HTTP/1.1" 301 0
+Unsafe redirect to URL with protocol 'fitness'
+Bad Request: /result/
+[23/Dec/2021 20:41:40] "GET /result/ HTTP/1.1" 400 66737
+Not Found: /favicon.ico
+[23/Dec/2021 20:41:40] "GET /favicon.ico HTTP/1.1" 404 3814
+[23/Dec/2021 20:41:50] "GET /select/ HTTP/1.1" 200 8434
+[23/Dec/2021 20:41:50] "GET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1" 200 13785
+[23/Dec/2021 20:41:50] "GET /static/vendor/boxicons/css/boxicons.min.css HTTP/1.1" 200 63781
+[23/Dec/2021 20:41:50] "GET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 73271
+[23/Dec/2021 20:41:50] "GET /static/vendor/remixicon/remixicon.css HTTP/1.1" 200 110438
+[23/Dec/2021 20:41:50] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+[23/Dec/2021 20:41:50] "GET /static/css/style.css HTTP/1.1" 200 43816
+[23/Dec/2021 20:41:50] "GET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1" 200 15563
+[23/Dec/2021 20:41:50] "GET /static/css/util.css HTTP/1.1" 200 83821
+[23/Dec/2021 20:41:50] "GET /static/css/style_g1.css HTTP/1.1" 200 2972
+[23/Dec/2021 20:41:50] "GET /static/js/main.js HTTP/1.1" 200 5049
+[23/Dec/2021 20:41:50] "GET /static/img/select-back.png HTTP/1.1" 200 2815
+[23/Dec/2021 20:41:50] "GET /static/img/logo.png HTTP/1.1" 200 16267
+[23/Dec/2021 20:41:50] "GET /static/img/sound-on.png HTTP/1.1" 200 34288
+[23/Dec/2021 20:41:50] "GET /static/img/fitness/push_up.gif HTTP/1.1" 200 160055
+[23/Dec/2021 20:41:50] "GET /static/img/fitness/side_lunge.gif HTTP/1.1" 200 295703
+[23/Dec/2021 20:41:50] "GET /static/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2?a74547b2f0863226942ff8ded57db345 HTTP/1.1" 200 92004
+[23/Dec/2021 20:41:50] "GET /static/img/main-bg.png HTTP/1.1" 200 189097
+[23/Dec/2021 20:41:50] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[23/Dec/2021 20:41:50] "GET /static/img/fitness/standing_knee_up.gif HTTP/1.1" 200 443097
+[23/Dec/2021 20:41:50] "GET /static/img/fitness/step_forward_lunge.gif HTTP/1.1" 200 386780
+[23/Dec/2021 20:41:55] "GET /player/ HTTP/1.1" 200 5235
+[23/Dec/2021 20:41:57] "POST /play/ HTTP/1.1" 200 6069
+[23/Dec/2021 20:41:57] "GET /static/css/style_SD.css HTTP/1.1" 200 3202
+[23/Dec/2021 20:41:57] "GET /static/js/loading.js HTTP/1.1" 200 1550
+[23/Dec/2021 20:41:57] "GET /static/js/health-bar.js HTTP/1.1" 200 909
+[23/Dec/2021 20:41:57] "GET /static/js/monster.js HTTP/1.1" 200 1402
+[23/Dec/2021 20:41:57] "GET /static/js/index.js HTTP/1.1" 200 2389
+[23/Dec/2021 20:41:57] "GET /static/js/sideknee_model_player2.js HTTP/1.1" 200 12570
+[23/Dec/2021 20:41:57] "GET /static/img/fitness/play-bg.png HTTP/1.1" 200 89914
+[23/Dec/2021 20:41:57] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[23/Dec/2021 20:41:57] "GET /static/json/model.json HTTP/1.1" 200 1435
+[23/Dec/2021 20:41:57] "GET /static/img/item/ironman_sm.png HTTP/1.1" 200 31881
+[23/Dec/2021 20:41:57] "GET /static/img/fitness/loading.png HTTP/1.1" 200 5010
+[23/Dec/2021 20:41:57] "GET /static/img/fitness/loading-pacman.gif HTTP/1.1" 200 35634
+[23/Dec/2021 20:41:57] "GET /static/img/item/ironman_Hand.png HTTP/1.1" 200 17421
+[23/Dec/2021 20:41:57] "GET /static/sound/Kommy_BasicAttack_Hit.wav HTTP/1.1" 200 110984
+[23/Dec/2021 20:41:57] "GET /static/sound/Kommy_BasicAttack.wav HTTP/1.1" 200 200688
+[23/Dec/2021 20:41:57] "GET /static/img/monster/monster-jelly_0.gif HTTP/1.1" 200 88200
+[23/Dec/2021 20:41:57] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+[23/Dec/2021 20:41:58] "GET /static/json/weights.bin HTTP/1.1" 200 5897200
+[23/Dec/2021 20:41:58] "GET /static/json/metadata.json HTTP/1.1" 200 343
+[23/Dec/2021 20:41:59] "GET /static/json/OkModel/model.json HTTP/1.1" 200 1441
+[23/Dec/2021 20:41:59] "GET /static/json/OkModel/weights.bin HTTP/1.1" 200 5897600
+[23/Dec/2021 20:42:00] "GET /static/json/OkModel/metadata.json HTTP/1.1" 200 348
+[23/Dec/2021 20:42:57] "GET /static/sound/upright-piano-arcade-instrumental-mix-1342.mp3 HTTP/1.1" 200 2617344
+[23/Dec/2021 20:43:07] "GET /static/sound/inspiring-8-bit-563.mp3 HTTP/1.1" 200 7631098
+[23/Dec/2021 20:45:11] "GET / HTTP/1.1" 200 18397
+[23/Dec/2021 20:45:11] "GET /static/vendor/glightbox/js/glightbox.min.js HTTP/1.1" 200 56222
+[23/Dec/2021 20:45:11] "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+[23/Dec/2021 20:45:11] "GET /static/vendor/isotope-layout/isotope.pkgd.min.js HTTP/1.1" 200 35445
+[23/Dec/2021 20:45:11] "GET /static/vendor/php-email-form/validate.js HTTP/1.1" 200 2527
+[23/Dec/2021 20:45:11] "GET /static/vendor/swiper/swiper-bundle.min.js HTTP/1.1" 200 135617
+[23/Dec/2021 20:45:11] "GET /static/vendor/boxicons/fonts/boxicons.woff2 HTTP/1.1" 200 102988
+[23/Dec/2021 20:45:11] "GET /static/vendor/remixicon/remixicon.woff2?t=1590207869815 HTTP/1.1" 200 125268
+[23/Dec/2021 20:45:11] "GET /static/js/main.js HTTP/1.1" 200 5049
+[23/Dec/2021 20:45:11] "GET /get_rank/ HTTP/1.1" 200 561
+[23/Dec/2021 20:45:13] "GET /static/img/hero-bg.mp4 HTTP/1.1" 200 5841045
+[23/Dec/2021 20:51:12] "GET / HTTP/1.1" 200 17645
+[23/Dec/2021 20:51:12] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+[23/Dec/2021 20:51:12] "GET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 73271
+[23/Dec/2021 20:51:12] "GET /static/vendor/remixicon/remixicon.css HTTP/1.1" 200 110438
+[23/Dec/2021 20:51:12] "GET /static/vendor/boxicons/css/boxicons.min.css HTTP/1.1" 200 63781
+[23/Dec/2021 20:51:12] "GET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1" 200 13785
+[23/Dec/2021 20:51:12] "GET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1" 200 15563
+[23/Dec/2021 20:51:12] "GET /static/css/style.css HTTP/1.1" 200 43816
+[23/Dec/2021 20:51:12] "GET /static/css/util.css HTTP/1.1" 200 83821
+[23/Dec/2021 20:51:12] "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+[23/Dec/2021 20:51:12] "GET /static/vendor/glightbox/js/glightbox.min.js HTTP/1.1" 200 56222
+[23/Dec/2021 20:51:12] "GET /static/vendor/isotope-layout/isotope.pkgd.min.js HTTP/1.1" 200 35445
+[23/Dec/2021 20:51:12] "GET /static/vendor/swiper/swiper-bundle.min.js HTTP/1.1" 200 135617
+[23/Dec/2021 20:51:12] "GET /static/vendor/php-email-form/validate.js HTTP/1.1" 200 2527
+[23/Dec/2021 20:51:12] "GET /static/js/main.js HTTP/1.1" 200 5049
+[23/Dec/2021 20:51:12] "GET /static/img/logo.png HTTP/1.1" 200 16267
+[23/Dec/2021 20:51:12] "GET /static/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2?a74547b2f0863226942ff8ded57db345 HTTP/1.1" 200 92004
+[23/Dec/2021 20:51:12] "GET /get_rank/ HTTP/1.1" 200 561
+[23/Dec/2021 20:51:12] "GET /static/vendor/boxicons/fonts/boxicons.woff2 HTTP/1.1" 200 102988
+[23/Dec/2021 20:51:12] "GET /static/vendor/remixicon/remixicon.woff2?t=1590207869815 HTTP/1.1" 200 125268
+[23/Dec/2021 20:51:12] "GET /static/img/hero-bg.mp4 HTTP/1.1" 200 630784
+[23/Dec/2021 20:51:20] "GET / HTTP/1.1" 200 17645
+[23/Dec/2021 20:51:20] "GET /get_rank/ HTTP/1.1" 200 561
+[23/Dec/2021 20:51:20] "GET /static/img/hero-bg.mp4 HTTP/1.1" 200 819200
+[23/Dec/2021 20:51:23] "GET /signin HTTP/1.1" 200 5304
+[23/Dec/2021 20:51:23] "GET /static/img/main-bg.png HTTP/1.1" 200 189097
+[23/Dec/2021 20:51:23] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+[23/Dec/2021 20:51:28] "GET /static/img/hero-bg.mp4 HTTP/1.1" 200 729088
+[23/Dec/2021 20:51:35,620] - Broken pipe from ('220.79.182.248', 55046)
+
+[23/Dec/2021 20:51:35,620] - Broken pipe from ('220.79.182.248', 55059)
+
+[23/Dec/2021 20:55:38] "GET /select HTTP/1.1" 301 0
+[23/Dec/2021 20:55:38] "GET /select/ HTTP/1.1" 200 8434
+[23/Dec/2021 20:55:38] "GET /static/css/style_g1.css HTTP/1.1" 200 2972
+[23/Dec/2021 20:55:38] "GET /static/img/select-back.png HTTP/1.1" 200 2815
+[23/Dec/2021 20:55:38] "GET /static/img/sound-on.png HTTP/1.1" 200 34288
+[23/Dec/2021 20:55:38] "GET /static/img/fitness/push_up.gif HTTP/1.1" 200 160055
+[23/Dec/2021 20:55:38] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[23/Dec/2021 20:55:38] "GET /static/img/fitness/standing_knee_up.gif HTTP/1.1" 200 443097
+[23/Dec/2021 20:55:38] "GET /static/img/main-bg.png HTTP/1.1" 200 189097
+[23/Dec/2021 20:55:38] "GET /static/img/fitness/step_forward_lunge.gif HTTP/1.1" 200 386780
+[23/Dec/2021 20:55:38] "GET /static/img/fitness/side_lunge.gif HTTP/1.1" 200 295703
+[23/Dec/2021 20:55:38] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+[23/Dec/2021 20:55:49] "GET / HTTP/1.1" 200 18397
+[23/Dec/2021 20:55:49] "GET /static/sound/upright-piano-arcade-instrumental-mix-1342.mp3 HTTP/1.1" 200 7880704
+[23/Dec/2021 20:55:49] "GET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1" 200 13785
+[23/Dec/2021 20:55:49] "GET /static/vendor/boxicons/css/boxicons.min.css HTTP/1.1" 200 63781
+[23/Dec/2021 20:55:49] "GET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 73271
+[23/Dec/2021 20:55:49] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+[23/Dec/2021 20:55:49] "GET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1" 200 15563
+[23/Dec/2021 20:55:49] "GET /static/vendor/remixicon/remixicon.css HTTP/1.1" 200 110438
+[23/Dec/2021 20:55:49] "GET /static/css/style.css HTTP/1.1" 200 43816
+[23/Dec/2021 20:55:49] "GET /static/css/util.css HTTP/1.1" 200 83821
+[23/Dec/2021 20:55:49] "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+[23/Dec/2021 20:55:49] "GET /static/vendor/glightbox/js/glightbox.min.js HTTP/1.1" 200 56222
+[23/Dec/2021 20:55:49] "GET /static/vendor/php-email-form/validate.js HTTP/1.1" 200 2527
+[23/Dec/2021 20:55:49] "GET /static/vendor/isotope-layout/isotope.pkgd.min.js HTTP/1.1" 200 35445
+[23/Dec/2021 20:55:49] "GET /static/vendor/swiper/swiper-bundle.min.js HTTP/1.1" 200 135617
+[23/Dec/2021 20:55:49] "GET /get_rank/ HTTP/1.1" 200 561
+[23/Dec/2021 20:55:50] "GET /static/img/hero-bg.mp4 HTTP/1.1" 200 5841045
+[23/Dec/2021 20:55:51] "GET /signout HTTP/1.1" 302 0
+[23/Dec/2021 20:55:52] "GET / HTTP/1.1" 200 17645
+[23/Dec/2021 20:55:52] "GET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1" 200 13785
+[23/Dec/2021 20:55:52] "GET /static/vendor/boxicons/css/boxicons.min.css HTTP/1.1" 200 63781
+[23/Dec/2021 20:55:52] "GET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 73271
+[23/Dec/2021 20:55:52] "GET /static/vendor/remixicon/remixicon.css HTTP/1.1" 200 110438
+[23/Dec/2021 20:55:52] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+[23/Dec/2021 20:55:52] "GET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1" 200 15563
+[23/Dec/2021 20:55:52] "GET /static/css/style.css HTTP/1.1" 200 43816
+[23/Dec/2021 20:55:52] "GET /static/css/util.css HTTP/1.1" 200 83821
+[23/Dec/2021 20:55:52] "GET /get_rank/ HTTP/1.1" 200 561
+[23/Dec/2021 20:55:53] "GET /static/img/hero-bg.mp4 HTTP/1.1" 200 5841045
+[23/Dec/2021 20:55:58] "GET /signin HTTP/1.1" 200 5304
+[23/Dec/2021 20:55:58] "GET /static/vendor/boxicons/css/boxicons.min.css HTTP/1.1" 200 63781
+[23/Dec/2021 20:55:58] "GET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1" 200 13785
+[23/Dec/2021 20:55:58] "GET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 73271
+[23/Dec/2021 20:55:58] "GET /static/vendor/remixicon/remixicon.css HTTP/1.1" 200 110438
+[23/Dec/2021 20:55:58] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+[23/Dec/2021 20:55:58] "GET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1" 200 15563
+[23/Dec/2021 20:55:58] "GET /static/css/util.css HTTP/1.1" 200 83821
+[23/Dec/2021 20:55:59] "GET /static/css/style.css HTTP/1.1" 200 43816
+[23/Dec/2021 20:55:59] "GET /static/img/main-bg.png HTTP/1.1" 200 189097
+[23/Dec/2021 20:56:17] "POST /signin HTTP/1.1" 302 0
+[23/Dec/2021 20:56:18] "GET / HTTP/1.1" 200 18397
+[23/Dec/2021 20:56:18] "GET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1" 200 13785
+[23/Dec/2021 20:56:18] "GET /static/vendor/boxicons/css/boxicons.min.css HTTP/1.1" 200 63781
+[23/Dec/2021 20:56:18] "GET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 73271
+[23/Dec/2021 20:56:18] "GET /static/vendor/remixicon/remixicon.css HTTP/1.1" 200 110438
+[23/Dec/2021 20:56:18] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+[23/Dec/2021 20:56:18] "GET /static/css/style.css HTTP/1.1" 200 43816
+[23/Dec/2021 20:56:18] "GET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1" 200 15563
+[23/Dec/2021 20:56:18] "GET /static/css/util.css HTTP/1.1" 200 83821
+[23/Dec/2021 20:56:18] "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+[23/Dec/2021 20:56:18] "GET /static/vendor/glightbox/js/glightbox.min.js HTTP/1.1" 200 56222
+[23/Dec/2021 20:56:18] "GET /static/vendor/php-email-form/validate.js HTTP/1.1" 200 2527
+[23/Dec/2021 20:56:18] "GET /static/vendor/isotope-layout/isotope.pkgd.min.js HTTP/1.1" 200 35445
+[23/Dec/2021 20:56:18] "GET /static/vendor/swiper/swiper-bundle.min.js HTTP/1.1" 200 135617
+[23/Dec/2021 20:56:18] "GET /static/js/main.js HTTP/1.1" 200 5049
+[23/Dec/2021 20:56:18] "GET /get_rank/ HTTP/1.1" 200 561
+[23/Dec/2021 20:56:19] "GET /static/img/hero-bg.mp4 HTTP/1.1" 200 5841045
+[23/Dec/2021 20:56:22] "GET /select HTTP/1.1" 301 0
+[23/Dec/2021 20:56:22] "GET /select/ HTTP/1.1" 200 8434
+[23/Dec/2021 20:56:22] "GET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1" 200 13785
+[23/Dec/2021 20:56:22] "GET /static/vendor/boxicons/css/boxicons.min.css HTTP/1.1" 200 63781
+[23/Dec/2021 20:56:22] "GET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 73271
+[23/Dec/2021 20:56:22] "GET /static/vendor/remixicon/remixicon.css HTTP/1.1" 200 110438
+[23/Dec/2021 20:56:22] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+[23/Dec/2021 20:56:22] "GET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1" 200 15563
+[23/Dec/2021 20:56:22] "GET /static/css/util.css HTTP/1.1" 200 83821
+[23/Dec/2021 20:56:22] "GET /static/css/style.css HTTP/1.1" 200 43816
+[23/Dec/2021 20:56:22] "GET /static/css/style_g1.css HTTP/1.1" 200 2972
+[23/Dec/2021 20:56:22] "GET /static/img/select-back.png HTTP/1.1" 200 2815
+[23/Dec/2021 20:56:22] "GET /static/img/sound-on.png HTTP/1.1" 200 34288
+[23/Dec/2021 20:56:22] "GET /static/img/fitness/push_up.gif HTTP/1.1" 200 160055
+[23/Dec/2021 20:56:22] "GET /static/img/fitness/side_lunge.gif HTTP/1.1" 200 295703
+[23/Dec/2021 20:56:22] "GET /static/img/fitness/standing_knee_up.gif HTTP/1.1" 200 443097
+[23/Dec/2021 20:56:22] "GET /static/img/fitness/step_forward_lunge.gif HTTP/1.1" 200 386780
+[23/Dec/2021 20:56:23] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[23/Dec/2021 20:56:23] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+[23/Dec/2021 20:56:33] "GET /player/ HTTP/1.1" 200 5235
+[23/Dec/2021 20:56:33] "GET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 73271
+[23/Dec/2021 20:56:33] "GET /static/vendor/boxicons/css/boxicons.min.css HTTP/1.1" 200 63781
+[23/Dec/2021 20:56:33] "GET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1" 200 13785
+[23/Dec/2021 20:56:33] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+[23/Dec/2021 20:56:33] "GET /static/vendor/remixicon/remixicon.css HTTP/1.1" 200 110438
+[23/Dec/2021 20:56:33] "GET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1" 200 15563
+[23/Dec/2021 20:56:33] "GET /static/css/style.css HTTP/1.1" 200 43816
+[23/Dec/2021 20:56:33] "GET /static/css/util.css HTTP/1.1" 200 83821
+[23/Dec/2021 20:56:34] "GET /static/css/style_g1.css HTTP/1.1" 200 2972
+[23/Dec/2021 20:56:34] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[23/Dec/2021 20:56:34] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[23/Dec/2021 20:56:50] "POST /play/ HTTP/1.1" 200 6069
+[23/Dec/2021 20:56:50] "GET /static/sound/upright-piano-arcade-instrumental-mix-1342.mp3 HTTP/1.1" 200 8359936
+[23/Dec/2021 20:56:50] "GET /static/css/style_SD.css HTTP/1.1" 200 3202
+[23/Dec/2021 20:56:50] "GET /static/js/loading.js HTTP/1.1" 200 1550
+[23/Dec/2021 20:56:50] "GET /static/js/index.js HTTP/1.1" 200 2389
+[23/Dec/2021 20:56:50] "GET /static/js/health-bar.js HTTP/1.1" 200 909
+[23/Dec/2021 20:56:50] "GET /static/js/monster.js HTTP/1.1" 200 1402
+[23/Dec/2021 20:56:50] "GET /static/js/sideknee_model_player2.js HTTP/1.1" 200 12570
+[23/Dec/2021 20:56:50] "GET /static/img/fitness/play-bg.png HTTP/1.1" 200 89914
+[23/Dec/2021 20:56:50] "GET /static/json/model.json HTTP/1.1" 200 1435
+[23/Dec/2021 20:56:50] "GET /static/img/item/ironman_sm.png HTTP/1.1" 200 31881
+[23/Dec/2021 20:56:50] "GET /static/img/item/ironman_Hand.png HTTP/1.1" 200 17421
+[23/Dec/2021 20:56:50] "GET /static/img/fitness/loading.png HTTP/1.1" 200 5010
+[23/Dec/2021 20:56:50] "GET /static/img/fitness/loading-pacman.gif HTTP/1.1" 200 35634
+[23/Dec/2021 20:56:50] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[23/Dec/2021 20:56:50] "GET /static/sound/Kommy_BasicAttack_Hit.wav HTTP/1.1" 200 110984
+[23/Dec/2021 20:56:50] "GET /static/sound/Kommy_BasicAttack.wav HTTP/1.1" 200 200688
+[23/Dec/2021 20:56:50] "GET /static/img/monster/monster-jelly_0.gif HTTP/1.1" 200 88200
+[23/Dec/2021 20:56:51] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+[23/Dec/2021 20:56:52] "GET /static/json/weights.bin HTTP/1.1" 200 5897200
+[23/Dec/2021 20:56:53] "GET /static/json/metadata.json HTTP/1.1" 200 343
+[23/Dec/2021 20:56:53] "GET /static/json/OkModel/model.json HTTP/1.1" 200 1441
+[23/Dec/2021 20:56:54] "GET /static/json/OkModel/weights.bin HTTP/1.1" 200 5897600
+[23/Dec/2021 20:56:54] "GET /static/json/OkModel/metadata.json HTTP/1.1" 200 348
+[23/Dec/2021 20:58:00] "GET /static/sound/inspiring-8-bit-563.mp3 HTTP/1.1" 200 7631098
+[23/Dec/2021 20:58:11] "GET / HTTP/1.1" 200 18397
+[23/Dec/2021 20:58:11] "GET /static/vendor/glightbox/js/glightbox.min.js HTTP/1.1" 200 56222
+[23/Dec/2021 20:58:11] "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+[23/Dec/2021 20:58:11] "GET /static/vendor/isotope-layout/isotope.pkgd.min.js HTTP/1.1" 200 35445
+[23/Dec/2021 20:58:11] "GET /static/vendor/php-email-form/validate.js HTTP/1.1" 200 2527
+[23/Dec/2021 20:58:11] "GET /static/js/main.js HTTP/1.1" 200 5049
+[23/Dec/2021 20:58:11] "GET /static/vendor/swiper/swiper-bundle.min.js HTTP/1.1" 200 135617
+[23/Dec/2021 20:58:12] "GET /get_rank/ HTTP/1.1" 200 561
+[23/Dec/2021 20:58:13] "GET /static/img/hero-bg.mp4 HTTP/1.1" 200 5841045
+[23/Dec/2021 20:58:16] "GET /select HTTP/1.1" 301 0
+[23/Dec/2021 20:58:17] "GET /select/ HTTP/1.1" 200 8434
+[23/Dec/2021 20:58:17] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+[23/Dec/2021 20:58:17] "GET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1" 200 13785
+[23/Dec/2021 20:58:17] "GET /static/vendor/boxicons/css/boxicons.min.css HTTP/1.1" 200 63781
+[23/Dec/2021 20:58:17] "GET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 73271
+[23/Dec/2021 20:58:17] "GET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1" 200 15563
+[23/Dec/2021 20:58:17] "GET /static/css/style.css HTTP/1.1" 200 43816
+[23/Dec/2021 20:58:17] "GET /static/css/util.css HTTP/1.1" 200 83821
+[23/Dec/2021 20:58:17] "GET /static/vendor/remixicon/remixicon.css HTTP/1.1" 200 110438
+[23/Dec/2021 20:58:17] "GET /static/css/style_g1.css HTTP/1.1" 200 2972
+[23/Dec/2021 20:58:17] "GET /static/img/select-back.png HTTP/1.1" 200 2815
+[23/Dec/2021 20:58:17] "GET /static/img/sound-on.png HTTP/1.1" 200 34288
+[23/Dec/2021 20:58:17] "GET /static/img/fitness/push_up.gif HTTP/1.1" 200 160055
+[23/Dec/2021 20:58:17] "GET /static/img/fitness/side_lunge.gif HTTP/1.1" 200 295703
+[23/Dec/2021 20:58:17] "GET /static/img/fitness/standing_knee_up.gif HTTP/1.1" 200 443097
+[23/Dec/2021 20:58:17] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[23/Dec/2021 20:58:17] "GET /static/img/main-bg.png HTTP/1.1" 200 189097
+[23/Dec/2021 20:58:17] "GET /static/img/fitness/step_forward_lunge.gif HTTP/1.1" 200 386780
+[23/Dec/2021 20:58:17] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+[23/Dec/2021 20:58:19] "GET /player/ HTTP/1.1" 200 5235
+[23/Dec/2021 20:58:28] "POST /play/ HTTP/1.1" 200 6146
+[23/Dec/2021 20:58:28] "GET /static/sound/upright-piano-arcade-instrumental-mix-1342.mp3 HTTP/1.1" 200 8151040
+[23/Dec/2021 20:58:28] "GET /static/css/style_SD.css HTTP/1.1" 200 3202
+[23/Dec/2021 20:58:28] "GET /static/js/loading.js HTTP/1.1" 200 1550
+[23/Dec/2021 20:58:28] "GET /static/js/health-bar.js HTTP/1.1" 200 909
+[23/Dec/2021 20:58:28] "GET /static/js/sideknee_model_player1.js HTTP/1.1" 200 7648
+[23/Dec/2021 20:58:28] "GET /static/js/monster.js HTTP/1.1" 200 1402
+[23/Dec/2021 20:58:28] "GET /static/js/index.js HTTP/1.1" 200 2389
+[23/Dec/2021 20:58:28] "GET /static/img/monster/monster-jelly_0.gif HTTP/1.1" 200 88200
+[23/Dec/2021 20:58:28] "GET /static/img/fitness/play-bg.png HTTP/1.1" 200 89914
+[23/Dec/2021 20:58:28] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[23/Dec/2021 20:58:28] "GET /static/json/model.json HTTP/1.1" 200 1435
+[23/Dec/2021 20:58:28] "GET /static/img/fitness/loading.png HTTP/1.1" 200 5010
+[23/Dec/2021 20:58:28] "GET /static/img/fitness/loading-pacman.gif HTTP/1.1" 200 35634
+[23/Dec/2021 20:58:28] "GET /static/img/item/ironman_sm.png HTTP/1.1" 200 31881
+[23/Dec/2021 20:58:28] "GET /static/img/item/ironman_Hand.png HTTP/1.1" 200 17421
+[23/Dec/2021 20:58:28] "GET /static/sound/Kommy_BasicAttack.wav HTTP/1.1" 200 200688
+[23/Dec/2021 20:58:29] "GET /static/sound/Kommy_BasicAttack_Hit.wav HTTP/1.1" 200 110984
+[23/Dec/2021 20:58:29] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+[23/Dec/2021 20:58:29] "GET /static/json/weights.bin HTTP/1.1" 200 5897200
+[23/Dec/2021 20:58:30] "GET /static/json/metadata.json HTTP/1.1" 200 343
+[23/Dec/2021 20:58:30] "GET /static/json/OkModel/model.json HTTP/1.1" 200 1441
+[23/Dec/2021 20:58:31] "GET /static/json/OkModel/weights.bin HTTP/1.1" 200 5897600
+[23/Dec/2021 20:58:31] "GET /static/json/OkModel/metadata.json HTTP/1.1" 200 348
+[23/Dec/2021 20:58:37] "POST /result/ HTTP/1.1" 200 8751
+[23/Dec/2021 20:58:37] "GET /static/css/style_Result.css HTTP/1.1" 200 2898
+[23/Dec/2021 20:58:37] "GET /static/img/main-bg.png HTTP/1.1" 200 189097
+[23/Dec/2021 20:58:37] "GET /get_result/ HTTP/1.1" 200 7086
+[23/Dec/2021 20:58:50] "GET / HTTP/1.1" 200 18397
+[23/Dec/2021 20:58:50] "GET /static/vendor/php-email-form/validate.js HTTP/1.1" 200 2527
+[23/Dec/2021 20:58:50] "GET /static/vendor/isotope-layout/isotope.pkgd.min.js HTTP/1.1" 200 35445
+[23/Dec/2021 20:58:50] "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+[23/Dec/2021 20:58:50] "GET /static/vendor/glightbox/js/glightbox.min.js HTTP/1.1" 200 56222
+[23/Dec/2021 20:58:50] "GET /static/vendor/swiper/swiper-bundle.min.js HTTP/1.1" 200 135617
+[23/Dec/2021 20:58:50] "GET /static/js/main.js HTTP/1.1" 200 5049
+[23/Dec/2021 20:58:50] "GET /get_rank/ HTTP/1.1" 200 561
+[23/Dec/2021 20:58:51] "GET /static/img/hero-bg.mp4 HTTP/1.1" 200 5841045
+[23/Dec/2021 21:10:16] "GET /select HTTP/1.1" 301 0
+[23/Dec/2021 21:10:16] "GET /select/ HTTP/1.1" 200 8434
+[23/Dec/2021 21:10:16] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+[23/Dec/2021 21:10:17] "GET /static/vendor/boxicons/css/boxicons.min.css HTTP/1.1" 200 63781
+[23/Dec/2021 21:10:17] "GET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1" 200 15563
+[23/Dec/2021 21:10:17] "GET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 73271
+[23/Dec/2021 21:10:17] "GET /static/css/style.css HTTP/1.1" 200 43816
+[23/Dec/2021 21:10:17] "GET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1" 200 13785
+[23/Dec/2021 21:10:17] "GET /static/vendor/remixicon/remixicon.css HTTP/1.1" 200 110438
+[23/Dec/2021 21:10:17] "GET /static/css/util.css HTTP/1.1" 200 83821
+[23/Dec/2021 21:10:17] "GET /static/img/select-back.png HTTP/1.1" 200 2815
+[23/Dec/2021 21:10:17] "GET /static/css/style_g1.css HTTP/1.1" 200 2972
+[23/Dec/2021 21:10:17] "GET /static/img/sound-on.png HTTP/1.1" 200 34288
+[23/Dec/2021 21:10:17] "GET /static/img/fitness/push_up.gif HTTP/1.1" 200 160055
+[23/Dec/2021 21:10:17] "GET /static/img/fitness/side_lunge.gif HTTP/1.1" 200 295703
+[23/Dec/2021 21:10:17] "GET /static/img/main-bg.png HTTP/1.1" 200 189097
+[23/Dec/2021 21:10:17] "GET /static/img/fitness/step_forward_lunge.gif HTTP/1.1" 200 386780
+[23/Dec/2021 21:10:17] "GET /static/img/fitness/standing_knee_up.gif HTTP/1.1" 200 443097
+[23/Dec/2021 21:10:17] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[23/Dec/2021 21:10:17] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+[23/Dec/2021 21:10:32] "GET /player/ HTTP/1.1" 200 5235
+[23/Dec/2021 21:10:32] "GET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1" 200 13785
+[23/Dec/2021 21:10:32] "GET /static/vendor/boxicons/css/boxicons.min.css HTTP/1.1" 200 63781
+[23/Dec/2021 21:10:32] "GET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 73271
+[23/Dec/2021 21:10:32] "GET /static/vendor/remixicon/remixicon.css HTTP/1.1" 200 110438
+[23/Dec/2021 21:10:32] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+[23/Dec/2021 21:10:32] "GET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1" 200 15563
+[23/Dec/2021 21:10:32] "GET /static/css/style.css HTTP/1.1" 200 43816
+[23/Dec/2021 21:10:32] "GET /static/css/util.css HTTP/1.1" 200 83821
+[23/Dec/2021 21:10:32] "GET /static/css/style_g1.css HTTP/1.1" 200 2972
+[23/Dec/2021 21:10:32] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[23/Dec/2021 21:10:33] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[23/Dec/2021 21:10:50] "POST /play/ HTTP/1.1" 200 6069
+[23/Dec/2021 21:10:50] "GET /static/js/loading.js HTTP/1.1" 200 1550
+[23/Dec/2021 21:10:50] "GET /static/css/style_SD.css HTTP/1.1" 200 3202
+[23/Dec/2021 21:10:51] "GET /static/js/monster.js HTTP/1.1" 200 1402
+[23/Dec/2021 21:10:51] "GET /static/js/index.js HTTP/1.1" 200 2389
+[23/Dec/2021 21:10:51] "GET /static/js/sideknee_model_player2.js HTTP/1.1" 200 12570
+[23/Dec/2021 21:10:51] "GET /static/js/health-bar.js HTTP/1.1" 200 909
+[23/Dec/2021 21:10:51] "GET /static/img/fitness/play-bg.png HTTP/1.1" 200 89914
+[23/Dec/2021 21:10:51] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[23/Dec/2021 21:10:51] "GET /static/json/model.json HTTP/1.1" 200 1435
+[23/Dec/2021 21:10:51] "GET /static/img/item/ironman_sm.png HTTP/1.1" 200 31881
+[23/Dec/2021 21:10:51] "GET /static/img/fitness/loading.png HTTP/1.1" 200 5010
+[23/Dec/2021 21:10:51] "GET /static/img/fitness/loading-pacman.gif HTTP/1.1" 200 35634
+[23/Dec/2021 21:10:51] "GET /static/img/item/ironman_Hand.png HTTP/1.1" 200 17421
+[23/Dec/2021 21:10:51] "GET /static/sound/Kommy_BasicAttack_Hit.wav HTTP/1.1" 200 110984
+[23/Dec/2021 21:10:51] "GET /static/sound/Kommy_BasicAttack.wav HTTP/1.1" 200 200688
+[23/Dec/2021 21:10:51] "GET /static/img/monster/monster-jelly_0.gif HTTP/1.1" 200 88200
+[23/Dec/2021 21:10:51] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+[23/Dec/2021 21:10:53] "GET /static/json/weights.bin HTTP/1.1" 200 5897200
+[23/Dec/2021 21:10:53] "GET /static/json/metadata.json HTTP/1.1" 200 343
+[23/Dec/2021 21:10:53] "GET /static/json/OkModel/model.json HTTP/1.1" 200 1441
+[23/Dec/2021 21:10:54] "GET /static/json/OkModel/weights.bin HTTP/1.1" 200 5897600
+[23/Dec/2021 21:10:55] "GET /static/json/OkModel/metadata.json HTTP/1.1" 200 348
+[23/Dec/2021 21:11:26] "GET /static/sound/inspiring-8-bit-563.mp3 HTTP/1.1" 200 7631098
+[23/Dec/2021 21:11:55] "GET / HTTP/1.1" 200 18397
+[23/Dec/2021 21:11:55] "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+[23/Dec/2021 21:11:55] "GET /static/vendor/glightbox/js/glightbox.min.js HTTP/1.1" 200 56222
+[23/Dec/2021 21:11:55] "GET /static/vendor/php-email-form/validate.js HTTP/1.1" 200 2527
+[23/Dec/2021 21:11:55] "GET /static/js/main.js HTTP/1.1" 200 5049
+[23/Dec/2021 21:11:55] "GET /static/vendor/isotope-layout/isotope.pkgd.min.js HTTP/1.1" 200 35445
+[23/Dec/2021 21:11:55] "GET /static/vendor/swiper/swiper-bundle.min.js HTTP/1.1" 200 135617
+[23/Dec/2021 21:11:55] "GET /get_rank/ HTTP/1.1" 200 561
+[23/Dec/2021 21:11:56] "GET /static/img/hero-bg.mp4 HTTP/1.1" 200 5841045
+[23/Dec/2021 21:12:01] "GET /select HTTP/1.1" 301 0
+[23/Dec/2021 21:12:01] "GET /select/ HTTP/1.1" 200 8434
+[23/Dec/2021 21:12:01] "GET /static/css/style_g1.css HTTP/1.1" 200 2972
+[23/Dec/2021 21:12:01] "GET /static/img/select-back.png HTTP/1.1" 200 2815
+[23/Dec/2021 21:12:01] "GET /static/img/sound-on.png HTTP/1.1" 200 34288
+[23/Dec/2021 21:12:01] "GET /static/img/fitness/push_up.gif HTTP/1.1" 200 160055
+[23/Dec/2021 21:12:01] "GET /static/img/fitness/step_forward_lunge.gif HTTP/1.1" 200 386780
+[23/Dec/2021 21:12:01] "GET /static/img/fitness/standing_knee_up.gif HTTP/1.1" 200 443097
+[23/Dec/2021 21:12:01] "GET /static/img/fitness/side_lunge.gif HTTP/1.1" 200 295703
+[23/Dec/2021 21:12:01] "GET /static/img/main-bg.png HTTP/1.1" 200 189097
+[23/Dec/2021 21:12:01] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[23/Dec/2021 21:12:01] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+[23/Dec/2021 21:12:03] "GET /player/ HTTP/1.1" 200 5235
+[23/Dec/2021 21:12:03] "GET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1" 200 13785
+[23/Dec/2021 21:12:03] "GET /static/vendor/boxicons/css/boxicons.min.css HTTP/1.1" 200 63781
+[23/Dec/2021 21:12:03] "GET /static/vendor/remixicon/remixicon.css HTTP/1.1" 200 110438
+[23/Dec/2021 21:12:03] "GET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 73271
+[23/Dec/2021 21:12:03] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+[23/Dec/2021 21:12:03] "GET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1" 200 15563
+[23/Dec/2021 21:12:03] "GET /static/css/style.css HTTP/1.1" 200 43816
+[23/Dec/2021 21:12:03] "GET /static/css/util.css HTTP/1.1" 200 83821
+[23/Dec/2021 21:12:03] "GET /static/css/style_g1.css HTTP/1.1" 200 2972
+[23/Dec/2021 21:12:03] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[23/Dec/2021 21:12:09] "POST /play/ HTTP/1.1" 200 6146
+[23/Dec/2021 21:12:09] "GET /static/sound/upright-piano-arcade-instrumental-mix-1342.mp3 HTTP/1.1" 200 7618560
+[23/Dec/2021 21:12:09] "GET /static/css/style_SD.css HTTP/1.1" 200 3202
+[23/Dec/2021 21:12:10] "GET /static/js/loading.js HTTP/1.1" 200 1550
+[23/Dec/2021 21:12:10] "GET /static/js/index.js HTTP/1.1" 200 2389
+[23/Dec/2021 21:12:10] "GET /static/js/sideknee_model_player1.js HTTP/1.1" 200 7648
+[23/Dec/2021 21:12:10] "GET /static/js/monster.js HTTP/1.1" 200 1402
+[23/Dec/2021 21:12:10] "GET /static/js/health-bar.js HTTP/1.1" 200 909
+[23/Dec/2021 21:12:10] "GET /static/img/monster/monster-jelly_0.gif HTTP/1.1" 200 88200
+[23/Dec/2021 21:12:10] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[23/Dec/2021 21:12:10] "GET /static/json/model.json HTTP/1.1" 200 1435
+[23/Dec/2021 21:12:10] "GET /static/img/item/ironman_sm.png HTTP/1.1" 200 31881
+[23/Dec/2021 21:12:10] "GET /static/img/item/ironman_Hand.png HTTP/1.1" 200 17421
+[23/Dec/2021 21:12:10] "GET /static/img/fitness/loading.png HTTP/1.1" 200 5010
+[23/Dec/2021 21:12:10] "GET /static/img/fitness/loading-pacman.gif HTTP/1.1" 200 35634
+[23/Dec/2021 21:12:10] "GET /static/sound/Kommy_BasicAttack_Hit.wav HTTP/1.1" 200 110984
+[23/Dec/2021 21:12:10] "GET /static/sound/Kommy_BasicAttack.wav HTTP/1.1" 200 200688
+[23/Dec/2021 21:12:10] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+[23/Dec/2021 21:12:11] "GET /static/json/weights.bin HTTP/1.1" 200 5897200
+[23/Dec/2021 21:12:11] "GET /static/json/metadata.json HTTP/1.1" 200 343
+[23/Dec/2021 21:12:11] "GET /static/json/OkModel/model.json HTTP/1.1" 200 1441
+[23/Dec/2021 21:12:12] "GET /static/json/OkModel/weights.bin HTTP/1.1" 200 5897600
+[23/Dec/2021 21:12:13] "GET /static/json/OkModel/metadata.json HTTP/1.1" 200 348
+[23/Dec/2021 21:12:19] "POST /result/ HTTP/1.1" 200 8751
+[23/Dec/2021 21:12:19] "GET /static/sound/inspiring-8-bit-563.mp3 HTTP/1.1" 200 6930432
+[23/Dec/2021 21:12:19] "GET /static/css/style_Result.css HTTP/1.1" 200 2898
+[23/Dec/2021 21:12:19] "GET /get_result/ HTTP/1.1" 200 7226
+[23/Dec/2021 21:12:19] "GET /static/img/main-bg.png HTTP/1.1" 200 189097
+[23/Dec/2021 21:12:34] "GET / HTTP/1.1" 200 18397
+[23/Dec/2021 21:12:34] "GET /static/vendor/glightbox/js/glightbox.min.js HTTP/1.1" 200 56222
+[23/Dec/2021 21:12:34] "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+[23/Dec/2021 21:12:34] "GET /static/vendor/isotope-layout/isotope.pkgd.min.js HTTP/1.1" 200 35445
+[23/Dec/2021 21:12:34] "GET /static/js/main.js HTTP/1.1" 200 5049
+[23/Dec/2021 21:12:34] "GET /static/vendor/php-email-form/validate.js HTTP/1.1" 200 2527
+[23/Dec/2021 21:12:34] "GET /static/vendor/swiper/swiper-bundle.min.js HTTP/1.1" 200 135617
+[23/Dec/2021 21:12:34] "GET /get_rank/ HTTP/1.1" 200 561
+[23/Dec/2021 21:12:35] "GET /static/img/hero-bg.mp4 HTTP/1.1" 200 5841045
+[23/Dec/2021 21:15:00] "GET /static/sound/inspiring-8-bit-563.mp3 HTTP/1.1" 200 6578176
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 453, in _write
+    result = self.stdout.write(data)
+  File "/usr/lib/python3.6/socketserver.py", line 803, in write
+    self._sock.sendall(b)
+  File "/usr/lib/python3.6/ssl.py", line 975, in sendall
+    v = self.send(byte_view[count:])
+  File "/usr/lib/python3.6/ssl.py", line 944, in send
+    return self._sslobj.write(data)
+  File "/usr/lib/python3.6/ssl.py", line 642, in write
+    return self._sslobj.write(data)
+TimeoutError: [Errno 110] Connection timed out
+[23/Dec/2021 21:15:00] "GET /static/sound/inspiring-8-bit-563.mp3 HTTP/1.1" 500 59
+----------------------------------------
+Exception happened during processing of request from ('210.92.30.210', 9594)
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 453, in _write
+    result = self.stdout.write(data)
+  File "/usr/lib/python3.6/socketserver.py", line 803, in write
+    self._sock.sendall(b)
+  File "/usr/lib/python3.6/ssl.py", line 975, in sendall
+    v = self.send(byte_view[count:])
+  File "/usr/lib/python3.6/ssl.py", line 944, in send
+    return self._sslobj.write(data)
+  File "/usr/lib/python3.6/ssl.py", line 642, in write
+    return self._sslobj.write(data)
+TimeoutError: [Errno 110] Connection timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 141, in run
+    self.handle_error()
+  File "/root/with-fit/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py", line 123, in handle_error
+    super().handle_error()
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 368, in handle_error
+    self.finish_response()
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 274, in write
+    self.send_headers()
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 331, in send_headers
+    if not self.origin_server or self.client_is_modern():
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 344, in client_is_modern
+    return self.environ['SERVER_PROTOCOL'].upper() != 'HTTP/0.9'
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/socketserver.py", line 654, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.6/socketserver.py", line 364, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.6/socketserver.py", line 724, in __init__
+    self.handle()
+  File "/root/with-fit/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py", line 178, in handle
+    self.handle_one_request()
+  File "/root/with-fit/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py", line 201, in handle_one_request
+    handler.run(self.server.get_app())
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 144, in run
+    self.close()
+  File "/root/with-fit/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py", line 118, in close
+    super().close()
+  File "/usr/lib/python3.6/wsgiref/simple_server.py", line 35, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+----------------------------------------
+[23/Dec/2021 21:27:03] "GET /static/sound/upright-piano-arcade-instrumental-mix-1342.mp3 HTTP/1.1" 200 8306688
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 453, in _write
+    result = self.stdout.write(data)
+  File "/usr/lib/python3.6/socketserver.py", line 803, in write
+    self._sock.sendall(b)
+  File "/usr/lib/python3.6/ssl.py", line 975, in sendall
+    v = self.send(byte_view[count:])
+  File "/usr/lib/python3.6/ssl.py", line 944, in send
+    return self._sslobj.write(data)
+  File "/usr/lib/python3.6/ssl.py", line 642, in write
+    return self._sslobj.write(data)
+TimeoutError: [Errno 110] Connection timed out
+[23/Dec/2021 21:27:03] "GET /static/sound/upright-piano-arcade-instrumental-mix-1342.mp3 HTTP/1.1" 500 59
+----------------------------------------
+Exception happened during processing of request from ('210.92.30.210', 20771)
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 453, in _write
+    result = self.stdout.write(data)
+  File "/usr/lib/python3.6/socketserver.py", line 803, in write
+    self._sock.sendall(b)
+  File "/usr/lib/python3.6/ssl.py", line 975, in sendall
+    v = self.send(byte_view[count:])
+  File "/usr/lib/python3.6/ssl.py", line 944, in send
+    return self._sslobj.write(data)
+  File "/usr/lib/python3.6/ssl.py", line 642, in write
+    return self._sslobj.write(data)
+TimeoutError: [Errno 110] Connection timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 141, in run
+    self.handle_error()
+  File "/root/with-fit/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py", line 123, in handle_error
+    super().handle_error()
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 368, in handle_error
+    self.finish_response()
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 274, in write
+    self.send_headers()
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 331, in send_headers
+    if not self.origin_server or self.client_is_modern():
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 344, in client_is_modern
+    return self.environ['SERVER_PROTOCOL'].upper() != 'HTTP/0.9'
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/socketserver.py", line 654, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.6/socketserver.py", line 364, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.6/socketserver.py", line 724, in __init__
+    self.handle()
+  File "/root/with-fit/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py", line 178, in handle
+    self.handle_one_request()
+  File "/root/with-fit/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py", line 201, in handle_one_request
+    handler.run(self.server.get_app())
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 144, in run
+    self.close()
+  File "/root/with-fit/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py", line 118, in close
+    super().close()
+  File "/usr/lib/python3.6/wsgiref/simple_server.py", line 35, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+----------------------------------------
+[23/Dec/2021 22:23:59] "GET / HTTP/1.1" 200 17645
+[23/Dec/2021 22:23:59] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+[23/Dec/2021 22:23:59] "GET /static/css/style.css HTTP/1.1" 200 43816
+[23/Dec/2021 22:23:59] "GET /static/css/util.css HTTP/1.1" 200 83821
+[23/Dec/2021 22:23:59] "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+[23/Dec/2021 22:23:59] "GET /static/vendor/glightbox/js/glightbox.min.js HTTP/1.1" 200 56222
+[23/Dec/2021 22:23:59] "GET /static/vendor/isotope-layout/isotope.pkgd.min.js HTTP/1.1" 200 35445
+[23/Dec/2021 22:23:59] "GET /static/vendor/swiper/swiper-bundle.min.js HTTP/1.1" 200 135617
+[23/Dec/2021 22:24:00] "GET /static/vendor/php-email-form/validate.js HTTP/1.1" 200 2527
+[23/Dec/2021 22:24:00] "GET /static/js/main.js HTTP/1.1" 200 5049
+[23/Dec/2021 22:24:00] "GET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 73271
+[23/Dec/2021 22:24:02] "GET /static/vendor/boxicons/css/boxicons.min.css HTTP/1.1" 200 63781
+[23/Dec/2021 22:24:03] "GET /static/vendor/remixicon/remixicon.css HTTP/1.1" 200 110438
+[23/Dec/2021 22:24:04] "GET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1" 200 13785
+[23/Dec/2021 22:24:04] "GET /static/img/logo.png HTTP/1.1" 200 16267
+[23/Dec/2021 22:24:06] "GET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1" 200 15563
+[23/Dec/2021 22:24:06] "GET /static/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2?a74547b2f0863226942ff8ded57db345 HTTP/1.1" 200 92004
+[23/Dec/2021 22:24:06] "GET /static/vendor/boxicons/fonts/boxicons.woff2 HTTP/1.1" 200 102988
+[23/Dec/2021 22:24:06] "GET /get_rank/ HTTP/1.1" 200 561
+[23/Dec/2021 22:24:07] "GET /static/vendor/remixicon/remixicon.woff2?t=1590207869815 HTTP/1.1" 200 125268
+[23/Dec/2021 22:24:26] "GET /signin HTTP/1.1" 200 5304
+[23/Dec/2021 22:24:26] "GET /static/img/main-bg.png HTTP/1.1" 200 189097
+[23/Dec/2021 22:24:26] "GET /static/img/hero-bg.mp4 HTTP/1.1" 200 5394432
+[23/Dec/2021 22:24:31] "GET /signin HTTP/1.1" 200 5304
+[23/Dec/2021 22:24:38] "GET /signup HTTP/1.1" 200 5354
+[23/Dec/2021 22:24:47] "POST /signup HTTP/1.1" 302 0
+[23/Dec/2021 22:24:47] "GET /signin HTTP/1.1" 200 5304
+[23/Dec/2021 22:24:52] "POST /signin HTTP/1.1" 302 0
+[23/Dec/2021 22:24:52] "GET / HTTP/1.1" 200 18395
+[23/Dec/2021 22:24:54] "GET /get_rank/ HTTP/1.1" 200 561
+[23/Dec/2021 22:24:58] "GET /static/img/hero-bg.mp4 HTTP/1.1" 200 1646592
+[23/Dec/2021 22:24:58] "GET /select HTTP/1.1" 301 0
+[23/Dec/2021 22:24:58] "GET /select/ HTTP/1.1" 200 8432
+[23/Dec/2021 22:24:58] "GET /static/css/style_g1.css HTTP/1.1" 200 2972
+[23/Dec/2021 22:24:58] "GET /static/img/sound-on.png HTTP/1.1" 200 34288
+[23/Dec/2021 22:24:58] "GET /static/img/fitness/push_up.gif HTTP/1.1" 200 160055
+[23/Dec/2021 22:24:59] "GET /static/img/select-back.png HTTP/1.1" 200 2815
+[23/Dec/2021 22:25:01] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[23/Dec/2021 22:25:02] "GET /static/img/fitness/side_lunge.gif HTTP/1.1" 200 295703
+[23/Dec/2021 22:25:02] "GET /static/img/fitness/step_forward_lunge.gif HTTP/1.1" 200 386780
+[23/Dec/2021 22:25:03] "GET /static/img/fitness/standing_knee_up.gif HTTP/1.1" 200 443097
+[23/Dec/2021 22:25:11] "GET /player/ HTTP/1.1" 200 5233
+[23/Dec/2021 22:25:16] "GET /static/sound/upright-piano-arcade-instrumental-mix-1342.mp3 HTTP/1.1" 200 5885952
+[23/Dec/2021 22:25:16] "POST /play/ HTTP/1.1" 200 6142
+[23/Dec/2021 22:25:16] "GET /static/css/style_SD.css HTTP/1.1" 200 3202
+[23/Dec/2021 22:25:16] "GET /static/js/health-bar.js HTTP/1.1" 200 909
+[23/Dec/2021 22:25:16] "GET /static/js/loading.js HTTP/1.1" 200 1550
+[23/Dec/2021 22:25:16] "GET /static/js/sideknee_model_player1.js HTTP/1.1" 200 7648
+[23/Dec/2021 22:25:16] "GET /static/img/fitness/play-bg.png HTTP/1.1" 200 89914
+[23/Dec/2021 22:25:16] "GET /static/json/model.json HTTP/1.1" 200 1435
+[23/Dec/2021 22:25:16] "GET /static/img/fitness/loading.png HTTP/1.1" 200 5010
+[23/Dec/2021 22:25:16] "GET /static/img/fitness/loading-pacman.gif HTTP/1.1" 200 35634
+[23/Dec/2021 22:25:16] "GET /static/img/monster/monster-jelly_0.gif HTTP/1.1" 200 88200
+[23/Dec/2021 22:25:17] "GET /static/js/index.js HTTP/1.1" 200 2389
+[23/Dec/2021 22:25:17] "GET /static/sound/Kommy_BasicAttack_Hit.wav HTTP/1.1" 200 110984
+[23/Dec/2021 22:25:17] "GET /static/sound/Kommy_BasicAttack.wav HTTP/1.1" 200 200688
+[23/Dec/2021 22:25:18] "GET /static/js/monster.js HTTP/1.1" 200 1402
+[23/Dec/2021 22:25:18] "GET /static/img/item/ironman_Hand.png HTTP/1.1" 200 17421
+[23/Dec/2021 22:25:18] "GET /static/img/item/ironman_sm.png HTTP/1.1" 200 31881
+[23/Dec/2021 22:25:20] "GET /static/sound/inspiring-8-bit-563.mp3 HTTP/1.1" 200 7631098
+[23/Dec/2021 22:25:22] "GET /static/json/weights.bin HTTP/1.1" 200 5897200
+[23/Dec/2021 22:25:23] "GET /static/json/metadata.json HTTP/1.1" 200 343
+[23/Dec/2021 22:25:24] "GET /static/json/OkModel/model.json HTTP/1.1" 200 1441
+[23/Dec/2021 22:25:26] "GET /static/json/OkModel/weights.bin HTTP/1.1" 200 5897600
+[23/Dec/2021 22:25:26] "GET /static/json/OkModel/metadata.json HTTP/1.1" 200 348
+[23/Dec/2021 22:25:35] "POST /result/ HTTP/1.1" 200 8749
+[23/Dec/2021 22:25:35] "GET /static/css/style_Result.css HTTP/1.1" 200 2898
+[23/Dec/2021 22:25:35] "GET /get_result/ HTTP/1.1" 200 7364
+[23/Dec/2021 22:58:17] "GET / HTTP/1.1" 200 17645
+[23/Dec/2021 22:58:17] "GET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1" 304 0
+[23/Dec/2021 22:58:17] "GET /static/css/style.css HTTP/1.1" 304 0
+[23/Dec/2021 22:58:17] "GET /static/vendor/boxicons/css/boxicons.min.css HTTP/1.1" 304 0
+[23/Dec/2021 22:58:17] "GET /static/css/util.css HTTP/1.1" 304 0
+[23/Dec/2021 22:58:17] "GET /static/vendor/isotope-layout/isotope.pkgd.min.js HTTP/1.1" 304 0
+[23/Dec/2021 22:58:17] "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 0
+[23/Dec/2021 22:58:17] "GET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1" 304 0
+[23/Dec/2021 22:58:17] "GET /static/vendor/glightbox/js/glightbox.min.js HTTP/1.1" 304 0
+[23/Dec/2021 22:58:17] "GET /static/js/main.js HTTP/1.1" 304 0
+[23/Dec/2021 22:58:17] "GET /static/vendor/php-email-form/validate.js HTTP/1.1" 304 0
+[23/Dec/2021 22:58:17] "GET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 304 0
+[23/Dec/2021 22:58:17] "GET /static/vendor/swiper/swiper-bundle.min.js HTTP/1.1" 304 0
+[23/Dec/2021 22:58:17] "GET /static/img/logo.png HTTP/1.1" 304 0
+[23/Dec/2021 22:58:17] "GET /static/vendor/remixicon/remixicon.css HTTP/1.1" 304 0
+[23/Dec/2021 22:58:17] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[23/Dec/2021 22:58:18] "GET /static/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2?a74547b2f0863226942ff8ded57db345 HTTP/1.1" 304 0
+[23/Dec/2021 22:58:18] "GET /static/vendor/remixicon/remixicon.woff2?t=1590207869815 HTTP/1.1" 304 0
+[23/Dec/2021 22:58:18] "GET /static/vendor/boxicons/fonts/boxicons.woff2 HTTP/1.1" 304 0
+[23/Dec/2021 22:58:18] "GET /get_rank/ HTTP/1.1" 200 561
+[23/Dec/2021 22:58:18] "GET /static/img/hero-bg.mp4 HTTP/1.1" 200 5841045
+[23/Dec/2021 22:58:49,967] - Broken pipe from ('182.216.215.147', 56681)
+
+[23/Dec/2021 22:58:49,968] - Broken pipe from ('182.216.215.147', 56682)
+
+[23/Dec/2021 23:30:16] "GET /signin HTTP/1.1" 200 5304
+[23/Dec/2021 23:30:16] "GET /static/img/main-bg.png HTTP/1.1" 304 0
+[23/Dec/2021 23:30:22] "GET / HTTP/1.1" 200 17645
+[23/Dec/2021 23:30:22] "GET /get_rank/ HTTP/1.1" 200 561
+[23/Dec/2021 23:30:22] "GET /static/img/hero-bg.mp4 HTTP/1.1" 200 5841045
+[24/Dec/2021 08:22:43] "GET / HTTP/1.1" 200 17645
+[24/Dec/2021 08:22:43] "GET /static/vendor/boxicons/css/boxicons.min.css HTTP/1.1" 304 0
+[24/Dec/2021 08:22:43] "GET /static/css/style.css HTTP/1.1" 304 0
+[24/Dec/2021 08:22:44] "GET /static/css/util.css HTTP/1.1" 304 0
+[24/Dec/2021 08:22:44] "GET /static/vendor/glightbox/js/glightbox.min.js HTTP/1.1" 304 0
+[24/Dec/2021 08:22:44] "GET /static/vendor/isotope-layout/isotope.pkgd.min.js HTTP/1.1" 304 0
+[24/Dec/2021 08:22:44] "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 0
+[24/Dec/2021 08:22:44] "GET /static/vendor/php-email-form/validate.js HTTP/1.1" 304 0
+[24/Dec/2021 08:22:44] "GET /static/js/main.js HTTP/1.1" 304 0
+[24/Dec/2021 08:22:44] "GET /static/vendor/swiper/swiper-bundle.min.js HTTP/1.1" 304 0
+[24/Dec/2021 08:22:44] "GET /static/img/logo.png HTTP/1.1" 304 0
+[24/Dec/2021 08:22:45] "GET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1" 304 0
+[24/Dec/2021 08:22:46] "GET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 304 0
+[24/Dec/2021 08:22:47] "GET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1" 304 0
+[24/Dec/2021 08:22:48] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[24/Dec/2021 08:22:50] "GET /static/vendor/remixicon/remixicon.css HTTP/1.1" 304 0
+[24/Dec/2021 08:22:50] "GET /static/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2?a74547b2f0863226942ff8ded57db345 HTTP/1.1" 304 0
+[24/Dec/2021 08:22:50] "GET /static/vendor/boxicons/fonts/boxicons.woff2 HTTP/1.1" 304 0
+[24/Dec/2021 08:22:50] "GET /static/vendor/remixicon/remixicon.woff2?t=1590207869815 HTTP/1.1" 304 0
+[24/Dec/2021 08:22:50] "GET /get_rank/ HTTP/1.1" 200 561
+[24/Dec/2021 08:22:52] "GET /static/img/hero-bg.mp4 HTTP/1.1" 200 5791744
+[24/Dec/2021 08:24:32] "GET / HTTP/1.1" 200 17645
+[24/Dec/2021 08:24:32] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+[24/Dec/2021 08:24:32] "GET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1" 200 13785
+[24/Dec/2021 08:24:32] "GET /static/css/style.css HTTP/1.1" 200 43816
+[24/Dec/2021 08:24:32] "GET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 73271
+[24/Dec/2021 08:24:32] "GET /static/css/util.css HTTP/1.1" 200 83821
+[24/Dec/2021 08:24:32] "GET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1" 200 15563
+[24/Dec/2021 08:24:32] "GET /static/vendor/remixicon/remixicon.css HTTP/1.1" 200 110438
+[24/Dec/2021 08:24:32] "GET /static/vendor/boxicons/css/boxicons.min.css HTTP/1.1" 200 63781
+[24/Dec/2021 08:24:32] "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+[24/Dec/2021 08:24:33] "GET /static/vendor/glightbox/js/glightbox.min.js HTTP/1.1" 200 56222
+[24/Dec/2021 08:24:33] "GET /static/vendor/isotope-layout/isotope.pkgd.min.js HTTP/1.1" 200 35445
+[24/Dec/2021 08:24:33] "GET /static/vendor/php-email-form/validate.js HTTP/1.1" 200 2527
+[24/Dec/2021 08:24:33] "GET /static/js/main.js HTTP/1.1" 200 5049
+[24/Dec/2021 08:24:33] "GET /static/img/logo.png HTTP/1.1" 200 16267
+[24/Dec/2021 08:24:33] "GET /static/vendor/swiper/swiper-bundle.min.js HTTP/1.1" 200 135617
+[24/Dec/2021 08:24:33] "GET /static/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2?a74547b2f0863226942ff8ded57db345 HTTP/1.1" 200 92004
+[24/Dec/2021 08:24:33] "GET /static/vendor/remixicon/remixicon.woff2?t=1590207869815 HTTP/1.1" 200 125268
+[24/Dec/2021 08:24:33] "GET /static/vendor/boxicons/fonts/boxicons.woff2 HTTP/1.1" 200 102988
+[24/Dec/2021 08:24:34] "GET /get_rank/ HTTP/1.1" 200 561
+[24/Dec/2021 08:24:35] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+[24/Dec/2021 08:24:35] "GET /static/img/hero-bg.mp4 HTTP/1.1" 200 5841045
+[24/Dec/2021 08:25:39] "GET / HTTP/1.1" 200 17645
+[24/Dec/2021 08:25:39] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+[24/Dec/2021 08:25:39] "GET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1" 200 13785
+[24/Dec/2021 08:25:39] "GET /static/css/util.css HTTP/1.1" 200 83821
+[24/Dec/2021 08:25:39] "GET /static/vendor/remixicon/remixicon.css HTTP/1.1" 200 110438
+[24/Dec/2021 08:25:39] "GET /static/vendor/boxicons/css/boxicons.min.css HTTP/1.1" 200 63781
+[24/Dec/2021 08:25:39] "GET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 73271
+[24/Dec/2021 08:25:39] "GET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1" 200 15563
+[24/Dec/2021 08:25:39] "GET /static/css/style.css HTTP/1.1" 200 43816
+[24/Dec/2021 08:25:39] "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+[24/Dec/2021 08:25:39] "GET /static/vendor/glightbox/js/glightbox.min.js HTTP/1.1" 200 56222
+[24/Dec/2021 08:25:39] "GET /static/vendor/isotope-layout/isotope.pkgd.min.js HTTP/1.1" 200 35445
+[24/Dec/2021 08:25:39] "GET /static/vendor/swiper/swiper-bundle.min.js HTTP/1.1" 200 135617
+[24/Dec/2021 08:25:39] "GET /static/js/main.js HTTP/1.1" 200 5049
+[24/Dec/2021 08:25:39] "GET /static/vendor/php-email-form/validate.js HTTP/1.1" 200 2527
+[24/Dec/2021 08:25:39] "GET /static/img/logo.png HTTP/1.1" 200 16267
+[24/Dec/2021 08:25:39] "GET /static/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2?a74547b2f0863226942ff8ded57db345 HTTP/1.1" 200 92004
+[24/Dec/2021 08:25:39] "GET /static/vendor/remixicon/remixicon.woff2?t=1590207869815 HTTP/1.1" 200 125268
+[24/Dec/2021 08:25:40] "GET /static/vendor/boxicons/fonts/boxicons.woff2 HTTP/1.1" 200 102988
+[24/Dec/2021 08:25:40] "GET /get_rank/ HTTP/1.1" 200 561
+[24/Dec/2021 08:25:41] "GET /static/img/hero-bg.mp4 HTTP/1.1" 200 5841045
+[24/Dec/2021 08:25:42] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+[24/Dec/2021 08:25:42] "GET / HTTP/1.1" 200 17645
+[24/Dec/2021 08:25:42] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+[24/Dec/2021 08:25:42] "GET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1" 200 13785
+[24/Dec/2021 08:25:43] "GET /static/css/style.css HTTP/1.1" 200 43816
+[24/Dec/2021 08:25:43] "GET /static/vendor/boxicons/css/boxicons.min.css HTTP/1.1" 200 63781
+[24/Dec/2021 08:25:43] "GET /static/css/util.css HTTP/1.1" 200 83821
+[24/Dec/2021 08:25:43] "GET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1" 200 15563
+[24/Dec/2021 08:25:43] "GET /static/vendor/remixicon/remixicon.css HTTP/1.1" 200 110438
+[24/Dec/2021 08:25:43] "GET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 73271
+[24/Dec/2021 08:25:43] "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+[24/Dec/2021 08:25:43] "GET /static/vendor/glightbox/js/glightbox.min.js HTTP/1.1" 200 56222
+[24/Dec/2021 08:25:43] "GET /static/vendor/php-email-form/validate.js HTTP/1.1" 200 2527
+[24/Dec/2021 08:25:43] "GET /static/img/logo.png HTTP/1.1" 200 16267
+[24/Dec/2021 08:25:43] "GET /static/js/main.js HTTP/1.1" 200 5049
+[24/Dec/2021 08:25:43] "GET /static/vendor/isotope-layout/isotope.pkgd.min.js HTTP/1.1" 200 35445
+[24/Dec/2021 08:25:43] "GET /static/vendor/swiper/swiper-bundle.min.js HTTP/1.1" 200 135617
+[24/Dec/2021 08:25:43] "GET /static/vendor/remixicon/remixicon.woff2?t=1590207869815 HTTP/1.1" 200 125268
+[24/Dec/2021 08:25:43] "GET /static/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2?a74547b2f0863226942ff8ded57db345 HTTP/1.1" 200 92004
+[24/Dec/2021 08:25:43] "GET /static/vendor/boxicons/fonts/boxicons.woff2 HTTP/1.1" 200 102988
+[24/Dec/2021 08:25:43] "GET /get_rank/ HTTP/1.1" 200 561
+[24/Dec/2021 08:25:44] "GET /static/img/hero-bg.mp4 HTTP/1.1" 200 5841045
+[24/Dec/2021 08:25:45] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+[24/Dec/2021 08:26:05] "GET /signin HTTP/1.1" 200 5304
+[24/Dec/2021 08:26:05] "GET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1" 200 15563
+[24/Dec/2021 08:26:05] "GET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 73271
+[24/Dec/2021 08:26:05] "GET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1" 200 13785
+[24/Dec/2021 08:26:05] "GET /static/vendor/boxicons/css/boxicons.min.css HTTP/1.1" 200 63781
+[24/Dec/2021 08:26:05] "GET /static/vendor/remixicon/remixicon.css HTTP/1.1" 200 110438
+[24/Dec/2021 08:26:05] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+[24/Dec/2021 08:26:05] "GET /static/css/style.css HTTP/1.1" 200 43816
+[24/Dec/2021 08:26:05] "GET /static/css/util.css HTTP/1.1" 200 83821
+[24/Dec/2021 08:26:06] "GET /static/img/main-bg.png HTTP/1.1" 200 189097
+[24/Dec/2021 08:26:06] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+[24/Dec/2021 08:26:08] "GET / HTTP/1.1" 200 17645
+[24/Dec/2021 08:26:08] "GET /get_rank/ HTTP/1.1" 200 561
+[24/Dec/2021 08:26:08] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+[24/Dec/2021 08:26:09] "GET /static/img/hero-bg.mp4 HTTP/1.1" 200 5841045
+[24/Dec/2021 08:26:13] "GET / HTTP/1.1" 200 17645
+[24/Dec/2021 08:26:13] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+[24/Dec/2021 08:26:13] "GET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1" 200 13785
+[24/Dec/2021 08:26:13] "GET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1" 200 15563
+[24/Dec/2021 08:26:13] "GET /static/vendor/boxicons/css/boxicons.min.css HTTP/1.1" 200 63781
+[24/Dec/2021 08:26:13] "GET /static/vendor/remixicon/remixicon.css HTTP/1.1" 200 110438
+[24/Dec/2021 08:26:13] "GET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 73271
+[24/Dec/2021 08:26:13] "GET /static/css/style.css HTTP/1.1" 200 43816
+[24/Dec/2021 08:26:13] "GET /static/css/util.css HTTP/1.1" 200 83821
+[24/Dec/2021 08:26:13] "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+[24/Dec/2021 08:26:13] "GET /static/vendor/glightbox/js/glightbox.min.js HTTP/1.1" 200 56222
+[24/Dec/2021 08:26:13] "GET /static/js/main.js HTTP/1.1" 200 5049
+[24/Dec/2021 08:26:13] "GET /static/vendor/isotope-layout/isotope.pkgd.min.js HTTP/1.1" 200 35445
+[24/Dec/2021 08:26:13] "GET /static/img/logo.png HTTP/1.1" 200 16267
+[24/Dec/2021 08:26:13] "GET /static/vendor/php-email-form/validate.js HTTP/1.1" 200 2527
+[24/Dec/2021 08:26:13] "GET /static/vendor/swiper/swiper-bundle.min.js HTTP/1.1" 200 135617
+[24/Dec/2021 08:26:14] "GET /static/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2?a74547b2f0863226942ff8ded57db345 HTTP/1.1" 200 92004
+[24/Dec/2021 08:26:14] "GET /static/vendor/boxicons/fonts/boxicons.woff2 HTTP/1.1" 200 102988
+[24/Dec/2021 08:26:14] "GET /static/vendor/remixicon/remixicon.woff2?t=1590207869815 HTTP/1.1" 200 125268
+[24/Dec/2021 08:26:14] "GET /get_rank/ HTTP/1.1" 200 561
+[24/Dec/2021 08:26:14] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+[24/Dec/2021 08:26:15] "GET /static/img/hero-bg.mp4 HTTP/1.1" 200 5841045
+[24/Dec/2021 08:26:16] "GET / HTTP/1.1" 200 17645
+[24/Dec/2021 08:26:16] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+[24/Dec/2021 08:26:16] "GET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 73271
+[24/Dec/2021 08:26:16] "GET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1" 200 13785
+[24/Dec/2021 08:26:16] "GET /static/vendor/boxicons/css/boxicons.min.css HTTP/1.1" 200 63781
+[24/Dec/2021 08:26:16] "GET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1" 200 15563
+[24/Dec/2021 08:26:16] "GET /static/vendor/remixicon/remixicon.css HTTP/1.1" 200 110438
+[24/Dec/2021 08:26:17] "GET /static/css/style.css HTTP/1.1" 200 43816
+[24/Dec/2021 08:26:17] "GET /static/css/util.css HTTP/1.1" 200 83821
+[24/Dec/2021 08:26:17] "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+[24/Dec/2021 08:26:17] "GET /static/vendor/glightbox/js/glightbox.min.js HTTP/1.1" 200 56222
+[24/Dec/2021 08:26:17] "GET /static/vendor/php-email-form/validate.js HTTP/1.1" 200 2527
+[24/Dec/2021 08:26:17] "GET /static/vendor/isotope-layout/isotope.pkgd.min.js HTTP/1.1" 200 35445
+[24/Dec/2021 08:26:17] "GET /static/js/main.js HTTP/1.1" 200 5049
+[24/Dec/2021 08:26:17] "GET /static/img/logo.png HTTP/1.1" 200 16267
+[24/Dec/2021 08:26:17] "GET /static/vendor/swiper/swiper-bundle.min.js HTTP/1.1" 200 135617
+[24/Dec/2021 08:26:17] "GET /static/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2?a74547b2f0863226942ff8ded57db345 HTTP/1.1" 200 92004
+[24/Dec/2021 08:26:17] "GET /static/vendor/boxicons/fonts/boxicons.woff2 HTTP/1.1" 200 102988
+[24/Dec/2021 08:26:17] "GET /static/vendor/remixicon/remixicon.woff2?t=1590207869815 HTTP/1.1" 200 125268
+[24/Dec/2021 08:26:17] "GET /get_rank/ HTTP/1.1" 200 561
+[24/Dec/2021 08:26:19] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+[24/Dec/2021 08:26:20] "GET /static/img/hero-bg.mp4 HTTP/1.1" 200 5841045
+[24/Dec/2021 08:26:21] "GET /signin HTTP/1.1" 200 5304
+[24/Dec/2021 08:26:22] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+[24/Dec/2021 08:26:22] "GET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 73271
+[24/Dec/2021 08:26:22] "GET /static/vendor/boxicons/css/boxicons.min.css HTTP/1.1" 200 63781
+[24/Dec/2021 08:26:22] "GET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1" 200 13785
+[24/Dec/2021 08:26:22] "GET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1" 200 15563
+[24/Dec/2021 08:26:22] "GET /static/vendor/remixicon/remixicon.css HTTP/1.1" 200 110438
+[24/Dec/2021 08:26:22] "GET /static/css/style.css HTTP/1.1" 200 43816
+[24/Dec/2021 08:26:22] "GET /static/css/util.css HTTP/1.1" 200 83821
+[24/Dec/2021 08:26:22] "GET /static/img/main-bg.png HTTP/1.1" 200 189097
+[24/Dec/2021 08:26:22] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+[24/Dec/2021 08:26:25] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+[24/Dec/2021 08:26:25] "GET /signup HTTP/1.1" 200 5354
+[24/Dec/2021 08:26:25] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+[24/Dec/2021 08:26:27] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+[24/Dec/2021 08:26:56] "POST /signup HTTP/1.1" 302 0
+[24/Dec/2021 08:26:56] "GET /signin HTTP/1.1" 200 5304
+[24/Dec/2021 08:26:56] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+[24/Dec/2021 08:27:05] "GET /signup HTTP/1.1" 200 5354
+[24/Dec/2021 08:27:05] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+Internal Server Error: /signup
+Traceback (most recent call last):
+  File "/root/with-fit/venv/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/root/with-fit/venv/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/root/with-fit/venv/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/root/with-fit/venv/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/root/with-fit/venv/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.IntegrityError: (1062, "Duplicate entry 'ajzhabu@naver.com' for key 'email'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/with-fit/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/root/with-fit/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/with-fit/user/views.py", line 18, in signup
+    user.save()
+  File "/root/with-fit/venv/lib/python3.6/site-packages/django/db/models/base.py", line 740, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/root/with-fit/venv/lib/python3.6/site-packages/django/db/models/base.py", line 778, in save_base
+    force_update, using, update_fields,
+  File "/root/with-fit/venv/lib/python3.6/site-packages/django/db/models/base.py", line 881, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "/root/with-fit/venv/lib/python3.6/site-packages/django/db/models/base.py", line 921, in _do_insert
+    using=using, raw=raw,
+  File "/root/with-fit/venv/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/root/with-fit/venv/lib/python3.6/site-packages/django/db/models/query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/root/with-fit/venv/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1416, in execute_sql
+    cursor.execute(sql, params)
+  File "/root/with-fit/venv/lib/python3.6/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/root/with-fit/venv/lib/python3.6/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/root/with-fit/venv/lib/python3.6/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/root/with-fit/venv/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/root/with-fit/venv/lib/python3.6/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/root/with-fit/venv/lib/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/root/with-fit/venv/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/root/with-fit/venv/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/root/with-fit/venv/lib/python3.6/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/root/with-fit/venv/lib/python3.6/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1062, "Duplicate entry 'ajzhabu@naver.com' for key 'email'")
+[24/Dec/2021 08:27:24] "POST /signup HTTP/1.1" 500 175260
+Not Found: /favicon.ico
+[24/Dec/2021 08:27:25] "GET /favicon.ico HTTP/1.1" 404 3814
+[24/Dec/2021 08:27:29] "GET /signup HTTP/1.1" 200 5354
+[24/Dec/2021 08:27:29] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+[24/Dec/2021 08:27:34] "GET /signin HTTP/1.1" 200 5304
+[24/Dec/2021 08:27:34] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+[24/Dec/2021 08:27:48] "POST /signin HTTP/1.1" 302 0
+[24/Dec/2021 08:27:48] "GET / HTTP/1.1" 200 18401
+[24/Dec/2021 08:27:48] "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+[24/Dec/2021 08:27:48] "GET /static/vendor/glightbox/js/glightbox.min.js HTTP/1.1" 200 56222
+[24/Dec/2021 08:27:48] "GET /static/vendor/isotope-layout/isotope.pkgd.min.js HTTP/1.1" 200 35445
+[24/Dec/2021 08:27:48] "GET /static/vendor/swiper/swiper-bundle.min.js HTTP/1.1" 200 135617
+[24/Dec/2021 08:27:48] "GET /static/vendor/php-email-form/validate.js HTTP/1.1" 200 2527
+[24/Dec/2021 08:27:48] "GET /static/js/main.js HTTP/1.1" 200 5049
+[24/Dec/2021 08:27:49] "GET /get_rank/ HTTP/1.1" 200 561
+[24/Dec/2021 08:27:52] "GET /static/img/hero-bg.mp4 HTTP/1.1" 200 5841045
+[24/Dec/2021 08:27:53] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+[24/Dec/2021 08:27:53] "GET /select HTTP/1.1" 301 0
+[24/Dec/2021 08:27:53] "GET /select/ HTTP/1.1" 200 8438
+[24/Dec/2021 08:27:54] "GET /static/css/style_g1.css HTTP/1.1" 200 2972
+[24/Dec/2021 08:27:54] "GET /static/img/select-back.png HTTP/1.1" 200 2815
+[24/Dec/2021 08:27:54] "GET /static/img/sound-on.png HTTP/1.1" 200 34288
+[24/Dec/2021 08:27:54] "GET /static/img/fitness/push_up.gif HTTP/1.1" 200 160055
+[24/Dec/2021 08:27:54] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[24/Dec/2021 08:27:54] "GET /static/img/fitness/step_forward_lunge.gif HTTP/1.1" 200 386780
+[24/Dec/2021 08:27:54] "GET /static/img/fitness/standing_knee_up.gif HTTP/1.1" 200 443097
+[24/Dec/2021 08:27:54] "GET /static/img/fitness/side_lunge.gif HTTP/1.1" 200 295703
+[24/Dec/2021 08:27:55] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+[24/Dec/2021 08:28:01] "GET /static/img/sound-off.png HTTP/1.1" 200 35301
+[24/Dec/2021 08:28:12] "GET /player/ HTTP/1.1" 200 5239
+[24/Dec/2021 08:28:12] "GET /static/css/style_g1.css HTTP/1.1" 200 2972
+[24/Dec/2021 08:28:12] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+[24/Dec/2021 08:28:12] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[24/Dec/2021 08:28:16] "POST /play/ HTTP/1.1" 200 6077
+[24/Dec/2021 08:28:17] "GET /static/sound/upright-piano-arcade-instrumental-mix-1342.mp3 HTTP/1.1" 200 8159232
+[24/Dec/2021 08:28:17] "GET /static/css/style_SD.css HTTP/1.1" 200 3202
+[24/Dec/2021 08:28:17] "GET /static/js/loading.js HTTP/1.1" 200 1550
+[24/Dec/2021 08:28:17] "GET /static/js/sideknee_model_player2.js HTTP/1.1" 200 12570
+[24/Dec/2021 08:28:17] "GET /static/js/monster.js HTTP/1.1" 200 1402
+[24/Dec/2021 08:28:17] "GET /static/js/health-bar.js HTTP/1.1" 200 909
+[24/Dec/2021 08:28:17] "GET /static/js/index.js HTTP/1.1" 200 2389
+[24/Dec/2021 08:28:17] "GET /static/img/fitness/play-bg.png HTTP/1.1" 200 89914
+[24/Dec/2021 08:28:17] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[24/Dec/2021 08:28:17] "GET /static/json/model.json HTTP/1.1" 200 1435
+[24/Dec/2021 08:28:17] "GET /static/img/item/ironman_sm.png HTTP/1.1" 200 31881
+[24/Dec/2021 08:28:17] "GET /static/img/item/ironman_Hand.png HTTP/1.1" 200 17421
+[24/Dec/2021 08:28:17] "GET /static/img/fitness/loading-pacman.gif HTTP/1.1" 200 35634
+[24/Dec/2021 08:28:17] "GET /static/img/fitness/loading.png HTTP/1.1" 200 5010
+[24/Dec/2021 08:28:17] "GET /static/sound/Kommy_BasicAttack_Hit.wav HTTP/1.1" 200 110984
+[24/Dec/2021 08:28:17] "GET /static/sound/Kommy_BasicAttack.wav HTTP/1.1" 200 200688
+[24/Dec/2021 08:28:17] "GET /static/img/monster/monster-jelly_0.gif HTTP/1.1" 200 88200
+[24/Dec/2021 08:28:18] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+[24/Dec/2021 08:28:22] "GET /static/sound/inspiring-8-bit-563.mp3 HTTP/1.1" 200 7631098
+[24/Dec/2021 08:28:23] "GET /static/json/weights.bin HTTP/1.1" 200 5897200
+[24/Dec/2021 08:28:24] "GET /static/json/metadata.json HTTP/1.1" 200 343
+[24/Dec/2021 08:28:28] "GET /static/json/OkModel/model.json HTTP/1.1" 200 1441
+[24/Dec/2021 08:28:30] "GET /static/json/OkModel/weights.bin HTTP/1.1" 200 5897600
+[24/Dec/2021 08:28:31] "GET /static/json/OkModel/metadata.json HTTP/1.1" 200 348
+[24/Dec/2021 08:28:35] "GET /select/ HTTP/1.1" 200 8438
+[24/Dec/2021 08:28:35,548] - Broken pipe from ('210.106.206.64', 58098)
+
+[24/Dec/2021 08:28:35] "GET /static/css/style_g1.css HTTP/1.1" 200 2972
+[24/Dec/2021 08:28:35] "GET /static/js/main.js HTTP/1.1" 200 5049
+[24/Dec/2021 08:28:35] "GET /static/img/select-back.png HTTP/1.1" 200 2815
+[24/Dec/2021 08:28:35] "GET /static/img/sound-on.png HTTP/1.1" 200 34288
+[24/Dec/2021 08:28:35] "GET /static/img/fitness/standing_knee_up.gif HTTP/1.1" 200 443097
+[24/Dec/2021 08:28:35] "GET /static/img/fitness/side_lunge.gif HTTP/1.1" 200 295703
+[24/Dec/2021 08:28:35] "GET /static/img/fitness/step_forward_lunge.gif HTTP/1.1" 200 386780
+[24/Dec/2021 08:28:35] "GET /static/img/fitness/push_up.gif HTTP/1.1" 200 160055
+[24/Dec/2021 08:28:36] "GET /static/sound/upright-piano-arcade-instrumental-mix-1342.mp3 HTTP/1.1" 200 4669440
+[24/Dec/2021 08:28:36] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+[24/Dec/2021 08:28:36] "GET /static/sound/upright-piano-arcade-instrumental-mix-1342.mp3 HTTP/1.1" 200 3248128
+[24/Dec/2021 09:09:00] "GET / HTTP/1.1" 200 18397
+[24/Dec/2021 09:09:00] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+[24/Dec/2021 09:09:00] "GET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1" 200 13785
+[24/Dec/2021 09:09:01] "GET /static/css/style.css HTTP/1.1" 200 43816
+[24/Dec/2021 09:09:01] "GET /static/vendor/boxicons/css/boxicons.min.css HTTP/1.1" 200 63781
+[24/Dec/2021 09:09:01] "GET /static/css/util.css HTTP/1.1" 200 83821
+[24/Dec/2021 09:09:01] "GET /static/vendor/remixicon/remixicon.css HTTP/1.1" 200 110438
+[24/Dec/2021 09:09:01] "GET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1" 200 15563
+[24/Dec/2021 09:09:01] "GET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 73271
+[24/Dec/2021 09:09:01] "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+[24/Dec/2021 09:09:01] "GET /static/vendor/glightbox/js/glightbox.min.js HTTP/1.1" 200 56222
+[24/Dec/2021 09:09:01] "GET /static/js/main.js HTTP/1.1" 200 5049
+[24/Dec/2021 09:09:01] "GET /static/vendor/php-email-form/validate.js HTTP/1.1" 200 2527
+[24/Dec/2021 09:09:01] "GET /static/img/logo.png HTTP/1.1" 200 16267
+[24/Dec/2021 09:09:01] "GET /static/vendor/isotope-layout/isotope.pkgd.min.js HTTP/1.1" 200 35445
+[24/Dec/2021 09:09:01] "GET /static/vendor/swiper/swiper-bundle.min.js HTTP/1.1" 200 135617
+[24/Dec/2021 09:09:01] "GET /static/vendor/remixicon/remixicon.woff2?t=1590207869815 HTTP/1.1" 200 125268
+[24/Dec/2021 09:09:01] "GET /static/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2?a74547b2f0863226942ff8ded57db345 HTTP/1.1" 200 92004
+[24/Dec/2021 09:09:01] "GET /static/vendor/boxicons/fonts/boxicons.woff2 HTTP/1.1" 200 102988
+[24/Dec/2021 09:09:01] "GET /get_rank/ HTTP/1.1" 200 561
+[24/Dec/2021 09:09:02] "GET /static/img/hero-bg.mp4 HTTP/1.1" 200 5841045
+[24/Dec/2021 09:09:09] "GET / HTTP/1.1" 200 18401
+[24/Dec/2021 09:09:09] "GET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 73271
+[24/Dec/2021 09:09:09] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+[24/Dec/2021 09:09:09] "GET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1" 200 13785
+[24/Dec/2021 09:09:09] "GET /static/vendor/remixicon/remixicon.css HTTP/1.1" 200 110438
+[24/Dec/2021 09:09:09] "GET /static/css/util.css HTTP/1.1" 200 83821
+[24/Dec/2021 09:09:09] "GET /static/vendor/boxicons/css/boxicons.min.css HTTP/1.1" 200 63781
+[24/Dec/2021 09:09:09] "GET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1" 200 15563
+[24/Dec/2021 09:09:09] "GET /static/css/style.css HTTP/1.1" 200 43816
+[24/Dec/2021 09:09:09] "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+[24/Dec/2021 09:09:10] "GET /static/vendor/isotope-layout/isotope.pkgd.min.js HTTP/1.1" 200 35445
+[24/Dec/2021 09:09:10] "GET /static/vendor/glightbox/js/glightbox.min.js HTTP/1.1" 200 56222
+[24/Dec/2021 09:09:10] "GET /static/vendor/php-email-form/validate.js HTTP/1.1" 200 2527
+[24/Dec/2021 09:09:10] "GET /static/js/main.js HTTP/1.1" 200 5049
+[24/Dec/2021 09:09:10] "GET /static/vendor/swiper/swiper-bundle.min.js HTTP/1.1" 200 135617
+[24/Dec/2021 09:09:10] "GET /static/img/logo.png HTTP/1.1" 200 16267
+[24/Dec/2021 09:09:10] "GET /static/vendor/boxicons/fonts/boxicons.woff2 HTTP/1.1" 200 102988
+[24/Dec/2021 09:09:10] "GET /static/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2?a74547b2f0863226942ff8ded57db345 HTTP/1.1" 200 92004
+[24/Dec/2021 09:09:10] "GET /static/vendor/remixicon/remixicon.woff2?t=1590207869815 HTTP/1.1" 200 125268
+[24/Dec/2021 09:09:10] "GET /get_rank/ HTTP/1.1" 200 561
+[24/Dec/2021 09:09:11] "GET /static/img/hero-bg.mp4 HTTP/1.1" 200 5841045
+[24/Dec/2021 09:09:12] "GET /signout HTTP/1.1" 302 0
+[24/Dec/2021 09:09:12] "GET / HTTP/1.1" 200 17645
+[24/Dec/2021 09:09:12] "GET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1" 200 13785
+[24/Dec/2021 09:09:12] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+[24/Dec/2021 09:09:12] "GET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1" 200 15563
+[24/Dec/2021 09:09:12] "GET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 73271
+[24/Dec/2021 09:09:12] "GET /static/vendor/boxicons/css/boxicons.min.css HTTP/1.1" 200 63781
+[24/Dec/2021 09:09:12] "GET /static/css/style.css HTTP/1.1" 200 43816
+[24/Dec/2021 09:09:12] "GET /static/css/util.css HTTP/1.1" 200 83821
+[24/Dec/2021 09:09:12] "GET /static/vendor/remixicon/remixicon.css HTTP/1.1" 200 110438
+[24/Dec/2021 09:09:12] "GET /get_rank/ HTTP/1.1" 200 561
+[24/Dec/2021 09:09:13] "GET /static/img/hero-bg.mp4 HTTP/1.1" 200 5841045
+[24/Dec/2021 09:09:20] "GET /signin HTTP/1.1" 200 5304
+[24/Dec/2021 09:09:20] "GET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1" 200 13785
+[24/Dec/2021 09:09:20] "GET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1" 200 15563
+[24/Dec/2021 09:09:20] "GET /static/vendor/boxicons/css/boxicons.min.css HTTP/1.1" 200 63781
+[24/Dec/2021 09:09:20] "GET /static/vendor/remixicon/remixicon.css HTTP/1.1" 200 110438
+[24/Dec/2021 09:09:20] "GET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 73271
+[24/Dec/2021 09:09:20] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+[24/Dec/2021 09:09:20] "GET /static/css/style.css HTTP/1.1" 200 43816
+[24/Dec/2021 09:09:20] "GET /static/css/util.css HTTP/1.1" 200 83821
+[24/Dec/2021 09:09:20] "GET /static/img/main-bg.png HTTP/1.1" 200 189097
+[24/Dec/2021 09:09:26] "POST /signin HTTP/1.1" 302 0
+[24/Dec/2021 09:09:26] "GET / HTTP/1.1" 200 18397
+[24/Dec/2021 09:09:26] "GET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1" 200 15563
+[24/Dec/2021 09:09:26] "GET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1" 200 13785
+[24/Dec/2021 09:09:26] "GET /static/vendor/boxicons/css/boxicons.min.css HTTP/1.1" 200 63781
+[24/Dec/2021 09:09:26] "GET /static/vendor/remixicon/remixicon.css HTTP/1.1" 200 110438
+[24/Dec/2021 09:09:26] "GET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 73271
+[24/Dec/2021 09:09:26] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+[24/Dec/2021 09:09:26] "GET /static/css/style.css HTTP/1.1" 200 43816
+[24/Dec/2021 09:09:26] "GET /static/css/util.css HTTP/1.1" 200 83821
+[24/Dec/2021 09:09:26] "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+[24/Dec/2021 09:09:26] "GET /static/vendor/glightbox/js/glightbox.min.js HTTP/1.1" 200 56222
+[24/Dec/2021 09:09:26] "GET /static/vendor/php-email-form/validate.js HTTP/1.1" 200 2527
+[24/Dec/2021 09:09:26] "GET /static/vendor/isotope-layout/isotope.pkgd.min.js HTTP/1.1" 200 35445
+[24/Dec/2021 09:09:26] "GET /static/js/main.js HTTP/1.1" 200 5049
+[24/Dec/2021 09:09:26] "GET /static/vendor/swiper/swiper-bundle.min.js HTTP/1.1" 200 135617
+[24/Dec/2021 09:09:26] "GET /get_rank/ HTTP/1.1" 200 561
+[24/Dec/2021 09:09:27] "GET /static/img/hero-bg.mp4 HTTP/1.1" 200 5841045
+[24/Dec/2021 09:09:30] "GET /select HTTP/1.1" 301 0
+[24/Dec/2021 09:09:31] "GET /select/ HTTP/1.1" 200 8434
+[24/Dec/2021 09:09:31] "GET /static/css/style_g1.css HTTP/1.1" 200 2972
+[24/Dec/2021 09:09:31] "GET /static/img/select-back.png HTTP/1.1" 200 2815
+[24/Dec/2021 09:09:31] "GET /static/img/sound-on.png HTTP/1.1" 200 34288
+[24/Dec/2021 09:09:31] "GET /static/img/fitness/push_up.gif HTTP/1.1" 200 160055
+[24/Dec/2021 09:09:31] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[24/Dec/2021 09:09:31] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+[24/Dec/2021 09:09:31] "GET /static/img/fitness/step_forward_lunge.gif HTTP/1.1" 200 386780
+[24/Dec/2021 09:09:31] "GET /static/img/fitness/standing_knee_up.gif HTTP/1.1" 200 443097
+[24/Dec/2021 09:09:31] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[24/Dec/2021 09:09:31] "GET /static/img/fitness/side_lunge.gif HTTP/1.1" 200 295703
+[24/Dec/2021 09:09:34] "GET /player/ HTTP/1.1" 200 5235
+[24/Dec/2021 09:09:34] "GET /static/css/style_g1.css HTTP/1.1" 200 2972
+[24/Dec/2021 09:09:34] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[24/Dec/2021 09:09:38] "POST /play/ HTTP/1.1" 200 6146
+[24/Dec/2021 09:09:38] "GET /static/sound/upright-piano-arcade-instrumental-mix-1342.mp3 HTTP/1.1" 200 6414336
+[24/Dec/2021 09:09:38] "GET /static/css/style_SD.css HTTP/1.1" 200 3202
+[24/Dec/2021 09:09:38] "GET /static/js/loading.js HTTP/1.1" 200 1550
+[24/Dec/2021 09:09:38] "GET /static/js/sideknee_model_player1.js HTTP/1.1" 200 7648
+[24/Dec/2021 09:09:38] "GET /static/js/health-bar.js HTTP/1.1" 200 909
+[24/Dec/2021 09:09:38] "GET /static/js/monster.js HTTP/1.1" 200 1402
+[24/Dec/2021 09:09:38] "GET /static/js/index.js HTTP/1.1" 200 2389
+[24/Dec/2021 09:09:38] "GET /static/img/fitness/play-bg.png HTTP/1.1" 200 89914
+[24/Dec/2021 09:09:38] "GET /static/img/monster/monster-jelly_0.gif HTTP/1.1" 200 88200
+[24/Dec/2021 09:09:38] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[24/Dec/2021 09:09:38] "GET /static/json/model.json HTTP/1.1" 200 1435
+[24/Dec/2021 09:09:38] "GET /static/img/fitness/loading.png HTTP/1.1" 200 5010
+[24/Dec/2021 09:09:38] "GET /static/img/fitness/loading-pacman.gif HTTP/1.1" 200 35634
+[24/Dec/2021 09:09:38] "GET /static/img/item/ironman_Hand.png HTTP/1.1" 200 17421
+[24/Dec/2021 09:09:38] "GET /static/img/item/ironman_sm.png HTTP/1.1" 200 31881
+[24/Dec/2021 09:09:38] "GET /static/sound/Kommy_BasicAttack_Hit.wav HTTP/1.1" 200 110984
+[24/Dec/2021 09:09:38] "GET /static/sound/Kommy_BasicAttack.wav HTTP/1.1" 200 200688
+[24/Dec/2021 09:09:39] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+[24/Dec/2021 09:09:40] "GET /static/json/weights.bin HTTP/1.1" 200 5897200
+[24/Dec/2021 09:09:40] "GET /static/json/metadata.json HTTP/1.1" 200 343
+[24/Dec/2021 09:09:40] "GET /static/json/OkModel/model.json HTTP/1.1" 200 1441
+[24/Dec/2021 09:09:41] "GET /static/json/OkModel/weights.bin HTTP/1.1" 200 5897600
+[24/Dec/2021 09:09:41] "GET /static/json/OkModel/metadata.json HTTP/1.1" 200 348
+[24/Dec/2021 09:09:49] "POST /result/ HTTP/1.1" 200 8751
+[24/Dec/2021 09:09:49] "GET /static/css/style_Result.css HTTP/1.1" 200 2898
+[24/Dec/2021 09:09:49] "GET /get_result/ HTTP/1.1" 200 7504
+[24/Dec/2021 09:09:49] "GET /static/img/main-bg.png HTTP/1.1" 200 189097
+[24/Dec/2021 09:09:50] "GET /select HTTP/1.1" 301 0
+[24/Dec/2021 09:09:50] "GET /select/ HTTP/1.1" 200 8434
+[24/Dec/2021 09:09:50] "GET /static/js/main.js HTTP/1.1" 200 5049
+[24/Dec/2021 09:09:50] "GET /static/css/style_g1.css HTTP/1.1" 200 2972
+[24/Dec/2021 09:09:50] "GET /static/img/select-back.png HTTP/1.1" 200 2815
+[24/Dec/2021 09:09:51] "GET /static/img/sound-on.png HTTP/1.1" 200 34288
+[24/Dec/2021 09:09:51] "GET /static/img/fitness/push_up.gif HTTP/1.1" 200 160055
+[24/Dec/2021 09:09:51] "GET /static/img/fitness/side_lunge.gif HTTP/1.1" 200 295703
+[24/Dec/2021 09:09:51] "GET /static/img/fitness/standing_knee_up.gif HTTP/1.1" 200 443097
+[24/Dec/2021 09:09:51] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+[24/Dec/2021 09:09:51] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[24/Dec/2021 09:09:51] "GET /static/img/fitness/step_forward_lunge.gif HTTP/1.1" 200 386780
+[24/Dec/2021 09:09:53] "GET /player/ HTTP/1.1" 200 5235
+[24/Dec/2021 09:09:53] "GET /static/css/style_g1.css HTTP/1.1" 200 2972
+[24/Dec/2021 09:09:53] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[24/Dec/2021 09:09:55] "POST /play/ HTTP/1.1" 200 6069
+[24/Dec/2021 09:09:55] "GET /static/sound/upright-piano-arcade-instrumental-mix-1342.mp3 HTTP/1.1" 200 4444160
+[24/Dec/2021 09:09:56] "GET /static/css/style_SD.css HTTP/1.1" 200 3202
+[24/Dec/2021 09:09:56] "GET /static/js/loading.js HTTP/1.1" 200 1550
+[24/Dec/2021 09:09:56] "GET /static/js/sideknee_model_player2.js HTTP/1.1" 200 12570
+[24/Dec/2021 09:09:56] "GET /static/js/health-bar.js HTTP/1.1" 200 909
+[24/Dec/2021 09:09:56] "GET /static/js/index.js HTTP/1.1" 200 2389
+[24/Dec/2021 09:09:56] "GET /static/js/monster.js HTTP/1.1" 200 1402
+[24/Dec/2021 09:09:56] "GET /static/json/model.json HTTP/1.1" 200 1435
+[24/Dec/2021 09:09:56] "GET /static/img/item/ironman_sm.png HTTP/1.1" 200 31881
+[24/Dec/2021 09:09:56] "GET /static/img/item/ironman_Hand.png HTTP/1.1" 200 17421
+[24/Dec/2021 09:09:56] "GET /static/img/fitness/loading.png HTTP/1.1" 200 5010
+[24/Dec/2021 09:09:56] "GET /static/img/fitness/loading-pacman.gif HTTP/1.1" 200 35634
+[24/Dec/2021 09:09:56] "GET /static/sound/Kommy_BasicAttack_Hit.wav HTTP/1.1" 200 110984
+[24/Dec/2021 09:09:56] "GET /static/sound/Kommy_BasicAttack.wav HTTP/1.1" 200 200688
+[24/Dec/2021 09:09:56] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[24/Dec/2021 09:09:56] "GET /static/img/monster/monster-jelly_0.gif HTTP/1.1" 200 88200
+[24/Dec/2021 09:09:56] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+[24/Dec/2021 09:09:57] "GET /static/json/weights.bin HTTP/1.1" 200 5897200
+[24/Dec/2021 09:09:57] "GET /static/json/metadata.json HTTP/1.1" 200 343
+[24/Dec/2021 09:09:57] "GET /static/json/OkModel/model.json HTTP/1.1" 200 1441
+[24/Dec/2021 09:09:58] "GET /static/json/OkModel/weights.bin HTTP/1.1" 200 5897600
+[24/Dec/2021 09:09:58] "GET /static/json/OkModel/metadata.json HTTP/1.1" 200 348
+[24/Dec/2021 09:11:22] "GET /select HTTP/1.1" 301 0
+[24/Dec/2021 09:11:22] "GET /select/ HTTP/1.1" 200 8438
+[24/Dec/2021 09:11:22] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+[24/Dec/2021 09:11:22] "GET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1" 200 13785
+[24/Dec/2021 09:11:22] "GET /static/vendor/boxicons/css/boxicons.min.css HTTP/1.1" 200 63781
+[24/Dec/2021 09:11:22] "GET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 73271
+[24/Dec/2021 09:11:22] "GET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1" 200 15563
+[24/Dec/2021 09:11:22] "GET /static/css/style.css HTTP/1.1" 200 43816
+[24/Dec/2021 09:11:22] "GET /static/vendor/remixicon/remixicon.css HTTP/1.1" 200 110438
+[24/Dec/2021 09:11:22] "GET /static/css/util.css HTTP/1.1" 200 83821
+[24/Dec/2021 09:11:22] "GET /static/css/style_g1.css HTTP/1.1" 200 2972
+[24/Dec/2021 09:11:22] "GET /static/img/select-back.png HTTP/1.1" 200 2815
+[24/Dec/2021 09:11:22] "GET /static/img/sound-on.png HTTP/1.1" 200 34288
+[24/Dec/2021 09:11:22] "GET /static/img/fitness/push_up.gif HTTP/1.1" 200 160055
+[24/Dec/2021 09:11:22] "GET /static/img/fitness/side_lunge.gif HTTP/1.1" 200 295703
+[24/Dec/2021 09:11:22] "GET /static/img/main-bg.png HTTP/1.1" 200 189097
+[24/Dec/2021 09:11:22] "GET /static/img/fitness/standing_knee_up.gif HTTP/1.1" 200 443097
+[24/Dec/2021 09:11:23] "GET /static/img/fitness/step_forward_lunge.gif HTTP/1.1" 200 386780
+[24/Dec/2021 09:11:23] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[24/Dec/2021 09:11:23] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+[24/Dec/2021 09:11:25] "GET /player/ HTTP/1.1" 200 5239
+[24/Dec/2021 09:11:26] "GET /static/sound/inspiring-8-bit-563.mp3 HTTP/1.1" 200 6754304
+[24/Dec/2021 09:11:28] "POST /play/ HTTP/1.1" 200 6077
+[24/Dec/2021 09:11:28] "GET /static/sound/upright-piano-arcade-instrumental-mix-1342.mp3 HTTP/1.1" 200 8503296
+[24/Dec/2021 09:11:28] "GET /static/css/style_SD.css HTTP/1.1" 200 3202
+[24/Dec/2021 09:11:28] "GET /static/js/loading.js HTTP/1.1" 200 1550
+[24/Dec/2021 09:11:28] "GET /static/js/sideknee_model_player2.js HTTP/1.1" 200 12570
+[24/Dec/2021 09:11:28] "GET /static/js/index.js HTTP/1.1" 200 2389
+[24/Dec/2021 09:11:28] "GET /static/js/monster.js HTTP/1.1" 200 1402
+[24/Dec/2021 09:11:28] "GET /static/js/health-bar.js HTTP/1.1" 200 909
+[24/Dec/2021 09:11:28] "GET /static/img/fitness/play-bg.png HTTP/1.1" 200 89914
+[24/Dec/2021 09:11:28] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[24/Dec/2021 09:11:28] "GET /static/img/item/ironman_sm.png HTTP/1.1" 200 31881
+[24/Dec/2021 09:11:28] "GET /static/json/model.json HTTP/1.1" 200 1435
+[24/Dec/2021 09:11:28] "GET /static/img/fitness/loading-pacman.gif HTTP/1.1" 200 35634
+[24/Dec/2021 09:11:28] "GET /static/img/fitness/loading.png HTTP/1.1" 200 5010
+[24/Dec/2021 09:11:28] "GET /static/img/item/ironman_Hand.png HTTP/1.1" 200 17421
+[24/Dec/2021 09:11:28] "GET /static/sound/Kommy_BasicAttack_Hit.wav HTTP/1.1" 200 110984
+[24/Dec/2021 09:11:28] "GET /static/sound/Kommy_BasicAttack.wav HTTP/1.1" 200 200688
+[24/Dec/2021 09:11:28] "GET /static/img/monster/monster-jelly_0.gif HTTP/1.1" 200 88200
+[24/Dec/2021 09:11:29] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+[24/Dec/2021 09:11:29] "GET /static/json/weights.bin HTTP/1.1" 200 5897200
+[24/Dec/2021 09:11:31] "GET /static/json/metadata.json HTTP/1.1" 200 343
+[24/Dec/2021 09:11:31] "GET /static/json/OkModel/model.json HTTP/1.1" 200 1441
+[24/Dec/2021 09:11:32] "GET /static/sound/inspiring-8-bit-563.mp3 HTTP/1.1" 200 7631098
+[24/Dec/2021 09:11:33] "GET /static/json/OkModel/weights.bin HTTP/1.1" 200 5897600
+[24/Dec/2021 09:11:34] "GET /static/json/OkModel/metadata.json HTTP/1.1" 200 348
+[24/Dec/2021 09:14:54] "GET / HTTP/1.1" 200 17645
+[24/Dec/2021 09:14:55] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+[24/Dec/2021 09:14:55] "GET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1" 200 13785
+[24/Dec/2021 09:14:55] "GET /static/css/style.css HTTP/1.1" 200 43816
+[24/Dec/2021 09:14:55] "GET /static/vendor/boxicons/css/boxicons.min.css HTTP/1.1" 200 63781
+[24/Dec/2021 09:14:55] "GET /static/css/util.css HTTP/1.1" 200 83821
+[24/Dec/2021 09:14:55] "GET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1" 200 15563
+[24/Dec/2021 09:14:55] "GET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 73271
+[24/Dec/2021 09:14:55] "GET /static/vendor/remixicon/remixicon.css HTTP/1.1" 200 110438
+[24/Dec/2021 09:14:55] "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+[24/Dec/2021 09:14:55] "GET /static/vendor/glightbox/js/glightbox.min.js HTTP/1.1" 200 56222
+[24/Dec/2021 09:14:56] "GET /static/vendor/php-email-form/validate.js HTTP/1.1" 200 2527
+[24/Dec/2021 09:14:56] "GET /static/vendor/isotope-layout/isotope.pkgd.min.js HTTP/1.1" 200 35445
+[24/Dec/2021 09:14:56] "GET /static/js/main.js HTTP/1.1" 200 5049
+[24/Dec/2021 09:14:56] "GET /static/img/logo.png HTTP/1.1" 200 16267
+[24/Dec/2021 09:14:56] "GET /static/vendor/swiper/swiper-bundle.min.js HTTP/1.1" 200 135617
+[24/Dec/2021 09:14:56] "GET /static/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2?a74547b2f0863226942ff8ded57db345 HTTP/1.1" 200 92004
+[24/Dec/2021 09:14:56] "GET /static/vendor/boxicons/fonts/boxicons.woff2 HTTP/1.1" 200 102988
+[24/Dec/2021 09:14:56] "GET /get_rank/ HTTP/1.1" 200 561
+[24/Dec/2021 09:14:56] "GET /static/vendor/remixicon/remixicon.woff2?t=1590207869815 HTTP/1.1" 200 125268
+[24/Dec/2021 09:15:00] "GET /static/img/hero-bg.mp4 HTTP/1.1" 200 5841045
+[24/Dec/2021 09:16:57] "GET / HTTP/1.1" 200 18401
+[24/Dec/2021 09:16:57] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+[24/Dec/2021 09:16:57] "GET /static/vendor/boxicons/css/boxicons.min.css HTTP/1.1" 200 63781
+[24/Dec/2021 09:16:57] "GET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1" 200 15563
+[24/Dec/2021 09:16:57] "GET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 73271
+[24/Dec/2021 09:16:57] "GET /static/css/style.css HTTP/1.1" 200 43816
+[24/Dec/2021 09:16:57] "GET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1" 200 13785
+[24/Dec/2021 09:16:57] "GET /static/vendor/remixicon/remixicon.css HTTP/1.1" 200 110438
+[24/Dec/2021 09:16:57] "GET /static/css/util.css HTTP/1.1" 200 83821
+[24/Dec/2021 09:16:58] "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+[24/Dec/2021 09:16:58] "GET /static/vendor/glightbox/js/glightbox.min.js HTTP/1.1" 200 56222
+[24/Dec/2021 09:16:58] "GET /static/vendor/isotope-layout/isotope.pkgd.min.js HTTP/1.1" 200 35445
+[24/Dec/2021 09:16:58] "GET /static/vendor/php-email-form/validate.js HTTP/1.1" 200 2527
+[24/Dec/2021 09:16:58] "GET /static/js/main.js HTTP/1.1" 200 5049
+[24/Dec/2021 09:16:58] "GET /static/vendor/swiper/swiper-bundle.min.js HTTP/1.1" 200 135617
+[24/Dec/2021 09:16:58] "GET /static/img/logo.png HTTP/1.1" 200 16267
+[24/Dec/2021 09:16:58] "GET /static/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2?a74547b2f0863226942ff8ded57db345 HTTP/1.1" 200 92004
+[24/Dec/2021 09:16:58] "GET /static/vendor/remixicon/remixicon.woff2?t=1590207869815 HTTP/1.1" 200 125268
+[24/Dec/2021 09:16:58] "GET /static/vendor/boxicons/fonts/boxicons.woff2 HTTP/1.1" 200 102988
+[24/Dec/2021 09:16:58] "GET /get_rank/ HTTP/1.1" 200 561
+[24/Dec/2021 09:16:58] "GET /static/img/hero-bg.mp4 HTTP/1.1" 200 5841045
+[24/Dec/2021 09:17:14] "GET /withfit/ HTTP/1.1" 200 17645
+[24/Dec/2021 09:17:14] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+[24/Dec/2021 09:17:14] "GET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1" 200 13785
+[24/Dec/2021 09:17:14] "GET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1" 200 15563
+[24/Dec/2021 09:17:14] "GET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 73271
+[24/Dec/2021 09:17:15] "GET /static/css/style.css HTTP/1.1" 200 43816
+[24/Dec/2021 09:17:15] "GET /static/vendor/remixicon/remixicon.css HTTP/1.1" 200 110438
+[24/Dec/2021 09:17:15] "GET /static/css/util.css HTTP/1.1" 200 83821
+[24/Dec/2021 09:17:15] "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+[24/Dec/2021 09:17:15] "GET /static/vendor/glightbox/js/glightbox.min.js HTTP/1.1" 200 56222
+[24/Dec/2021 09:17:15] "GET /static/vendor/boxicons/css/boxicons.min.css HTTP/1.1" 200 63781
+[24/Dec/2021 09:17:15] "GET /static/vendor/isotope-layout/isotope.pkgd.min.js HTTP/1.1" 200 35445
+[24/Dec/2021 09:17:15] "GET /static/vendor/swiper/swiper-bundle.min.js HTTP/1.1" 200 135617
+[24/Dec/2021 09:17:15] "GET /static/js/main.js HTTP/1.1" 200 5049
+[24/Dec/2021 09:17:15] "GET /static/vendor/php-email-form/validate.js HTTP/1.1" 200 2527
+[24/Dec/2021 09:17:15] "GET /static/img/logo.png HTTP/1.1" 200 16267
+[24/Dec/2021 09:17:15] "GET /static/vendor/remixicon/remixicon.woff2?t=1590207869815 HTTP/1.1" 200 125268
+[24/Dec/2021 09:17:15] "GET /static/vendor/boxicons/fonts/boxicons.woff2 HTTP/1.1" 200 102988
+[24/Dec/2021 09:17:16] "GET /static/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2?a74547b2f0863226942ff8ded57db345 HTTP/1.1" 200 92004
+[24/Dec/2021 09:17:16] "GET /get_rank/ HTTP/1.1" 200 561
+[24/Dec/2021 09:17:17] "GET /signin HTTP/1.1" 200 5304
+[24/Dec/2021 09:17:17] "GET /static/img/hero-bg.mp4 HTTP/1.1" 200 5443584
+[24/Dec/2021 09:17:17] "GET /static/img/main-bg.png HTTP/1.1" 200 189097
+[24/Dec/2021 09:17:17] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+Internal Server Error: /signin
+Traceback (most recent call last):
+  File "/root/with-fit/user/views.py", line 32, in signin
+    user = User.objects.get(email=email, password=password)
+  File "/root/with-fit/venv/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/root/with-fit/venv/lib/python3.6/site-packages/django/db/models/query.py", line 437, in get
+    self.model._meta.object_name
+user.models.User.DoesNotExist: User matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/with-fit/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/root/with-fit/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/with-fit/user/views.py", line 43, in signin
+    return render(request, 'signin.html', context)
+  File "/root/with-fit/venv/lib/python3.6/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/with-fit/venv/lib/python3.6/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/with-fit/venv/lib/python3.6/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: signin.html
+[24/Dec/2021 09:17:25] "POST /signin HTTP/1.1" 500 91655
+Not Found: /favicon.ico
+[24/Dec/2021 09:17:26] "GET /favicon.ico HTTP/1.1" 404 3814
+[24/Dec/2021 09:17:27] "GET /signin HTTP/1.1" 200 5304
+[24/Dec/2021 09:17:27] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+Internal Server Error: /signin
+Traceback (most recent call last):
+  File "/root/with-fit/user/views.py", line 32, in signin
+    user = User.objects.get(email=email, password=password)
+  File "/root/with-fit/venv/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/root/with-fit/venv/lib/python3.6/site-packages/django/db/models/query.py", line 437, in get
+    self.model._meta.object_name
+user.models.User.DoesNotExist: User matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/with-fit/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/root/with-fit/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/with-fit/user/views.py", line 43, in signin
+    return render(request, 'signin.html', context)
+  File "/root/with-fit/venv/lib/python3.6/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/with-fit/venv/lib/python3.6/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/with-fit/venv/lib/python3.6/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: signin.html
+[24/Dec/2021 09:17:38] "POST /signin HTTP/1.1" 500 91673
+[24/Dec/2021 09:17:39] "GET /signin HTTP/1.1" 200 5304
+[24/Dec/2021 09:17:39] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+[24/Dec/2021 09:23:04] "GET / HTTP/1.1" 200 17645
+[24/Dec/2021 09:23:04] "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+[24/Dec/2021 09:23:04] "GET /static/vendor/glightbox/js/glightbox.min.js HTTP/1.1" 200 56222
+[24/Dec/2021 09:23:04] "GET /static/vendor/isotope-layout/isotope.pkgd.min.js HTTP/1.1" 200 35445
+[24/Dec/2021 09:23:05] "GET /static/vendor/swiper/swiper-bundle.min.js HTTP/1.1" 200 135617
+[24/Dec/2021 09:23:05] "GET /static/vendor/php-email-form/validate.js HTTP/1.1" 200 2527
+[24/Dec/2021 09:23:05] "GET /static/js/main.js HTTP/1.1" 200 5049
+[24/Dec/2021 09:23:06] "GET /get_rank/ HTTP/1.1" 200 561
+[24/Dec/2021 09:23:08] "GET /signin HTTP/1.1" 200 5304
+[24/Dec/2021 09:23:11] "GET /static/img/hero-bg.mp4 HTTP/1.1" 200 3354624
+[24/Dec/2021 09:23:11] "GET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 73271
+[24/Dec/2021 09:23:11] "GET /static/vendor/boxicons/css/boxicons.min.css HTTP/1.1" 200 63781
+[24/Dec/2021 09:23:11] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+[24/Dec/2021 09:23:11] "GET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1" 200 15563
+[24/Dec/2021 09:23:11] "GET /static/css/util.css HTTP/1.1" 200 83821
+[24/Dec/2021 09:23:11] "GET /static/vendor/remixicon/remixicon.css HTTP/1.1" 200 110438
+[24/Dec/2021 09:23:11] "GET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1" 200 13785
+[24/Dec/2021 09:23:11] "GET /static/css/style.css HTTP/1.1" 200 43816
+[24/Dec/2021 09:23:18] "POST /signin HTTP/1.1" 302 0
+[24/Dec/2021 09:23:18] "GET / HTTP/1.1" 200 18397
+[24/Dec/2021 09:23:18] "GET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1" 200 13785
+[24/Dec/2021 09:23:18] "GET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1" 200 15563
+[24/Dec/2021 09:23:18] "GET /static/vendor/boxicons/css/boxicons.min.css HTTP/1.1" 200 63781
+[24/Dec/2021 09:23:18] "GET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 73271
+[24/Dec/2021 09:23:18] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+[24/Dec/2021 09:23:18] "GET /static/css/style.css HTTP/1.1" 200 43816
+[24/Dec/2021 09:23:19] "GET /static/vendor/remixicon/remixicon.css HTTP/1.1" 200 110438
+[24/Dec/2021 09:23:19] "GET /static/css/util.css HTTP/1.1" 200 83821
+[24/Dec/2021 09:23:19] "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+[24/Dec/2021 09:23:19] "GET /static/vendor/glightbox/js/glightbox.min.js HTTP/1.1" 200 56222
+[24/Dec/2021 09:23:19] "GET /static/js/main.js HTTP/1.1" 200 5049
+[24/Dec/2021 09:23:19] "GET /static/vendor/php-email-form/validate.js HTTP/1.1" 200 2527
+[24/Dec/2021 09:23:19] "GET /static/vendor/isotope-layout/isotope.pkgd.min.js HTTP/1.1" 200 35445
+[24/Dec/2021 09:23:19] "GET /static/vendor/swiper/swiper-bundle.min.js HTTP/1.1" 200 135617
+[24/Dec/2021 09:23:19] "GET /get_rank/ HTTP/1.1" 200 561
+[24/Dec/2021 09:23:19] "GET /static/img/hero-bg.mp4 HTTP/1.1" 200 5841045
+[24/Dec/2021 09:23:20] "GET /select HTTP/1.1" 301 0
+[24/Dec/2021 09:23:20] "GET /select/ HTTP/1.1" 200 8434
+[24/Dec/2021 09:23:20] "GET /static/css/style_g1.css HTTP/1.1" 200 2972
+[24/Dec/2021 09:23:20] "GET /static/img/select-back.png HTTP/1.1" 200 2815
+[24/Dec/2021 09:23:20] "GET /static/img/sound-on.png HTTP/1.1" 200 34288
+[24/Dec/2021 09:23:21] "GET /static/img/fitness/side_lunge.gif HTTP/1.1" 200 295703
+[24/Dec/2021 09:23:21] "GET /static/img/fitness/step_forward_lunge.gif HTTP/1.1" 200 386780
+[24/Dec/2021 09:23:21] "GET /static/img/fitness/push_up.gif HTTP/1.1" 200 160055
+[24/Dec/2021 09:23:21] "GET /static/img/fitness/standing_knee_up.gif HTTP/1.1" 200 443097
+[24/Dec/2021 09:23:21] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[24/Dec/2021 09:23:21] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+[24/Dec/2021 09:23:21] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[24/Dec/2021 09:23:22] "GET /player/ HTTP/1.1" 200 5235
+[24/Dec/2021 09:23:23] "GET /static/css/style_g1.css HTTP/1.1" 200 2972
+[24/Dec/2021 09:23:23] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[24/Dec/2021 09:23:25] "POST /play/ HTTP/1.1" 200 6069
+[24/Dec/2021 09:23:25] "GET /static/sound/upright-piano-arcade-instrumental-mix-1342.mp3 HTTP/1.1" 200 7929856
+[24/Dec/2021 09:23:25] "GET /static/css/style_SD.css HTTP/1.1" 200 3217
+[24/Dec/2021 09:23:25] "GET /static/js/loading.js HTTP/1.1" 200 1550
+[24/Dec/2021 09:23:25] "GET /static/js/health-bar.js HTTP/1.1" 200 909
+[24/Dec/2021 09:23:25] "GET /static/js/sideknee_model_player2.js HTTP/1.1" 200 12570
+[24/Dec/2021 09:23:25] "GET /static/js/monster.js HTTP/1.1" 200 1402
+[24/Dec/2021 09:23:25] "GET /static/js/index.js HTTP/1.1" 200 2389
+[24/Dec/2021 09:23:25] "GET /static/img/fitness/play-bg.png HTTP/1.1" 200 89914
+[24/Dec/2021 09:23:25] "GET /static/json/model.json HTTP/1.1" 200 1435
+[24/Dec/2021 09:23:25] "GET /static/img/fitness/loading-pacman.gif HTTP/1.1" 200 35634
+[24/Dec/2021 09:23:25] "GET /static/img/fitness/loading.png HTTP/1.1" 200 5010
+[24/Dec/2021 09:23:25] "GET /static/img/item/ironman_Hand.png HTTP/1.1" 200 17421
+[24/Dec/2021 09:23:25] "GET /static/img/item/ironman_sm.png HTTP/1.1" 200 31881
+[24/Dec/2021 09:23:25] "GET /static/sound/Kommy_BasicAttack_Hit.wav HTTP/1.1" 200 110984
+[24/Dec/2021 09:23:25] "GET /static/sound/Kommy_BasicAttack.wav HTTP/1.1" 200 200688
+[24/Dec/2021 09:23:25] "GET /static/img/monster/monster-jelly_0.gif HTTP/1.1" 200 88200
+[24/Dec/2021 09:23:25] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[24/Dec/2021 09:23:27] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+[24/Dec/2021 09:23:27] "GET /static/json/weights.bin HTTP/1.1" 200 5897200
+[24/Dec/2021 09:23:28] "GET /static/json/metadata.json HTTP/1.1" 200 343
+[24/Dec/2021 09:23:28] "GET /static/sound/inspiring-8-bit-563.mp3 HTTP/1.1" 200 7631098
+[24/Dec/2021 09:23:30] "GET /static/json/OkModel/model.json HTTP/1.1" 200 1441
+[24/Dec/2021 09:23:31] "GET /static/json/OkModel/weights.bin HTTP/1.1" 200 5897600
+[24/Dec/2021 09:23:31] "GET /static/json/OkModel/metadata.json HTTP/1.1" 200 348
+[24/Dec/2021 09:25:34] "POST /play/ HTTP/1.1" 200 6069
+[24/Dec/2021 09:25:35] "GET /static/css/style_SD.css HTTP/1.1" 200 3217
+[24/Dec/2021 09:25:35] "GET /static/json/model.json HTTP/1.1" 200 1435
+[24/Dec/2021 09:25:35] "GET /static/img/fitness/loading-pacman.gif HTTP/1.1" 200 35634
+[24/Dec/2021 09:25:35] "GET /static/sound/Kommy_BasicAttack_Hit.wav HTTP/1.1" 200 110984
+[24/Dec/2021 09:25:35] "GET /static/img/fitness/loading.png HTTP/1.1" 200 5010
+[24/Dec/2021 09:25:35] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[24/Dec/2021 09:25:35] "GET /static/sound/Kommy_BasicAttack.wav HTTP/1.1" 200 200688
+[24/Dec/2021 09:25:36] "GET /static/sound/inspiring-8-bit-563.mp3 HTTP/1.1" 200 5468160
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 453, in _write
+    result = self.stdout.write(data)
+  File "/usr/lib/python3.6/socketserver.py", line 803, in write
+    self._sock.sendall(b)
+  File "/usr/lib/python3.6/ssl.py", line 975, in sendall
+    v = self.send(byte_view[count:])
+  File "/usr/lib/python3.6/ssl.py", line 944, in send
+    return self._sslobj.write(data)
+  File "/usr/lib/python3.6/ssl.py", line 642, in write
+    return self._sslobj.write(data)
+TimeoutError: [Errno 110] Connection timed out
+[24/Dec/2021 09:25:36] "GET /static/sound/inspiring-8-bit-563.mp3 HTTP/1.1" 500 59
+----------------------------------------
+Exception happened during processing of request from ('220.79.182.248', 10319)
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 453, in _write
+    result = self.stdout.write(data)
+  File "/usr/lib/python3.6/socketserver.py", line 803, in write
+    self._sock.sendall(b)
+  File "/usr/lib/python3.6/ssl.py", line 975, in sendall
+    v = self.send(byte_view[count:])
+  File "/usr/lib/python3.6/ssl.py", line 944, in send
+    return self._sslobj.write(data)
+  File "/usr/lib/python3.6/ssl.py", line 642, in write
+    return self._sslobj.write(data)
+TimeoutError: [Errno 110] Connection timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 141, in run
+    self.handle_error()
+  File "/root/with-fit/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py", line 123, in handle_error
+    super().handle_error()
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 368, in handle_error
+    self.finish_response()
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 274, in write
+    self.send_headers()
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 331, in send_headers
+    if not self.origin_server or self.client_is_modern():
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 344, in client_is_modern
+    return self.environ['SERVER_PROTOCOL'].upper() != 'HTTP/0.9'
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/socketserver.py", line 654, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.6/socketserver.py", line 364, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.6/socketserver.py", line 724, in __init__
+    self.handle()
+  File "/root/with-fit/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py", line 178, in handle
+    self.handle_one_request()
+  File "/root/with-fit/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py", line 201, in handle_one_request
+    handler.run(self.server.get_app())
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 144, in run
+    self.close()
+  File "/root/with-fit/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py", line 118, in close
+    super().close()
+  File "/usr/lib/python3.6/wsgiref/simple_server.py", line 35, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+----------------------------------------
+[24/Dec/2021 09:25:36] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+[24/Dec/2021 09:25:39] "GET /static/sound/inspiring-8-bit-563.mp3 HTTP/1.1" 200 7631098
+[24/Dec/2021 09:25:40] "GET /static/json/weights.bin HTTP/1.1" 200 5897200
+[24/Dec/2021 09:25:41] "GET /static/json/metadata.json HTTP/1.1" 200 343
+[24/Dec/2021 09:25:41] "GET /static/json/OkModel/model.json HTTP/1.1" 200 1441
+[24/Dec/2021 09:25:43] "GET /static/json/OkModel/weights.bin HTTP/1.1" 200 5897600
+[24/Dec/2021 09:25:44] "GET /static/json/OkModel/metadata.json HTTP/1.1" 200 348
+[24/Dec/2021 09:25:53] "GET / HTTP/1.1" 200 18397
+[24/Dec/2021 09:25:53] "GET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1" 200 13785
+[24/Dec/2021 09:25:53] "GET /static/vendor/boxicons/css/boxicons.min.css HTTP/1.1" 200 63781
+[24/Dec/2021 09:25:53] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+[24/Dec/2021 09:25:53] "GET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 73271
+[24/Dec/2021 09:25:53] "GET /static/css/style.css HTTP/1.1" 200 43816
+[24/Dec/2021 09:25:53] "GET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1" 200 15563
+[24/Dec/2021 09:25:53] "GET /static/css/util.css HTTP/1.1" 200 83821
+[24/Dec/2021 09:25:53] "GET /static/vendor/remixicon/remixicon.css HTTP/1.1" 200 110438
+[24/Dec/2021 09:25:54] "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+[24/Dec/2021 09:25:54] "GET /static/vendor/glightbox/js/glightbox.min.js HTTP/1.1" 200 56222
+[24/Dec/2021 09:25:54] "GET /static/vendor/isotope-layout/isotope.pkgd.min.js HTTP/1.1" 200 35445
+[24/Dec/2021 09:25:54] "GET /static/js/main.js HTTP/1.1" 200 5049
+[24/Dec/2021 09:25:54] "GET /static/vendor/php-email-form/validate.js HTTP/1.1" 200 2527
+[24/Dec/2021 09:25:54] "GET /static/img/logo.png HTTP/1.1" 200 16267
+[24/Dec/2021 09:25:54] "GET /static/vendor/swiper/swiper-bundle.min.js HTTP/1.1" 200 135617
+[24/Dec/2021 09:25:54] "GET /static/vendor/remixicon/remixicon.woff2?t=1590207869815 HTTP/1.1" 200 125268
+[24/Dec/2021 09:25:54] "GET /static/vendor/boxicons/fonts/boxicons.woff2 HTTP/1.1" 200 102988
+[24/Dec/2021 09:25:54] "GET /static/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2?a74547b2f0863226942ff8ded57db345 HTTP/1.1" 200 92004
+[24/Dec/2021 09:25:54] "GET /get_rank/ HTTP/1.1" 200 561
+[24/Dec/2021 09:25:55] "GET /select HTTP/1.1" 301 0
+[24/Dec/2021 09:25:55] "GET /select/ HTTP/1.1" 200 8434
+[24/Dec/2021 09:25:55] "GET /static/img/hero-bg.mp4 HTTP/1.1" 200 4861952
+[24/Dec/2021 09:25:55] "GET /static/css/style_g1.css HTTP/1.1" 200 2972
+[24/Dec/2021 09:25:55] "GET /static/img/select-back.png HTTP/1.1" 200 2815
+[24/Dec/2021 09:25:55] "GET /static/img/sound-on.png HTTP/1.1" 200 34288
+[24/Dec/2021 09:25:55] "GET /static/img/fitness/push_up.gif HTTP/1.1" 200 160055
+[24/Dec/2021 09:25:55] "GET /static/img/fitness/step_forward_lunge.gif HTTP/1.1" 200 386780
+[24/Dec/2021 09:25:55] "GET /static/img/fitness/standing_knee_up.gif HTTP/1.1" 200 443097
+[24/Dec/2021 09:25:55] "GET /static/img/fitness/side_lunge.gif HTTP/1.1" 200 295703
+[24/Dec/2021 09:25:56] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[24/Dec/2021 09:25:56] "GET /static/img/main-bg.png HTTP/1.1" 200 189097
+[24/Dec/2021 09:25:56] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+[24/Dec/2021 09:25:56] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[24/Dec/2021 09:26:14] "GET /player/ HTTP/1.1" 200 5235
+[24/Dec/2021 09:26:14] "GET /static/css/style_g1.css HTTP/1.1" 200 2972
+[24/Dec/2021 09:26:14] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[24/Dec/2021 09:26:23] "POST /play/ HTTP/1.1" 200 6069
+[24/Dec/2021 09:26:23] "GET /static/sound/upright-piano-arcade-instrumental-mix-1342.mp3 HTTP/1.1" 200 8364032
+[24/Dec/2021 09:26:23] "GET /static/js/loading.js HTTP/1.1" 200 1550
+[24/Dec/2021 09:26:23] "GET /static/css/style_SD.css HTTP/1.1" 200 3217
+[24/Dec/2021 09:26:23] "GET /static/js/index.js HTTP/1.1" 200 2389
+[24/Dec/2021 09:26:23] "GET /static/js/health-bar.js HTTP/1.1" 200 909
+[24/Dec/2021 09:26:23] "GET /static/js/monster.js HTTP/1.1" 200 1402
+[24/Dec/2021 09:26:23] "GET /static/js/sideknee_model_player2.js HTTP/1.1" 200 12570
+[24/Dec/2021 09:26:23] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[24/Dec/2021 09:26:23] "GET /static/json/model.json HTTP/1.1" 200 1435
+[24/Dec/2021 09:26:23] "GET /static/img/fitness/play-bg.png HTTP/1.1" 200 89914
+[24/Dec/2021 09:26:23] "GET /static/img/item/ironman_sm.png HTTP/1.1" 200 31881
+[24/Dec/2021 09:26:23] "GET /static/img/fitness/loading-pacman.gif HTTP/1.1" 200 35634
+[24/Dec/2021 09:26:23] "GET /static/img/fitness/loading.png HTTP/1.1" 200 5010
+[24/Dec/2021 09:26:23] "GET /static/img/item/ironman_Hand.png HTTP/1.1" 200 17421
+[24/Dec/2021 09:26:23] "GET /static/sound/Kommy_BasicAttack_Hit.wav HTTP/1.1" 200 110984
+[24/Dec/2021 09:26:23] "GET /static/sound/Kommy_BasicAttack.wav HTTP/1.1" 200 200688
+[24/Dec/2021 09:26:23] "GET /static/img/monster/monster-jelly_0.gif HTTP/1.1" 200 88200
+[24/Dec/2021 09:26:24] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+[24/Dec/2021 09:26:25] "GET /static/json/weights.bin HTTP/1.1" 200 5897200
+[24/Dec/2021 09:26:26] "GET /static/sound/inspiring-8-bit-563.mp3 HTTP/1.1" 200 7631098
+[24/Dec/2021 09:26:26] "GET /static/json/metadata.json HTTP/1.1" 200 343
+[24/Dec/2021 09:26:26] "GET /static/json/OkModel/model.json HTTP/1.1" 200 1441
+[24/Dec/2021 09:26:27] "GET /static/json/OkModel/weights.bin HTTP/1.1" 200 5897600
+[24/Dec/2021 09:26:27] "GET /static/json/OkModel/metadata.json HTTP/1.1" 200 348
+[24/Dec/2021 09:26:56] "POST /play/ HTTP/1.1" 200 6069
+[24/Dec/2021 09:26:57] "GET /static/css/style_SD.css HTTP/1.1" 200 3217
+[24/Dec/2021 09:26:57] "GET /static/json/model.json HTTP/1.1" 200 1435
+[24/Dec/2021 09:26:57] "GET /static/img/fitness/loading-pacman.gif HTTP/1.1" 200 35634
+[24/Dec/2021 09:26:57] "GET /static/img/fitness/loading.png HTTP/1.1" 200 5010
+[24/Dec/2021 09:26:57] "GET /static/sound/Kommy_BasicAttack.wav HTTP/1.1" 200 200688
+[24/Dec/2021 09:26:57] "GET /static/sound/Kommy_BasicAttack_Hit.wav HTTP/1.1" 200 110984
+[24/Dec/2021 09:26:57] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[24/Dec/2021 09:26:58] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+[24/Dec/2021 09:27:00] "GET /static/json/weights.bin HTTP/1.1" 200 5897200
+[24/Dec/2021 09:27:01] "GET /static/json/metadata.json HTTP/1.1" 200 343
+[24/Dec/2021 09:27:01] "GET /static/json/OkModel/model.json HTTP/1.1" 200 1441
+[24/Dec/2021 09:27:03] "GET /static/json/OkModel/weights.bin HTTP/1.1" 200 5897600
+[24/Dec/2021 09:27:04] "GET /static/json/OkModel/metadata.json HTTP/1.1" 200 348
+[24/Dec/2021 09:27:13] "GET /static/sound/inspiring-8-bit-563.mp3 HTTP/1.1" 200 1773568
+[24/Dec/2021 09:42:15] "GET / HTTP/1.1" 200 18397
+[24/Dec/2021 09:42:16] "GET /static/vendor/glightbox/js/glightbox.min.js HTTP/1.1" 200 56222
+[24/Dec/2021 09:42:16] "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+[24/Dec/2021 09:42:16] "GET /static/vendor/isotope-layout/isotope.pkgd.min.js HTTP/1.1" 200 35445
+[24/Dec/2021 09:42:16] "GET /static/vendor/swiper/swiper-bundle.min.js HTTP/1.1" 200 135617
+[24/Dec/2021 09:42:16] "GET /static/vendor/php-email-form/validate.js HTTP/1.1" 200 2527
+[24/Dec/2021 09:42:17] "GET /static/js/main.js HTTP/1.1" 200 5049
+[24/Dec/2021 09:42:17] "GET /select HTTP/1.1" 301 0
+[24/Dec/2021 09:42:17] "GET /static/img/hero-bg.mp4 HTTP/1.1" 200 5841045
+[24/Dec/2021 09:42:17] "GET /select/ HTTP/1.1" 200 8434
+[24/Dec/2021 09:42:18] "GET /static/js/main.js HTTP/1.1" 200 5049
+[24/Dec/2021 09:42:18] "GET /static/css/style_g1.css HTTP/1.1" 200 2972
+[24/Dec/2021 09:42:18] "GET /static/img/select-back.png HTTP/1.1" 200 2815
+[24/Dec/2021 09:42:18] "GET /static/img/sound-on.png HTTP/1.1" 200 34288
+[24/Dec/2021 09:42:18] "GET /static/img/fitness/side_lunge.gif HTTP/1.1" 200 295703
+[24/Dec/2021 09:42:18] "GET /static/img/fitness/push_up.gif HTTP/1.1" 200 160055
+[24/Dec/2021 09:42:18] "GET /static/img/main-bg.png HTTP/1.1" 200 189097
+[24/Dec/2021 09:42:19] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[24/Dec/2021 09:42:19] "GET /static/img/fitness/step_forward_lunge.gif HTTP/1.1" 200 386780
+[24/Dec/2021 09:42:19] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+[24/Dec/2021 09:42:20] "GET /static/img/fitness/standing_knee_up.gif HTTP/1.1" 200 443097
+[24/Dec/2021 09:42:20] "GET /player/ HTTP/1.1" 200 5235
+[24/Dec/2021 09:42:22] "POST /play/ HTTP/1.1" 200 6146
+[24/Dec/2021 09:42:23] "GET /static/js/loading.js HTTP/1.1" 200 1550
+[24/Dec/2021 09:42:23] "GET /static/js/health-bar.js HTTP/1.1" 200 909
+[24/Dec/2021 09:42:23] "GET /static/js/monster.js HTTP/1.1" 200 1402
+[24/Dec/2021 09:42:23] "GET /static/js/sideknee_model_player1.js HTTP/1.1" 200 7717
+[24/Dec/2021 09:42:23] "GET /static/css/style_SD.css HTTP/1.1" 200 3217
+[24/Dec/2021 09:42:23] "GET /static/img/monster/monster-jelly_0.gif HTTP/1.1" 200 88200
+[24/Dec/2021 09:42:23] "GET /static/js/index.js HTTP/1.1" 200 2389
+[24/Dec/2021 09:42:23] "GET /static/json/model.json HTTP/1.1" 200 1435
+[24/Dec/2021 09:42:23] "GET /static/img/item/ironman_Hand.png HTTP/1.1" 200 17421
+[24/Dec/2021 09:42:23] "GET /static/img/item/ironman_sm.png HTTP/1.1" 200 31881
+[24/Dec/2021 09:42:23] "GET /static/img/fitness/loading.png HTTP/1.1" 200 5010
+[24/Dec/2021 09:42:23] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[24/Dec/2021 09:42:23] "GET /static/img/fitness/loading-pacman.gif HTTP/1.1" 200 35634
+[24/Dec/2021 09:42:23] "GET /static/sound/Kommy_BasicAttack_Hit.wav HTTP/1.1" 200 110984
+[24/Dec/2021 09:42:24] "GET /static/sound/Kommy_BasicAttack.wav HTTP/1.1" 200 200688
+[24/Dec/2021 09:42:25] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+[24/Dec/2021 09:42:28] "GET /static/json/weights.bin HTTP/1.1" 200 5897200
+[24/Dec/2021 09:42:30] "GET /static/json/metadata.json HTTP/1.1" 200 343
+[24/Dec/2021 09:42:30] "GET /static/json/OkModel/model.json HTTP/1.1" 200 1441
+[24/Dec/2021 09:42:32] "GET /static/json/OkModel/weights.bin HTTP/1.1" 200 5897600
+[24/Dec/2021 09:42:33] "GET /static/json/OkModel/metadata.json HTTP/1.1" 200 348
+[24/Dec/2021 09:42:39] "POST /result/ HTTP/1.1" 200 8751
+[24/Dec/2021 09:42:39] "GET /static/sound/inspiring-8-bit-563.mp3 HTTP/1.1" 200 6660096
+[24/Dec/2021 09:42:39] "GET /static/css/style_Result.css HTTP/1.1" 200 2898
+[24/Dec/2021 09:42:39] "GET /get_result/ HTTP/1.1" 200 7644
+[24/Dec/2021 09:42:39] "GET /static/img/main-bg.png HTTP/1.1" 200 189097
+[24/Dec/2021 09:42:41] "GET /select/ HTTP/1.1" 200 8434
+[24/Dec/2021 09:42:41] "GET /static/css/style_g1.css HTTP/1.1" 200 2972
+[24/Dec/2021 09:42:41] "GET /static/js/main.js HTTP/1.1" 200 5049
+[24/Dec/2021 09:42:41] "GET /static/img/select-back.png HTTP/1.1" 200 2815
+[24/Dec/2021 09:42:41] "GET /static/img/sound-on.png HTTP/1.1" 200 34288
+[24/Dec/2021 09:42:41] "GET /static/img/fitness/push_up.gif HTTP/1.1" 200 160055
+[24/Dec/2021 09:42:41] "GET /static/img/fitness/side_lunge.gif HTTP/1.1" 200 295703
+[24/Dec/2021 09:42:42] "GET /static/img/fitness/standing_knee_up.gif HTTP/1.1" 200 443097
+[24/Dec/2021 09:42:42] "GET /static/img/fitness/step_forward_lunge.gif HTTP/1.1" 200 386780
+[24/Dec/2021 09:42:42] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[24/Dec/2021 09:42:44] "GET /player/ HTTP/1.1" 200 5235
+[24/Dec/2021 09:42:44] "GET /static/css/style_g1.css HTTP/1.1" 200 2972
+[24/Dec/2021 09:42:44] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[24/Dec/2021 09:42:46] "POST /play/ HTTP/1.1" 200 6146
+[24/Dec/2021 09:42:46] "GET /static/sound/upright-piano-arcade-instrumental-mix-1342.mp3 HTTP/1.1" 200 4222976
+[24/Dec/2021 09:42:46] "GET /static/css/style_SD.css HTTP/1.1" 200 3217
+[24/Dec/2021 09:42:46] "GET /static/js/loading.js HTTP/1.1" 200 1550
+[24/Dec/2021 09:42:46] "GET /static/js/sideknee_model_player1.js HTTP/1.1" 200 7717
+[24/Dec/2021 09:42:46] "GET /static/js/monster.js HTTP/1.1" 200 1402
+[24/Dec/2021 09:42:46] "GET /static/js/health-bar.js HTTP/1.1" 200 909
+[24/Dec/2021 09:42:46] "GET /static/js/index.js HTTP/1.1" 200 2389
+[24/Dec/2021 09:42:46] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[24/Dec/2021 09:42:46] "GET /static/json/model.json HTTP/1.1" 200 1435
+[24/Dec/2021 09:42:46] "GET /static/img/item/ironman_sm.png HTTP/1.1" 200 31881
+[24/Dec/2021 09:42:46] "GET /static/img/monster/monster-jelly_0.gif HTTP/1.1" 200 88200
+[24/Dec/2021 09:42:46] "GET /static/img/fitness/loading.png HTTP/1.1" 200 5010
+[24/Dec/2021 09:42:46] "GET /static/img/fitness/loading-pacman.gif HTTP/1.1" 200 35634
+[24/Dec/2021 09:42:46] "GET /static/img/item/ironman_Hand.png HTTP/1.1" 200 17421
+[24/Dec/2021 09:42:46] "GET /static/sound/Kommy_BasicAttack_Hit.wav HTTP/1.1" 200 110984
+[24/Dec/2021 09:42:46] "GET /static/sound/Kommy_BasicAttack.wav HTTP/1.1" 200 200688
+[24/Dec/2021 09:42:46] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+[24/Dec/2021 09:42:47] "GET /static/vendor/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+[24/Dec/2021 09:42:48] "GET /static/json/weights.bin HTTP/1.1" 200 5897200
+[24/Dec/2021 09:42:50] "GET /static/json/metadata.json HTTP/1.1" 200 343
+[24/Dec/2021 09:42:50] "GET /static/json/OkModel/model.json HTTP/1.1" 200 1441
+[24/Dec/2021 09:42:52] "GET /static/json/OkModel/weights.bin HTTP/1.1" 200 5897600
+[24/Dec/2021 09:42:53] "GET /static/json/OkModel/metadata.json HTTP/1.1" 200 348
+[24/Dec/2021 09:42:59] "POST /result/ HTTP/1.1" 200 8751
+[24/Dec/2021 09:42:59] "GET /static/sound/inspiring-8-bit-563.mp3 HTTP/1.1" 200 6131712
+[24/Dec/2021 09:42:59] "GET /static/css/style_Result.css HTTP/1.1" 200 2898
+[24/Dec/2021 09:42:59] "GET /static/img/main-bg.png HTTP/1.1" 200 189097
+[24/Dec/2021 09:42:59] "GET /get_result/ HTTP/1.1" 200 7784
+[24/Dec/2021 09:42:59] "GET /static/vendor/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+[24/Dec/2021 09:43:24] "POST /result/ HTTP/1.1" 200 8751
+[24/Dec/2021 09:43:24] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+[24/Dec/2021 09:43:24] "GET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 73271
+[24/Dec/2021 09:43:24] "GET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1" 200 13785
+[24/Dec/2021 09:43:24] "GET /static/vendor/boxicons/css/boxicons.min.css HTTP/1.1" 200 63781
+[24/Dec/2021 09:43:25] "GET /static/vendor/remixicon/remixicon.css HTTP/1.1" 200 110438
+[24/Dec/2021 09:43:25] "GET /static/css/style.css HTTP/1.1" 200 43816
+[24/Dec/2021 09:43:25] "GET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1" 200 15563
+[24/Dec/2021 09:43:25] "GET /static/css/util.css HTTP/1.1" 200 83821
+[24/Dec/2021 09:43:25] "GET /static/css/style_Result.css HTTP/1.1" 200 2898
+[24/Dec/2021 09:43:25] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+[24/Dec/2021 09:43:25] "GET /get_result/ HTTP/1.1" 200 7924
+[24/Dec/2021 09:43:25] "GET /static/vendor/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+[24/Dec/2021 09:43:26] "GET / HTTP/1.1" 200 18397
+[24/Dec/2021 09:43:27] "GET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1" 200 13785
+[24/Dec/2021 09:43:27] "GET /static/vendor/boxicons/css/boxicons.min.css HTTP/1.1" 200 63781
+[24/Dec/2021 09:43:27] "GET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 73271
+[24/Dec/2021 09:43:27] "GET /static/vendor/remixicon/remixicon.css HTTP/1.1" 200 110438
+[24/Dec/2021 09:43:27] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+[24/Dec/2021 09:43:27] "GET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1" 200 15563
+[24/Dec/2021 09:43:27] "GET /static/css/style.css HTTP/1.1" 200 43816
+[24/Dec/2021 09:43:27] "GET /static/css/util.css HTTP/1.1" 200 83821
+[24/Dec/2021 09:43:27] "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+[24/Dec/2021 09:43:27] "GET /static/vendor/glightbox/js/glightbox.min.js HTTP/1.1" 200 56222
+[24/Dec/2021 09:43:27] "GET /static/vendor/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+[24/Dec/2021 09:43:27] "GET /static/vendor/php-email-form/validate.js HTTP/1.1" 200 2527
+[24/Dec/2021 09:43:27] "GET /static/vendor/isotope-layout/isotope.pkgd.min.js HTTP/1.1" 200 35445
+[24/Dec/2021 09:43:27] "GET /static/vendor/swiper/swiper-bundle.min.js HTTP/1.1" 200 135617
+[24/Dec/2021 09:43:27] "GET /static/js/main.js HTTP/1.1" 200 5049
+[24/Dec/2021 09:43:27] "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+[24/Dec/2021 09:43:27] "GET /static/vendor/swiper/swiper-bundle.min.js.map HTTP/1.1" 404 1875
+[24/Dec/2021 09:43:27] "GET /get_rank/ HTTP/1.1" 200 561
+[24/Dec/2021 09:43:28] "GET /static/img/hero-bg.mp4 HTTP/1.1" 200 5841045
+[24/Dec/2021 09:43:30] "GET /select HTTP/1.1" 301 0
+[24/Dec/2021 09:43:30] "GET /select/ HTTP/1.1" 200 8434
+[24/Dec/2021 09:43:30] "GET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1" 200 13785
+[24/Dec/2021 09:43:30] "GET /static/vendor/boxicons/css/boxicons.min.css HTTP/1.1" 200 63781
+[24/Dec/2021 09:43:30] "GET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 73271
+[24/Dec/2021 09:43:30] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+[24/Dec/2021 09:43:31] "GET /static/vendor/remixicon/remixicon.css HTTP/1.1" 200 110438
+[24/Dec/2021 09:43:31] "GET /static/css/style.css HTTP/1.1" 200 43816
+[24/Dec/2021 09:43:31] "GET /static/css/util.css HTTP/1.1" 200 83821
+[24/Dec/2021 09:43:31] "GET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1" 200 15563
+[24/Dec/2021 09:43:31] "GET /static/css/style_g1.css HTTP/1.1" 200 2972
+[24/Dec/2021 09:43:31] "GET /static/img/select-back.png HTTP/1.1" 200 2815
+[24/Dec/2021 09:43:31] "GET /static/img/sound-on.png HTTP/1.1" 200 34288
+[24/Dec/2021 09:43:31] "GET /static/img/fitness/push_up.gif HTTP/1.1" 200 160055
+[24/Dec/2021 09:43:31] "GET /static/img/fitness/side_lunge.gif HTTP/1.1" 200 295703
+[24/Dec/2021 09:43:31] "GET /static/img/fitness/standing_knee_up.gif HTTP/1.1" 200 443097
+[24/Dec/2021 09:43:31] "GET /static/img/fitness/step_forward_lunge.gif HTTP/1.1" 200 386780
+[24/Dec/2021 09:43:31] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[24/Dec/2021 09:43:31] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+[24/Dec/2021 09:43:31] "GET /static/vendor/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+[24/Dec/2021 09:43:32] "GET /player/ HTTP/1.1" 200 5235
+[24/Dec/2021 09:43:32] "GET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1" 200 13785
+[24/Dec/2021 09:43:32] "GET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 73271
+[24/Dec/2021 09:43:32] "GET /static/vendor/boxicons/css/boxicons.min.css HTTP/1.1" 200 63781
+[24/Dec/2021 09:43:32] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+[24/Dec/2021 09:43:33] "GET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1" 200 15563
+[24/Dec/2021 09:43:33] "GET /static/css/style.css HTTP/1.1" 200 43816
+[24/Dec/2021 09:43:33] "GET /static/css/style_g1.css HTTP/1.1" 200 2972
+[24/Dec/2021 09:43:33] "GET /static/css/util.css HTTP/1.1" 200 83821
+[24/Dec/2021 09:43:33] "GET /static/vendor/remixicon/remixicon.css HTTP/1.1" 200 110438
+[24/Dec/2021 09:43:33] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[24/Dec/2021 09:43:35] "POST /play/ HTTP/1.1" 200 6147
+[24/Dec/2021 09:43:35] "GET /static/sound/upright-piano-arcade-instrumental-mix-1342.mp3 HTTP/1.1" 200 7897088
+[24/Dec/2021 09:43:35] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+[24/Dec/2021 09:43:35] "GET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1" 200 15563
+[24/Dec/2021 09:43:35] "GET /static/vendor/boxicons/css/boxicons.min.css HTTP/1.1" 200 63781
+[24/Dec/2021 09:43:35] "GET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1" 200 13785
+[24/Dec/2021 09:43:35] "GET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 73271
+[24/Dec/2021 09:43:35] "GET /static/css/style.css HTTP/1.1" 200 43816
+[24/Dec/2021 09:43:35] "GET /static/css/util.css HTTP/1.1" 200 83821
+[24/Dec/2021 09:43:35] "GET /static/css/style_SD.css HTTP/1.1" 200 3217
+[24/Dec/2021 09:43:35] "GET /static/vendor/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+[24/Dec/2021 09:43:35] "GET /static/js/loading.js HTTP/1.1" 200 1550
+[24/Dec/2021 09:43:35] "GET /static/js/health-bar.js HTTP/1.1" 200 909
+[24/Dec/2021 09:43:35] "GET /static/js/sideknee_model_player1.js HTTP/1.1" 200 7717
+[24/Dec/2021 09:43:35] "GET /static/js/monster.js HTTP/1.1" 200 1402
+[24/Dec/2021 09:43:35] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[24/Dec/2021 09:43:36] "GET /static/json/model.json HTTP/1.1" 200 1435
+[24/Dec/2021 09:43:36] "GET /static/img/fitness/loading.png HTTP/1.1" 200 5010
+[24/Dec/2021 09:43:36] "GET /static/img/fitness/play-bg.png HTTP/1.1" 200 89914
+[24/Dec/2021 09:43:36] "GET /static/img/fitness/loading-pacman.gif HTTP/1.1" 200 35634
+[24/Dec/2021 09:43:36] "GET /static/js/index.js HTTP/1.1" 200 2389
+[24/Dec/2021 09:43:36] "GET /static/img/item/ironman_sm.png HTTP/1.1" 200 31881
+[24/Dec/2021 09:43:36] "GET /static/img/monster/monster-jelly_0.gif HTTP/1.1" 200 88200
+[24/Dec/2021 09:43:36] "GET /static/img/item/ironman_Hand.png HTTP/1.1" 200 17421
+[24/Dec/2021 09:43:36] "GET /static/sound/Kommy_BasicAttack_Hit.wav HTTP/1.1" 200 110984
+[24/Dec/2021 09:43:36] "GET /static/sound/Kommy_BasicAttack.wav HTTP/1.1" 200 200688
+[24/Dec/2021 09:43:37] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+[24/Dec/2021 09:43:38] "GET /static/json/weights.bin HTTP/1.1" 200 5897200
+[24/Dec/2021 09:43:40] "GET /static/sound/inspiring-8-bit-563.mp3 HTTP/1.1" 200 7631098
+[24/Dec/2021 09:43:40] "GET /static/json/metadata.json HTTP/1.1" 200 343
+[24/Dec/2021 09:43:40] "GET /static/json/OkModel/model.json HTTP/1.1" 200 1441
+[24/Dec/2021 09:43:42] "GET /static/json/OkModel/weights.bin HTTP/1.1" 200 5897600
+[24/Dec/2021 09:43:42] "GET /static/json/OkModel/metadata.json HTTP/1.1" 200 348
+[24/Dec/2021 09:44:13] "POST /result/ HTTP/1.1" 200 8751
+[24/Dec/2021 09:44:14] "GET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 73271
+[24/Dec/2021 09:44:14] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+[24/Dec/2021 09:44:14] "GET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1" 200 13785
+[24/Dec/2021 09:44:14] "GET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1" 200 15563
+[24/Dec/2021 09:44:14] "GET /static/vendor/boxicons/css/boxicons.min.css HTTP/1.1" 200 63781
+[24/Dec/2021 09:44:14] "GET /static/css/style.css HTTP/1.1" 200 43816
+[24/Dec/2021 09:44:14] "GET /static/css/util.css HTTP/1.1" 200 83821
+[24/Dec/2021 09:44:14] "GET /static/css/style_Result.css HTTP/1.1" 200 2898
+[24/Dec/2021 09:44:14] "GET /static/img/main-bg.png HTTP/1.1" 200 189097
+[24/Dec/2021 09:44:14] "GET /get_result/ HTTP/1.1" 200 8064
+[24/Dec/2021 09:44:14] "GET /static/vendor/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+[24/Dec/2021 09:44:38] "POST /play/ HTTP/1.1" 200 6147
+[24/Dec/2021 09:44:38] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+[24/Dec/2021 09:44:38] "GET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 73271
+[24/Dec/2021 09:44:38] "GET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1" 200 13785
+[24/Dec/2021 09:44:38] "GET /static/vendor/boxicons/css/boxicons.min.css HTTP/1.1" 200 63781
+[24/Dec/2021 09:44:38] "GET /static/vendor/remixicon/remixicon.css HTTP/1.1" 200 110438
+[24/Dec/2021 09:44:38] "GET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1" 200 15563
+[24/Dec/2021 09:44:38] "GET /static/css/style.css HTTP/1.1" 200 43816
+[24/Dec/2021 09:44:38] "GET /static/css/util.css HTTP/1.1" 200 83821
+[24/Dec/2021 09:44:38] "GET /static/css/style_SD.css HTTP/1.1" 200 3217
+[24/Dec/2021 09:44:38] "GET /static/vendor/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+[24/Dec/2021 09:44:38] "GET /static/js/health-bar.js HTTP/1.1" 200 909
+[24/Dec/2021 09:44:38] "GET /static/js/loading.js HTTP/1.1" 200 1550
+[24/Dec/2021 09:44:38] "GET /static/js/sideknee_model_player1.js HTTP/1.1" 200 7730
+[24/Dec/2021 09:44:38] "GET /static/img/logo.png HTTP/1.1" 200 16267
+[24/Dec/2021 09:44:38] "GET /static/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2?a74547b2f0863226942ff8ded57db345 HTTP/1.1" 200 92004
+[24/Dec/2021 09:44:38] "GET /static/js/monster.js HTTP/1.1" 200 1402
+[24/Dec/2021 09:44:38] "GET /static/img/fitness/play-bg.png HTTP/1.1" 200 89914
+[24/Dec/2021 09:44:38] "GET /static/json/model.json HTTP/1.1" 200 1435
+[24/Dec/2021 09:44:38] "GET /static/img/fitness/loading.png HTTP/1.1" 200 5010
+[24/Dec/2021 09:44:38] "GET /static/img/fitness/loading-pacman.gif HTTP/1.1" 200 35634
+[24/Dec/2021 09:44:38] "GET /static/js/index.js HTTP/1.1" 200 2389
+[24/Dec/2021 09:44:38] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[24/Dec/2021 09:44:38] "GET /static/img/monster/monster-jelly_0.gif HTTP/1.1" 200 88200
+[24/Dec/2021 09:44:38] "GET /static/img/item/ironman_sm.png HTTP/1.1" 200 31881
+[24/Dec/2021 09:44:38] "GET /static/img/item/ironman_Hand.png HTTP/1.1" 200 17421
+[24/Dec/2021 09:44:38] "GET /static/sound/Kommy_BasicAttack_Hit.wav HTTP/1.1" 200 110984
+[24/Dec/2021 09:44:39] "GET /static/sound/Kommy_BasicAttack.wav HTTP/1.1" 200 200688
+[24/Dec/2021 09:44:39] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+[24/Dec/2021 09:44:41] "GET /static/json/weights.bin HTTP/1.1" 200 5897200
+[24/Dec/2021 09:44:42] "GET /static/json/metadata.json HTTP/1.1" 200 343
+[24/Dec/2021 09:44:42] "GET /static/json/OkModel/model.json HTTP/1.1" 200 1441
+[24/Dec/2021 09:44:44] "GET /static/json/OkModel/weights.bin HTTP/1.1" 200 5897600
+[24/Dec/2021 09:44:45] "GET /static/json/OkModel/metadata.json HTTP/1.1" 200 348
+[24/Dec/2021 09:44:56] "GET /static/sound/inspiring-8-bit-563.mp3 HTTP/1.1" 200 7385088
+[24/Dec/2021 09:45:16] "POST /result/ HTTP/1.1" 200 8751
+[24/Dec/2021 09:45:16] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+[24/Dec/2021 09:45:16] "GET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 73271
+[24/Dec/2021 09:45:16] "GET /static/vendor/boxicons/css/boxicons.min.css HTTP/1.1" 200 63781
+[24/Dec/2021 09:45:16] "GET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1" 200 13785
+[24/Dec/2021 09:45:16] "GET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1" 200 15563
+[24/Dec/2021 09:45:16] "GET /static/css/style.css HTTP/1.1" 200 43816
+[24/Dec/2021 09:45:16] "GET /static/css/util.css HTTP/1.1" 200 83821
+[24/Dec/2021 09:45:16] "GET /static/vendor/remixicon/remixicon.css HTTP/1.1" 200 110438
+[24/Dec/2021 09:45:16] "GET /static/css/style_Result.css HTTP/1.1" 200 2898
+[24/Dec/2021 09:45:16] "GET /get_result/ HTTP/1.1" 200 8204
+[24/Dec/2021 09:45:16] "GET /static/img/main-bg.png HTTP/1.1" 200 189097
+[24/Dec/2021 09:45:16] "GET /static/vendor/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+[24/Dec/2021 09:46:13] "POST /result/ HTTP/1.1" 200 8751
+[24/Dec/2021 09:46:13] "GET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1" 200 13785
+[24/Dec/2021 09:46:13] "GET /static/vendor/boxicons/css/boxicons.min.css HTTP/1.1" 200 63781
+[24/Dec/2021 09:46:13] "GET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 73271
+[24/Dec/2021 09:46:13] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+[24/Dec/2021 09:46:13] "GET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1" 200 15563
+[24/Dec/2021 09:46:13] "GET /static/css/util.css HTTP/1.1" 200 83821
+[24/Dec/2021 09:46:13] "GET /static/vendor/remixicon/remixicon.css HTTP/1.1" 200 110438
+[24/Dec/2021 09:46:13] "GET /static/css/style.css HTTP/1.1" 200 43816
+[24/Dec/2021 09:46:13] "GET /static/vendor/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+[24/Dec/2021 09:46:13] "GET /static/css/style_Result.css HTTP/1.1" 200 2898
+[24/Dec/2021 09:46:13] "GET /get_result/ HTTP/1.1" 200 8344
+[24/Dec/2021 09:46:13] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+[24/Dec/2021 09:46:16] "GET / HTTP/1.1" 200 18397
+[24/Dec/2021 09:46:16] "GET /static/vendor/boxicons/css/boxicons.min.css HTTP/1.1" 200 63781
+[24/Dec/2021 09:46:16] "GET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 73271
+[24/Dec/2021 09:46:16] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+[24/Dec/2021 09:46:16] "GET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1" 200 13785
+[24/Dec/2021 09:46:16] "GET /static/vendor/remixicon/remixicon.css HTTP/1.1" 200 110438
+[24/Dec/2021 09:46:16] "GET /static/css/style.css HTTP/1.1" 200 43816
+[24/Dec/2021 09:46:16] "GET /static/css/util.css HTTP/1.1" 200 83821
+[24/Dec/2021 09:46:16] "GET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1" 200 15563
+[24/Dec/2021 09:46:16] "GET /static/vendor/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+[24/Dec/2021 09:46:16] "GET /static/vendor/glightbox/js/glightbox.min.js HTTP/1.1" 200 56222
+[24/Dec/2021 09:46:16] "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+[24/Dec/2021 09:46:16] "GET /static/vendor/isotope-layout/isotope.pkgd.min.js HTTP/1.1" 200 35445
+[24/Dec/2021 09:46:16] "GET /static/vendor/remixicon/remixicon.woff2?t=1590207869815 HTTP/1.1" 200 125268
+[24/Dec/2021 09:46:16] "GET /static/vendor/php-email-form/validate.js HTTP/1.1" 200 2527
+[24/Dec/2021 09:46:16] "GET /static/vendor/swiper/swiper-bundle.min.js HTTP/1.1" 200 135617
+[24/Dec/2021 09:46:16] "GET /static/vendor/boxicons/fonts/boxicons.woff2 HTTP/1.1" 200 102988
+[24/Dec/2021 09:46:17] "GET /static/js/main.js HTTP/1.1" 200 5049
+[24/Dec/2021 09:46:17] "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+[24/Dec/2021 09:46:17] "GET /static/vendor/swiper/swiper-bundle.min.js.map HTTP/1.1" 404 1875
+[24/Dec/2021 09:46:17] "GET /get_rank/ HTTP/1.1" 200 561
+[24/Dec/2021 09:46:18] "GET /static/img/hero-bg.mp4 HTTP/1.1" 200 5841045
+[24/Dec/2021 09:46:25] "GET /select HTTP/1.1" 301 0
+[24/Dec/2021 09:46:25] "GET /select/ HTTP/1.1" 200 8434
+[24/Dec/2021 09:46:26] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+[24/Dec/2021 09:46:26] "GET /static/vendor/boxicons/css/boxicons.min.css HTTP/1.1" 200 63781
+[24/Dec/2021 09:46:26] "GET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 73271
+[24/Dec/2021 09:46:26] "GET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1" 200 15563
+[24/Dec/2021 09:46:26] "GET /static/css/style.css HTTP/1.1" 200 43816
+[24/Dec/2021 09:46:26] "GET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1" 200 13785
+[24/Dec/2021 09:46:26] "GET /static/vendor/remixicon/remixicon.css HTTP/1.1" 200 110438
+[24/Dec/2021 09:46:26] "GET /static/css/util.css HTTP/1.1" 200 83821
+[24/Dec/2021 09:46:26] "GET /static/css/style_g1.css HTTP/1.1" 200 2972
+[24/Dec/2021 09:46:26] "GET /static/img/select-back.png HTTP/1.1" 200 2815
+[24/Dec/2021 09:46:26] "GET /static/img/sound-on.png HTTP/1.1" 200 34288
+[24/Dec/2021 09:46:26] "GET /static/img/fitness/push_up.gif HTTP/1.1" 200 160055
+[24/Dec/2021 09:46:26] "GET /static/img/fitness/side_lunge.gif HTTP/1.1" 200 295703
+[24/Dec/2021 09:46:26] "GET /static/img/main-bg.png HTTP/1.1" 200 189097
+[24/Dec/2021 09:46:26] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[24/Dec/2021 09:46:26] "GET /static/img/fitness/step_forward_lunge.gif HTTP/1.1" 200 386780
+[24/Dec/2021 09:46:26] "GET /static/img/fitness/standing_knee_up.gif HTTP/1.1" 200 443097
+[24/Dec/2021 09:46:26] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+[24/Dec/2021 09:46:27] "GET /player/ HTTP/1.1" 200 5235
+[24/Dec/2021 09:46:27] "GET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1" 200 13785
+[24/Dec/2021 09:46:27] "GET /static/vendor/boxicons/css/boxicons.min.css HTTP/1.1" 200 63781
+[24/Dec/2021 09:46:27] "GET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 73271
+[24/Dec/2021 09:46:27] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+[24/Dec/2021 09:46:27] "GET /static/vendor/remixicon/remixicon.css HTTP/1.1" 200 110438
+[24/Dec/2021 09:46:27] "GET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1" 200 15563
+[24/Dec/2021 09:46:27] "GET /static/css/style.css HTTP/1.1" 200 43816
+[24/Dec/2021 09:46:27] "GET /static/css/util.css HTTP/1.1" 200 83821
+[24/Dec/2021 09:46:27] "GET /static/css/style_g1.css HTTP/1.1" 200 2972
+[24/Dec/2021 09:46:28] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[24/Dec/2021 09:46:30] "POST /play/ HTTP/1.1" 200 6147
+[24/Dec/2021 09:46:30] "GET /static/css/style_SD.css HTTP/1.1" 200 3217
+[24/Dec/2021 09:46:30] "GET /static/js/health-bar.js HTTP/1.1" 200 909
+[24/Dec/2021 09:46:30] "GET /static/js/monster.js HTTP/1.1" 200 1402
+[24/Dec/2021 09:46:30] "GET /static/js/loading.js HTTP/1.1" 200 1550
+[24/Dec/2021 09:46:30] "GET /static/js/sideknee_model_player1.js HTTP/1.1" 200 7730
+[24/Dec/2021 09:46:30] "GET /static/js/index.js HTTP/1.1" 200 2389
+[24/Dec/2021 09:46:30] "GET /static/img/monster/monster-jelly_0.gif HTTP/1.1" 200 88200
+[24/Dec/2021 09:46:30] "GET /static/img/fitness/play-bg.png HTTP/1.1" 200 89914
+[24/Dec/2021 09:46:30] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[24/Dec/2021 09:46:30] "GET /static/json/model.json HTTP/1.1" 200 1435
+[24/Dec/2021 09:46:30] "GET /static/img/fitness/loading-pacman.gif HTTP/1.1" 200 35634
+[24/Dec/2021 09:46:30] "GET /static/img/fitness/loading.png HTTP/1.1" 200 5010
+[24/Dec/2021 09:46:30] "GET /static/img/item/ironman_sm.png HTTP/1.1" 200 31881
+[24/Dec/2021 09:46:30] "GET /static/img/item/ironman_Hand.png HTTP/1.1" 200 17421
+[24/Dec/2021 09:46:31] "GET /static/sound/Kommy_BasicAttack_Hit.wav HTTP/1.1" 200 110984
+[24/Dec/2021 09:46:31] "GET /static/sound/Kommy_BasicAttack.wav HTTP/1.1" 200 200688
+[24/Dec/2021 09:46:31] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+[24/Dec/2021 09:46:35] "GET /static/json/weights.bin HTTP/1.1" 200 5897200
+[24/Dec/2021 09:46:36] "GET /static/json/metadata.json HTTP/1.1" 200 343
+[24/Dec/2021 09:46:36] "GET /static/json/OkModel/model.json HTTP/1.1" 200 1441
+[24/Dec/2021 09:46:40] "GET /static/json/OkModel/weights.bin HTTP/1.1" 200 5897600
+[24/Dec/2021 09:46:41] "GET /static/json/OkModel/metadata.json HTTP/1.1" 200 348
+[24/Dec/2021 09:46:55] "GET /signout HTTP/1.1" 302 0
+[24/Dec/2021 09:46:55] "GET / HTTP/1.1" 200 17645
+[24/Dec/2021 09:46:55] "GET /static/sound/inspiring-8-bit-563.mp3 HTTP/1.1" 200 5664768
+[24/Dec/2021 09:46:55] "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+[24/Dec/2021 09:46:55] "GET /static/vendor/glightbox/js/glightbox.min.js HTTP/1.1" 200 56222
+[24/Dec/2021 09:46:55] "GET /static/vendor/isotope-layout/isotope.pkgd.min.js HTTP/1.1" 200 35445
+[24/Dec/2021 09:46:55] "GET /static/vendor/swiper/swiper-bundle.min.js HTTP/1.1" 200 135617
+[24/Dec/2021 09:46:55] "GET /static/js/main.js HTTP/1.1" 200 5049
+[24/Dec/2021 09:46:55] "GET /static/vendor/php-email-form/validate.js HTTP/1.1" 200 2527
+[24/Dec/2021 09:46:55] "GET /get_rank/ HTTP/1.1" 200 561
+[24/Dec/2021 09:46:56] "GET /static/img/hero-bg.mp4 HTTP/1.1" 200 5841045
+[24/Dec/2021 09:46:58] "GET /signin HTTP/1.1" 200 5304
+[24/Dec/2021 09:46:58] "GET /static/img/main-bg.png HTTP/1.1" 200 189097
+[24/Dec/2021 09:47:11] "POST /signin HTTP/1.1" 302 0
+[24/Dec/2021 09:47:11] "GET / HTTP/1.1" 200 18401
+[24/Dec/2021 09:47:11] "GET /static/vendor/glightbox/js/glightbox.min.js HTTP/1.1" 200 56222
+[24/Dec/2021 09:47:11] "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+[24/Dec/2021 09:47:11] "GET /static/vendor/php-email-form/validate.js HTTP/1.1" 200 2527
+[24/Dec/2021 09:47:11] "GET /static/vendor/isotope-layout/isotope.pkgd.min.js HTTP/1.1" 200 35445
+[24/Dec/2021 09:47:11] "GET /static/js/main.js HTTP/1.1" 200 5049
+[24/Dec/2021 09:47:11] "GET /static/vendor/swiper/swiper-bundle.min.js HTTP/1.1" 200 135617
+[24/Dec/2021 09:47:12] "GET /get_rank/ HTTP/1.1" 200 561
+[24/Dec/2021 09:47:12] "GET /static/img/hero-bg.mp4 HTTP/1.1" 200 5841045
+[24/Dec/2021 09:47:14] "GET /select HTTP/1.1" 301 0
+[24/Dec/2021 09:47:14] "GET /select/ HTTP/1.1" 200 8438
+[24/Dec/2021 09:47:14] "GET /static/css/style_g1.css HTTP/1.1" 200 2972
+[24/Dec/2021 09:47:14] "GET /static/img/select-back.png HTTP/1.1" 200 2815
+[24/Dec/2021 09:47:14] "GET /static/img/fitness/push_up.gif HTTP/1.1" 200 160055
+[24/Dec/2021 09:47:14] "GET /static/img/sound-on.png HTTP/1.1" 200 34288
+[24/Dec/2021 09:47:14] "GET /static/img/fitness/side_lunge.gif HTTP/1.1" 200 295703
+[24/Dec/2021 09:47:14] "GET /static/img/fitness/step_forward_lunge.gif HTTP/1.1" 200 386780
+[24/Dec/2021 09:47:14] "GET /static/img/fitness/standing_knee_up.gif HTTP/1.1" 200 443097
+[24/Dec/2021 09:47:14] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[24/Dec/2021 09:47:14] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+[24/Dec/2021 09:47:16] "GET /player/ HTTP/1.1" 200 5239
+[24/Dec/2021 09:47:16] "GET /static/css/style_g1.css HTTP/1.1" 200 2972
+[24/Dec/2021 09:47:17] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[24/Dec/2021 09:47:18] "POST /play/ HTTP/1.1" 200 6155
+[24/Dec/2021 09:47:18] "GET /static/sound/upright-piano-arcade-instrumental-mix-1342.mp3 HTTP/1.1" 200 9220096
+[24/Dec/2021 09:47:18] "GET /static/css/style_SD.css HTTP/1.1" 200 3217
+[24/Dec/2021 09:47:18] "GET /static/js/loading.js HTTP/1.1" 200 1550
+[24/Dec/2021 09:47:18] "GET /static/js/health-bar.js HTTP/1.1" 200 909
+[24/Dec/2021 09:47:18] "GET /static/js/sideknee_model_player1.js HTTP/1.1" 200 7730
+[24/Dec/2021 09:47:18] "GET /static/js/monster.js HTTP/1.1" 200 1402
+[24/Dec/2021 09:47:18] "GET /static/img/monster/monster-jelly_0.gif HTTP/1.1" 200 88200
+[24/Dec/2021 09:47:18] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[24/Dec/2021 09:47:18] "GET /static/json/model.json HTTP/1.1" 200 1435
+[24/Dec/2021 09:47:18] "GET /static/img/fitness/loading-pacman.gif HTTP/1.1" 200 35634
+[24/Dec/2021 09:47:18] "GET /static/js/index.js HTTP/1.1" 200 2389
+[24/Dec/2021 09:47:18] "GET /static/img/fitness/loading.png HTTP/1.1" 200 5010
+[24/Dec/2021 09:47:19] "GET /static/img/item/ironman_sm.png HTTP/1.1" 200 31881
+[24/Dec/2021 09:47:19] "GET /static/img/item/ironman_Hand.png HTTP/1.1" 200 17421
+[24/Dec/2021 09:47:19] "GET /static/sound/Kommy_BasicAttack_Hit.wav HTTP/1.1" 200 110984
+[24/Dec/2021 09:47:19] "GET /static/img/fitness/play-bg.png HTTP/1.1" 200 89914
+[24/Dec/2021 09:47:20] "GET /static/sound/Kommy_BasicAttack.wav HTTP/1.1" 200 200688
+[24/Dec/2021 09:47:20] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+[24/Dec/2021 09:47:23] "GET /static/sound/inspiring-8-bit-563.mp3 HTTP/1.1" 200 7631098
+[24/Dec/2021 09:47:26] "GET /static/json/weights.bin HTTP/1.1" 200 5897200
+[24/Dec/2021 09:47:27] "GET /static/json/metadata.json HTTP/1.1" 200 343
+[24/Dec/2021 09:47:27] "GET /static/json/OkModel/model.json HTTP/1.1" 200 1441
+[24/Dec/2021 09:47:29] "GET /static/json/OkModel/weights.bin HTTP/1.1" 200 5897600
+[24/Dec/2021 09:47:30] "GET /static/json/OkModel/metadata.json HTTP/1.1" 200 348
+[24/Dec/2021 09:47:40] "GET / HTTP/1.1" 200 18401
+[24/Dec/2021 09:47:40] "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+[24/Dec/2021 09:47:40] "GET /static/vendor/glightbox/js/glightbox.min.js HTTP/1.1" 200 56222
+[24/Dec/2021 09:47:40] "GET /static/vendor/isotope-layout/isotope.pkgd.min.js HTTP/1.1" 200 35445
+[24/Dec/2021 09:47:40] "GET /static/vendor/swiper/swiper-bundle.min.js HTTP/1.1" 200 135617
+[24/Dec/2021 09:47:40] "GET /static/vendor/php-email-form/validate.js HTTP/1.1" 200 2527
+[24/Dec/2021 09:47:40] "GET /static/js/main.js HTTP/1.1" 200 5049
+[24/Dec/2021 09:47:40] "GET /get_rank/ HTTP/1.1" 200 561
+[24/Dec/2021 09:47:41] "GET /static/img/hero-bg.mp4 HTTP/1.1" 200 5841045
+[24/Dec/2021 09:48:45] "GET /result HTTP/1.1" 301 0
+Unsafe redirect to URL with protocol 'fitness'
+Bad Request: /result/
+[24/Dec/2021 09:48:45] "GET /result/ HTTP/1.1" 400 66737
+[24/Dec/2021 09:48:48] "GET / HTTP/1.1" 200 18401
+[24/Dec/2021 09:48:48] "GET /get_rank/ HTTP/1.1" 200 561
+[24/Dec/2021 09:48:48] "GET /static/img/hero-bg.mp4 HTTP/1.1" 200 5841045
+[24/Dec/2021 09:48:49] "GET /select HTTP/1.1" 301 0
+[24/Dec/2021 09:48:49] "GET /select/ HTTP/1.1" 200 8438
+[24/Dec/2021 09:48:49] "GET /static/img/select-back.png HTTP/1.1" 200 2815
+[24/Dec/2021 09:48:49] "GET /static/css/style_g1.css HTTP/1.1" 200 2972
+[24/Dec/2021 09:48:49] "GET /static/img/sound-on.png HTTP/1.1" 200 34288
+[24/Dec/2021 09:48:49] "GET /static/img/fitness/push_up.gif HTTP/1.1" 200 160055
+[24/Dec/2021 09:48:49] "GET /static/img/fitness/side_lunge.gif HTTP/1.1" 200 295703
+[24/Dec/2021 09:48:49] "GET /static/img/fitness/standing_knee_up.gif HTTP/1.1" 200 443097
+[24/Dec/2021 09:48:49] "GET /static/img/fitness/step_forward_lunge.gif HTTP/1.1" 200 386780
+[24/Dec/2021 09:48:49] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[24/Dec/2021 09:48:49] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+[24/Dec/2021 09:48:50] "GET /player/ HTTP/1.1" 200 5239
+[24/Dec/2021 09:48:52] "POST /play/ HTTP/1.1" 200 6155
+[24/Dec/2021 09:48:52] "GET /static/sound/upright-piano-arcade-instrumental-mix-1342.mp3 HTTP/1.1" 200 3563520
+[24/Dec/2021 09:48:52] "GET /static/css/style_SD.css HTTP/1.1" 200 3217
+[24/Dec/2021 09:48:52] "GET /static/js/monster.js HTTP/1.1" 200 1402
+[24/Dec/2021 09:48:52] "GET /static/js/sideknee_model_player1.js HTTP/1.1" 200 7734
+[24/Dec/2021 09:48:52] "GET /static/js/loading.js HTTP/1.1" 200 1550
+[24/Dec/2021 09:48:52] "GET /static/js/health-bar.js HTTP/1.1" 200 909
+[24/Dec/2021 09:48:52] "GET /static/js/index.js HTTP/1.1" 200 2389
+[24/Dec/2021 09:48:53] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[24/Dec/2021 09:48:53] "GET /static/img/fitness/play-bg.png HTTP/1.1" 200 89914
+[24/Dec/2021 09:48:53] "GET /static/img/fitness/loading-pacman.gif HTTP/1.1" 200 35634
+[24/Dec/2021 09:48:54] "GET /static/json/model.json HTTP/1.1" 200 1435
+[24/Dec/2021 09:48:54] "GET /static/img/fitness/loading.png HTTP/1.1" 200 5010
+[24/Dec/2021 09:48:54] "GET /static/img/monster/monster-jelly_0.gif HTTP/1.1" 200 88200
+[24/Dec/2021 09:48:54] "GET /static/img/item/ironman_sm.png HTTP/1.1" 200 31881
+[24/Dec/2021 09:48:55] "GET /static/img/item/ironman_Hand.png HTTP/1.1" 200 17421
+[24/Dec/2021 09:48:55] "GET /static/sound/Kommy_BasicAttack_Hit.wav HTTP/1.1" 200 110984
+[24/Dec/2021 09:48:57] "GET /static/sound/Kommy_BasicAttack.wav HTTP/1.1" 200 200688
+[24/Dec/2021 09:48:57] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+[24/Dec/2021 09:49:35] "GET /static/sound/inspiring-8-bit-563.mp3 HTTP/1.1" 200 7631098
+[24/Dec/2021 09:49:37] "GET /static/json/weights.bin HTTP/1.1" 200 5897200
+[24/Dec/2021 09:49:39] "GET /static/json/metadata.json HTTP/1.1" 200 343
+[24/Dec/2021 09:49:40] "GET /static/json/OkModel/model.json HTTP/1.1" 200 1441
+[24/Dec/2021 09:49:43] "GET /static/json/OkModel/weights.bin HTTP/1.1" 200 5897600
+[24/Dec/2021 09:49:44] "GET /static/json/OkModel/metadata.json HTTP/1.1" 200 348
+[24/Dec/2021 09:50:50] "POST /play/ HTTP/1.1" 200 6155
+[24/Dec/2021 09:50:50] "POST /result/ HTTP/1.1" 200 8755
+[24/Dec/2021 09:50:51] "GET /static/css/style_SD.css HTTP/1.1" 200 3217
+[24/Dec/2021 09:50:52] "GET /static/js/sideknee_model_player1.js HTTP/1.1" 304 0
+[24/Dec/2021 09:50:53] "GET /static/img/fitness/loading.png HTTP/1.1" 200 5010
+[24/Dec/2021 09:50:53] "GET /static/img/fitness/loading-pacman.gif HTTP/1.1" 200 35634
+[24/Dec/2021 09:50:56] "GET /static/json/model.json HTTP/1.1" 200 1435
+[24/Dec/2021 09:50:56] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[24/Dec/2021 09:50:57] "GET /static/sound/Kommy_BasicAttack_Hit.wav HTTP/1.1" 200 110984
+[24/Dec/2021 09:50:58] "GET /static/sound/Kommy_BasicAttack.wav HTTP/1.1" 200 200688
+[24/Dec/2021 09:51:02] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+[24/Dec/2021 09:51:10] "GET /static/sound/inspiring-8-bit-563.mp3 HTTP/1.1" 200 749568
+[24/Dec/2021 09:51:12] "GET /static/json/weights.bin HTTP/1.1" 200 5897200
+[24/Dec/2021 09:51:37] "GET /static/json/metadata.json HTTP/1.1" 200 343
+[24/Dec/2021 09:51:37] "GET /static/json/OkModel/model.json HTTP/1.1" 200 1441
+[24/Dec/2021 09:51:45] "GET /static/json/OkModel/weights.bin HTTP/1.1" 200 5897600
+[24/Dec/2021 09:51:47] "GET /static/json/OkModel/metadata.json HTTP/1.1" 200 348
+[24/Dec/2021 09:54:30] "POST /result/ HTTP/1.1" 200 8755
+[24/Dec/2021 09:54:30] "GET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 73271
+[24/Dec/2021 09:54:30] "GET /static/vendor/boxicons/css/boxicons.min.css HTTP/1.1" 200 63781
+[24/Dec/2021 09:54:30] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+[24/Dec/2021 09:54:30] "GET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1" 200 15563
+[24/Dec/2021 09:54:30] "GET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1" 200 13785
+[24/Dec/2021 09:54:30] "GET /static/vendor/remixicon/remixicon.css HTTP/1.1" 200 110438
+[24/Dec/2021 09:54:30] "GET /static/css/style.css HTTP/1.1" 200 43816
+[24/Dec/2021 09:54:30] "GET /static/css/util.css HTTP/1.1" 200 83821
+[24/Dec/2021 09:54:30] "GET /static/css/style_Result.css HTTP/1.1" 200 2898
+[24/Dec/2021 09:54:30] "GET /static/img/main-bg.png HTTP/1.1" 200 189097
+[24/Dec/2021 09:54:30] "GET /get_result/ HTTP/1.1" 200 8650
+[24/Dec/2021 09:58:46] "GET /static/sound/upright-piano-arcade-instrumental-mix-1342.mp3 HTTP/1.1" 200 6643712
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 453, in _write
+    result = self.stdout.write(data)
+  File "/usr/lib/python3.6/socketserver.py", line 803, in write
+    self._sock.sendall(b)
+  File "/usr/lib/python3.6/ssl.py", line 975, in sendall
+    v = self.send(byte_view[count:])
+  File "/usr/lib/python3.6/ssl.py", line 944, in send
+    return self._sslobj.write(data)
+  File "/usr/lib/python3.6/ssl.py", line 642, in write
+    return self._sslobj.write(data)
+TimeoutError: [Errno 110] Connection timed out
+[24/Dec/2021 09:58:46] "GET /static/sound/upright-piano-arcade-instrumental-mix-1342.mp3 HTTP/1.1" 500 59
+----------------------------------------
+Exception happened during processing of request from ('210.92.30.210', 33807)
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 453, in _write
+    result = self.stdout.write(data)
+  File "/usr/lib/python3.6/socketserver.py", line 803, in write
+    self._sock.sendall(b)
+  File "/usr/lib/python3.6/ssl.py", line 975, in sendall
+    v = self.send(byte_view[count:])
+  File "/usr/lib/python3.6/ssl.py", line 944, in send
+    return self._sslobj.write(data)
+  File "/usr/lib/python3.6/ssl.py", line 642, in write
+    return self._sslobj.write(data)
+TimeoutError: [Errno 110] Connection timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 141, in run
+    self.handle_error()
+  File "/root/with-fit/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py", line 123, in handle_error
+    super().handle_error()
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 368, in handle_error
+    self.finish_response()
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 274, in write
+    self.send_headers()
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 331, in send_headers
+    if not self.origin_server or self.client_is_modern():
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 344, in client_is_modern
+    return self.environ['SERVER_PROTOCOL'].upper() != 'HTTP/0.9'
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/socketserver.py", line 654, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.6/socketserver.py", line 364, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.6/socketserver.py", line 724, in __init__
+    self.handle()
+  File "/root/with-fit/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py", line 178, in handle
+    self.handle_one_request()
+  File "/root/with-fit/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py", line 201, in handle_one_request
+    handler.run(self.server.get_app())
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 144, in run
+    self.close()
+  File "/root/with-fit/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py", line 118, in close
+    super().close()
+  File "/usr/lib/python3.6/wsgiref/simple_server.py", line 35, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+----------------------------------------
+[24/Dec/2021 10:02:09] "GET /static/sound/upright-piano-arcade-instrumental-mix-1342.mp3 HTTP/1.1" 200 8638464
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 453, in _write
+    result = self.stdout.write(data)
+  File "/usr/lib/python3.6/socketserver.py", line 803, in write
+    self._sock.sendall(b)
+  File "/usr/lib/python3.6/ssl.py", line 975, in sendall
+    v = self.send(byte_view[count:])
+  File "/usr/lib/python3.6/ssl.py", line 944, in send
+    return self._sslobj.write(data)
+  File "/usr/lib/python3.6/ssl.py", line 642, in write
+    return self._sslobj.write(data)
+TimeoutError: [Errno 110] Connection timed out
+[24/Dec/2021 10:02:09] "GET /static/sound/upright-piano-arcade-instrumental-mix-1342.mp3 HTTP/1.1" 500 59
+----------------------------------------
+Exception happened during processing of request from ('210.92.30.210', 7621)
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 453, in _write
+    result = self.stdout.write(data)
+  File "/usr/lib/python3.6/socketserver.py", line 803, in write
+    self._sock.sendall(b)
+  File "/usr/lib/python3.6/ssl.py", line 975, in sendall
+    v = self.send(byte_view[count:])
+  File "/usr/lib/python3.6/ssl.py", line 944, in send
+    return self._sslobj.write(data)
+  File "/usr/lib/python3.6/ssl.py", line 642, in write
+    return self._sslobj.write(data)
+TimeoutError: [Errno 110] Connection timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 141, in run
+    self.handle_error()
+  File "/root/with-fit/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py", line 123, in handle_error
+    super().handle_error()
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 368, in handle_error
+    self.finish_response()
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 274, in write
+    self.send_headers()
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 331, in send_headers
+    if not self.origin_server or self.client_is_modern():
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 344, in client_is_modern
+    return self.environ['SERVER_PROTOCOL'].upper() != 'HTTP/0.9'
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/socketserver.py", line 654, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.6/socketserver.py", line 364, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.6/socketserver.py", line 724, in __init__
+    self.handle()
+  File "/root/with-fit/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py", line 178, in handle
+    self.handle_one_request()
+  File "/root/with-fit/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py", line 201, in handle_one_request
+    handler.run(self.server.get_app())
+  File "/usr/lib/python3.6/wsgiref/handlers.py", line 144, in run
+    self.close()
+  File "/root/with-fit/venv/lib/python3.6/site-packages/django/core/servers/basehttp.py", line 118, in close
+    super().close()
+  File "/usr/lib/python3.6/wsgiref/simple_server.py", line 35, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+----------------------------------------
+[24/Dec/2021 10:12:04] "GET / HTTP/1.1" 200 18397
+[24/Dec/2021 10:12:05] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+[24/Dec/2021 10:12:05] "GET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1" 200 13785
+[24/Dec/2021 10:12:06] "GET /static/css/style.css HTTP/1.1" 200 43816
+[24/Dec/2021 10:12:06] "GET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 73271
+[24/Dec/2021 10:12:06] "GET /static/css/util.css HTTP/1.1" 200 83821
+[24/Dec/2021 10:12:06] "GET /static/vendor/boxicons/css/boxicons.min.css HTTP/1.1" 200 63781
+[24/Dec/2021 10:12:06] "GET /static/vendor/remixicon/remixicon.css HTTP/1.1" 200 110438
+[24/Dec/2021 10:12:06] "GET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1" 200 15563
+[24/Dec/2021 10:12:06] "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+[24/Dec/2021 10:12:06] "GET /static/vendor/glightbox/js/glightbox.min.js HTTP/1.1" 200 56222
+[24/Dec/2021 10:12:06] "GET /static/js/main.js HTTP/1.1" 200 5049
+[24/Dec/2021 10:12:06] "GET /static/vendor/php-email-form/validate.js HTTP/1.1" 200 2527
+[24/Dec/2021 10:12:06] "GET /static/vendor/isotope-layout/isotope.pkgd.min.js HTTP/1.1" 200 35445
+[24/Dec/2021 10:12:06] "GET /static/vendor/swiper/swiper-bundle.min.js HTTP/1.1" 200 135617
+[24/Dec/2021 10:12:07] "GET /static/vendor/boxicons/fonts/boxicons.woff2 HTTP/1.1" 200 102988
+[24/Dec/2021 10:12:07] "GET /static/img/logo.png HTTP/1.1" 200 16267
+[24/Dec/2021 10:12:07] "GET /static/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2?a74547b2f0863226942ff8ded57db345 HTTP/1.1" 200 92004
+[24/Dec/2021 10:12:07] "GET /static/vendor/remixicon/remixicon.woff2?t=1590207869815 HTTP/1.1" 200 125268
+[24/Dec/2021 10:12:07] "GET /get_rank/ HTTP/1.1" 200 561
+[24/Dec/2021 10:12:17] "GET /static/img/hero-bg.mp4 HTTP/1.1" 200 5841045
+[24/Dec/2021 10:12:29] "GET / HTTP/1.1" 200 18397
+[24/Dec/2021 10:12:30] "GET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1" 200 15563
+[24/Dec/2021 10:12:30] "GET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1" 200 13785
+[24/Dec/2021 10:12:30] "GET /static/vendor/boxicons/css/boxicons.min.css HTTP/1.1" 200 63781
+[24/Dec/2021 10:12:30] "GET /static/vendor/remixicon/remixicon.css HTTP/1.1" 200 110438
+[24/Dec/2021 10:12:30] "GET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 73271
+[24/Dec/2021 10:12:30] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+[24/Dec/2021 10:12:30] "GET /static/css/style.css HTTP/1.1" 200 43816
+[24/Dec/2021 10:12:30] "GET /static/css/util.css HTTP/1.1" 200 83821
+[24/Dec/2021 10:12:30] "GET /get_rank/ HTTP/1.1" 200 561
+[24/Dec/2021 10:12:33] "GET /select HTTP/1.1" 301 0
+[24/Dec/2021 10:12:33] "GET /select/ HTTP/1.1" 200 8434
+[24/Dec/2021 10:12:33] "GET /static/img/hero-bg.mp4 HTTP/1.1" 200 5439488
+[24/Dec/2021 10:12:33] "GET /static/vendor/boxicons/css/boxicons.min.css HTTP/1.1" 200 63781
+[24/Dec/2021 10:12:33] "GET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1" 200 13785
+[24/Dec/2021 10:12:33] "GET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 73271
+[24/Dec/2021 10:12:33] "GET /static/vendor/remixicon/remixicon.css HTTP/1.1" 200 110438
+[24/Dec/2021 10:12:33] "GET /static/css/style.css HTTP/1.1" 200 43816
+[24/Dec/2021 10:12:33] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+[24/Dec/2021 10:12:34] "GET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1" 200 15563
+[24/Dec/2021 10:12:34] "GET /static/css/util.css HTTP/1.1" 200 83821
+[24/Dec/2021 10:12:34] "GET /static/css/style_g1.css HTTP/1.1" 200 2972
+[24/Dec/2021 10:12:34] "GET /static/img/select-back.png HTTP/1.1" 200 2815
+[24/Dec/2021 10:12:34] "GET /static/img/sound-on.png HTTP/1.1" 200 34288
+[24/Dec/2021 10:12:34] "GET /static/img/fitness/push_up.gif HTTP/1.1" 200 160055
+[24/Dec/2021 10:12:35] "GET /static/img/fitness/standing_knee_up.gif HTTP/1.1" 200 443097
+[24/Dec/2021 10:12:35] "GET /static/img/main-bg.png HTTP/1.1" 200 189097
+[24/Dec/2021 10:12:35] "GET /static/img/fitness/step_forward_lunge.gif HTTP/1.1" 200 386780
+[24/Dec/2021 10:12:36] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+[24/Dec/2021 10:12:37] "GET /static/img/fitness/side_lunge.gif HTTP/1.1" 200 295703
+[24/Dec/2021 10:12:37] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[24/Dec/2021 10:12:45] "GET /static/img/sound-off.png HTTP/1.1" 200 35301
+[24/Dec/2021 10:13:40] "GET /player/ HTTP/1.1" 200 5235
+[24/Dec/2021 10:13:40] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+[24/Dec/2021 10:13:40] "GET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1" 200 13785
+[24/Dec/2021 10:13:40] "GET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 73271
+[24/Dec/2021 10:13:40] "GET /static/vendor/boxicons/css/boxicons.min.css HTTP/1.1" 200 63781
+[24/Dec/2021 10:13:40] "GET /static/vendor/remixicon/remixicon.css HTTP/1.1" 200 110438
+[24/Dec/2021 10:13:40] "GET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1" 200 15563
+[24/Dec/2021 10:13:40] "GET /static/css/style.css HTTP/1.1" 200 43816
+[24/Dec/2021 10:13:40] "GET /static/css/style_g1.css HTTP/1.1" 200 2972
+[24/Dec/2021 10:13:40] "GET /static/css/util.css HTTP/1.1" 200 83821
+[24/Dec/2021 10:13:42] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[24/Dec/2021 10:13:47] "POST /play/ HTTP/1.1" 200 6069
+[24/Dec/2021 10:13:47] "GET /static/sound/upright-piano-arcade-instrumental-mix-1342.mp3 HTTP/1.1" 200 6504448
+[24/Dec/2021 10:13:47] "GET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1" 200 13785
+[24/Dec/2021 10:13:47] "GET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 73271
+[24/Dec/2021 10:13:47] "GET /static/vendor/boxicons/css/boxicons.min.css HTTP/1.1" 200 63781
+[24/Dec/2021 10:13:47] "GET /static/vendor/remixicon/remixicon.css HTTP/1.1" 200 110438
+[24/Dec/2021 10:13:47] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+[24/Dec/2021 10:13:47] "GET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1" 200 15563
+[24/Dec/2021 10:13:47] "GET /static/css/style.css HTTP/1.1" 200 43816
+[24/Dec/2021 10:13:47] "GET /static/css/util.css HTTP/1.1" 200 83821
+[24/Dec/2021 10:13:48] "GET /static/css/style_SD.css HTTP/1.1" 200 3217
+[24/Dec/2021 10:13:48] "GET /static/js/loading.js HTTP/1.1" 200 1550
+[24/Dec/2021 10:13:48] "GET /static/js/monster.js HTTP/1.1" 200 1402
+[24/Dec/2021 10:13:48] "GET /static/js/health-bar.js HTTP/1.1" 200 909
+[24/Dec/2021 10:13:48] "GET /static/js/sideknee_model_player2.js HTTP/1.1" 200 12668
+[24/Dec/2021 10:13:48] "GET /static/js/index.js HTTP/1.1" 200 2389
+[24/Dec/2021 10:13:48] "GET /static/img/fitness/play-bg.png HTTP/1.1" 200 89914
+[24/Dec/2021 10:13:48] "GET /static/json/model.json HTTP/1.1" 200 1435
+[24/Dec/2021 10:13:48] "GET /static/img/fitness/loading-pacman.gif HTTP/1.1" 200 35634
+[24/Dec/2021 10:13:48] "GET /static/img/fitness/loading.png HTTP/1.1" 200 5010
+[24/Dec/2021 10:13:48] "GET /static/img/item/ironman_sm.png HTTP/1.1" 200 31881
+[24/Dec/2021 10:13:48] "GET /static/img/item/ironman_Hand.png HTTP/1.1" 200 17421
+[24/Dec/2021 10:13:48] "GET /static/sound/Kommy_BasicAttack_Hit.wav HTTP/1.1" 200 110984
+[24/Dec/2021 10:13:48] "GET /static/font/shadow9.TTF HTTP/1.1" 200 489324
+[24/Dec/2021 10:13:49] "GET /static/img/monster/monster-jelly_0.gif HTTP/1.1" 200 88200
+[24/Dec/2021 10:13:49] "GET /static/sound/Kommy_BasicAttack.wav HTTP/1.1" 200 200688
+[24/Dec/2021 10:13:49] "GET /static/img/favicon.png HTTP/1.1" 200 31591
+[24/Dec/2021 10:13:59] "GET /static/json/weights.bin HTTP/1.1" 200 5897200
+[24/Dec/2021 10:13:59] "GET /static/json/metadata.json HTTP/1.1" 200 343
+[24/Dec/2021 10:14:00] "GET /static/json/OkModel/model.json HTTP/1.1" 200 1441
+[24/Dec/2021 10:14:04] "GET /static/json/OkModel/weights.bin HTTP/1.1" 200 5897600
+[24/Dec/2021 10:14:04] "GET /static/json/OkModel/metadata.json HTTP/1.1" 200 348
+[24/Dec/2021 10:14:53] "GET / HTTP/1.1" 200 18397
+[24/Dec/2021 10:14:53] "GET /static/sound/inspiring-8-bit-563.mp3 HTTP/1.1" 200 6217728
+[24/Dec/2021 10:14:53] "GET /static/vendor/glightbox/css/glightbox.min.css HTTP/1.1" 200 13785
+[24/Dec/2021 10:14:53] "GET /static/vendor/boxicons/css/boxicons.min.css HTTP/1.1" 200 63781
+[24/Dec/2021 10:14:53] "GET /static/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 73271
+[24/Dec/2021 10:14:53] "GET /static/vendor/remixicon/remixicon.css HTTP/1.1" 200 110438
+[24/Dec/2021 10:14:53] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+[24/Dec/2021 10:14:53] "GET /static/vendor/swiper/swiper-bundle.min.css HTTP/1.1" 200 15563
+[24/Dec/2021 10:14:53] "GET /static/css/style.css HTTP/1.1" 200 43816
+[24/Dec/2021 10:14:53] "GET /static/css/util.css HTTP/1.1" 200 83821
+[24/Dec/2021 10:14:54] "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+[24/Dec/2021 10:14:54] "GET /static/vendor/glightbox/js/glightbox.min.js HTTP/1.1" 200 56222
+[24/Dec/2021 10:14:54] "GET /static/vendor/php-email-form/validate.js HTTP/1.1" 200 2527
+[24/Dec/2021 10:14:54] "GET /static/vendor/isotope-layout/isotope.pkgd.min.js HTTP/1.1" 200 35445
+[24/Dec/2021 10:14:54] "GET /static/vendor/swiper/swiper-bundle.min.js HTTP/1.1" 200 135617
+[24/Dec/2021 10:14:54] "GET /static/js/main.js HTTP/1.1" 200 5049
+[24/Dec/2021 10:14:54] "GET /get_rank/ HTTP/1.1" 200 561
+[24/Dec/2021 10:14:59] "GET /static/img/hero-bg.mp4 HTTP/1.1" 200 5841045

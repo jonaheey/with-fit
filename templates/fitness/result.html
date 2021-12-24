@@ -18,25 +18,25 @@
             </thead>
             <tbody style="color:white; font-size: large;">
                 {% for i in '1234567' %}
-                {% if i != '4' %}
-                <tr>
-                    <td class="row_num">{{ i }}</td>
-                    <td class="rank_user_name"></td>
-                    <td class="rank_fitness_name"></td>
-                    <td class="stage"></td>
-                    <td class="option"></td>
-                    <td class="rank_score"></td>
-                </tr>
-                {% else %}
-                <tr style="color:red;">
-                    <td class="row_num">{{ i }}</td>
-                    <td class="rank_user_name"></td>
-                    <td class="rank_fitness_name"></td>
-                    <td class="stage"></td>
-                    <td class="option"></td>
-                    <td class="rank_score"></td>
-                </tr>
-                {% endif %}
+                    {% if i != '4' %}
+                    <tr>
+                        <td class="row_num">{{ i }}</td>
+                        <td class="rank_user_name"></td>
+                        <td class="rank_fitness_name"></td>
+                        <td class="stage"></td>
+                        <td class="option"></td>
+                        <td class="rank_score"></td>
+                    </tr>
+                    {% else %}
+                    <tr style="color:red;">
+                        <td class="row_num">{{ i }}</td>
+                        <td class="rank_user_name"></td>
+                        <td class="rank_fitness_name"></td>
+                        <td class="stage"></td>
+                        <td class="option"></td>
+                        <td class="rank_score"></td>
+                    </tr>
+                    {% endif %}
                 {% endfor %}
             </tbody>
 

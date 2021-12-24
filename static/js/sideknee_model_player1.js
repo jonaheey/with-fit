@@ -182,7 +182,9 @@ function drawPose(pose) {
             const minPartConfidence = 0.5;
             tmPose.drawKeypoints(pose.keypoints, minPartConfidence, ctx);
             tmPose.drawSkeleton(pose.keypoints, minPartConfidence, ctx);
-            itemEquip(pose, ctx);
+            if (document.getElementById('user_index').value == 3) {
+                itemEquip(pose, ctx);
+            }
         }
     }
 }

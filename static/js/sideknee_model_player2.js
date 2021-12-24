@@ -247,8 +247,10 @@ let status1, status2 = 0;
                 tmPose.drawSkeleton(pose.keypoints, minPartConfidence, ctx);
                 tmPose.drawKeypoints(pose2.keypoints, minPartConfidence, ctx);
                 tmPose.drawSkeleton(pose2.keypoints, minPartConfidence, ctx);
-                itemEquip(pose, ctx)
-                itemEquip(pose2, ctx)
+                if (document.getElementById('user_index').value == 3) {
+                    itemEquip(pose, ctx)
+                    itemEquip(pose2, ctx)
+                }
             }
         }
     }
