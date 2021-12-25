@@ -1,6 +1,7 @@
     // More API functions here:
     // https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/pose
-let status1, status2 = 0;
+let status1 = 0;
+let status2 = 0;
     // the link to your model provided by Teachable Machine export panel
     async function init() {
         
@@ -39,6 +40,8 @@ let status1, status2 = 0;
         // 웹캠 에러가 발생하지 않은 경우에만 실행
         if (error_point == 0) {
             setTimeout("closeLoadingWithMask()", 3000);
+            // 시연용 코드 bgm 로딩후 정지
+            setTimeout("bgm.pause()", 3000);
         }
         
         window.requestAnimationFrame(loop);
@@ -108,18 +111,23 @@ let status1, status2 = 0;
 
         // Prediction 2: run input through teachable machine classification model
         const prediction = await model.predict(pose_player1.posenetOutput);
-        for (let i = 0; i < maxPredictions; i++) {
-            const classPrediction = prediction[i].className + ": " + prediction[i].probability.toFixed(2);
-            labelContainer.childNodes[i+1].innerHTML = classPrediction;
-        }
+        var classPrediction = prediction[0].className + ": " + prediction[0].probability.toFixed(2);
+        labelContainer.childNodes[1].innerHTML = classPrediction;
+        var classPrediction = prediction[1].className + ": " + prediction[2].probability.toFixed(2);
+        labelContainer.childNodes[2].innerHTML = classPrediction;
+        var classPrediction = prediction[2].className + ": " + prediction[1].probability.toFixed(2);
+        labelContainer.childNodes[3].innerHTML = classPrediction;
+        
 
         const prediction2 = await model.predict(pose_player2.posenetOutput);
-        for (let i = 0; i < maxPredictions2; i++) {
-            const classPrediction2 = prediction2[i].className + ": " + prediction2[i].probability.toFixed(2);
-            labelContainer2.childNodes[i+1].innerHTML = classPrediction2;
-        }
+        var classPrediction2 = prediction2[0].className + ": " + prediction2[0].probability.toFixed(2);
+        labelContainer2.childNodes[1].innerHTML = classPrediction2;
+        var classPrediction2 = prediction2[1].className + ": " + prediction2[2].probability.toFixed(2);
+        labelContainer2.childNodes[2].innerHTML = classPrediction2;
+        var classPrediction2 = prediction2[2].className + ": " + prediction2[1].probability.toFixed(2);
+        labelContainer2.childNodes[3].innerHTML = classPrediction2;
 
-        pose_detect(prediction, 1);
+        pose_detect(prediction, '1');
         pose_detect(prediction2, 2);
 
         // finally draw the poses
@@ -138,7 +146,6 @@ let status1, status2 = 0;
         // Prediction 2: run input through teachable machine classification model
         const sign_prediction1 = await sign_model.predict(sign_pose_player1.posenetOutput);
         const sign_prediction2 = await sign_model.predict(sign_pose_player2.posenetOutput);
-        console.log('현재실행')
 
         if (sign_prediction1[0].probability.toFixed(2) >= 0.99 || sign_prediction2[0].probability.toFixed(2) >= 0.99){
             sign_switch = 0;
@@ -168,20 +175,22 @@ let status1, status2 = 0;
     function pose_detect(prediction, player) {
         const attack = 50;
         let score = 0;
-        if (player == 1){
+        let score2 = 0;
+        if (player == '1'){
+            console.log(status1)
             if (prediction[0].probability.toFixed(2) >= 0.80 && status1 == 0) {
                     status1 = 1;
                     score = 10 * (prediction[0].probability.toFixed(2) * 100);
             } else if (prediction[1].probability.toFixed(2) >= 0.90 && status1 == 1) {
                     status1 = 2;
-                    score = 10 * (prediction[1].probability.toFixed(2) * 100);
+                    score = 10 * (prediction[2].probability.toFixed(2) * 100);
                     audio_pose.play();
             } else if (prediction[0].probability.toFixed(2) >= 0.80 && status1 == 2) {
                     status1 = 3;
                     score = 10 * (prediction[0].probability.toFixed(2) * 100);
             } else if (prediction[2].probability.toFixed(2) >= 0.90 && status1 == 3) {
                     status1 = 4;
-                    score = 10 * (prediction[2].probability.toFixed(2) * 100);
+                    score = 10 * (prediction[1].probability.toFixed(2) * 100);
                     audio_pose.play();
             } else if (prediction[0].probability.toFixed(2) >= 0.80 && status1 == 4) {
                     status1 = 0;
@@ -189,30 +198,32 @@ let status1, status2 = 0;
                     damage(attack);
                     audio_set.play();
             }
+
         } else if (player == 2) {
             if (prediction[0].probability.toFixed(2) >= 0.80 && status2 == 0) {
                     status2 = 1;
-                    score = 10 * (prediction[0].probability.toFixed(2) * 100);
+                    score2 = 10 * (prediction[0].probability.toFixed(2) * 100);
             } else if (prediction[1].probability.toFixed(2) >= 0.90 && status2 == 1) {
                     status2 = 2;
-                    score = 10 * (prediction[1].probability.toFixed(2) * 100);
+                    score2 = 10 * (prediction[2].probability.toFixed(2) * 100);
                     audio_pose.play();
             } else if (prediction[0].probability.toFixed(2) >= 0.80 && status2 == 2) {
                     status2 = 3;
-                    score = 10 * (prediction[0].probability.toFixed(2) * 100);
+                    score2 = 10 * (prediction[0].probability.toFixed(2) * 100);
             } else if (prediction[2].probability.toFixed(2) >= 0.90 && status2 == 3) {
                     status2 = 4;
-                    score = 10 * (prediction[2].probability.toFixed(2) * 100);
+                    score2 = 10 * (prediction[1].probability.toFixed(2) * 100);
                     audio_pose.play();
             } else if (prediction[0].probability.toFixed(2) >= 0.80 && status2 == 4) {
                     status2 = 0;
-                    score = 10 * (prediction[0].probability.toFixed(2) * 100);
+                    score2 = 10 * (prediction[0].probability.toFixed(2) * 100);
                     damage(attack);
                     audio_set.play();
             }
         }
 
         result_score += score;
+        result_score += score2;
         
         if (!(result_score == 0)) {
             $(".score-text").text(result_score / 2," 점");
@@ -237,6 +248,13 @@ let status1, status2 = 0;
      
         if (webcam.canvas) {
             ctx.drawImage(webcam.canvas, 0, 0);
+
+            // 선그리기
+            ctx.beginPath();
+            ctx.moveTo(300, 0);
+            ctx.lineTo(300, 600);
+            ctx.strokeStyle = "white";
+            ctx.stroke();
             // draw the keypoints and skeleton
             if (pose && pose2) {
                 const minPartConfidence = 0.5;

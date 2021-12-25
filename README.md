@@ -20,8 +20,8 @@
 ## 2. 팀원
 - 👋 Team    : AIdam's Project
 - 👀 Member  : **김순동** 이종현 이지원 최수빈 한민기 ~~강원석~~ 
-- 🌱 Python, Machine Learning, Deep Learning, AI, Django
-- 💞️ 다중 모션 인식을 활용한 피트니스 웹 게임
+- 🌱 Skills : HTML5, CSS3, JavaScript, jQuery, Ajax, nodejs, VueJS, Reactjs, Oracle, mysql, MariaDB, AWS, APACHE, NGINX, C, C#, Unity, Unreal, 3D Mark, Java, Spring-framework, Python, Django-framework, BigData, AI, Numpy, Pandas, Machine Learning, Deep Learning, Git, Github, Docker, Trello, Jira, Confluence, ZEPLIN, Notion, Adobe Photoshop
+- 💞️ 다중 모션 인식을 활용한 1/2인 피트니스 웹 게임
 - 📫 With Fitness
 
 <!---

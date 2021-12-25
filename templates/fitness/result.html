@@ -56,11 +56,16 @@
         });
         result.then((context) => {
             const data = context.data;
-            // const user_index = "{{ user_index }}"; 
+            // const user_index = "{{ user_index }}";
+            // let my_pk = 9999;
 
             // for (let i = 0; i < data.result_data.length; i++) {
-            //     data.result_data[i].pk;
+            //     if(data.result_data[i].pk == user_index){
+            //         my_rank = i;
+            //         break;
+            //     }
             // }
+            // console.log(my_pk);
 
             rank_user_name = document.getElementsByClassName('rank_user_name');
             rank_fitness_name = document.getElementsByClassName('rank_fitness_name');

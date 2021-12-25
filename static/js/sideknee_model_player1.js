@@ -37,6 +37,8 @@ async function init() {
     // 웹캠 에러가 발생하지 않은 경우에만 실행
     if (error_point == 0) {
         setTimeout("closeLoadingWithMask()", 3000);
+        // 테스트 코드 시연 용 bgm 정지
+        setTimeout("bgm.pause()", 3000);
     }
 
     window.requestAnimationFrame(loop);

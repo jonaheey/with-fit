@@ -31,16 +31,16 @@ class Monster {
 
     changeImageGreen3() {
         var image = document.getElementById('monster');
-        image.src = "../static/img/monster/monster-potato_0.gif";
+        image.src = "../static/img/monster/monster-Potato_0.gif";
     }
     
     changeImageYellow3() {
         var image = document.getElementById('monster');
-        image.src = "../static/img/monster/monster-potato_1.gif";
+        image.src = "../static/img/monster/monster-Potato_1.gif";
     }
     
     changeImageRed3(){
         var image = document.getElementById('monster');
-        image.src = "../static/img/monster/monster-potato_2.png";
+        image.src = "../static/img/monster/monster-Potato_2.png";
     }
 }

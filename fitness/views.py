@@ -80,27 +80,33 @@ def result(request):
     user_index = int(request.POST.get('user_index'))
     stage = request.POST.get('stage')
 
+    message = ''
+
     try:
       rank = Rank.objects.get(user_index=user_index, fitness_index=fitness_index)
       if score > rank.rank_score:
         rank.rank_score = score
         rank.save()
+        message = '기록 갱신!!'
+      else:
+        message = '기록 갱신 실패'
     except Exception as e:
       rank = Rank(rank_score=score,
-          option=option,
-          rank_fitness_name=fitness_name,
-          rank_user_name=user_name,
-          fitness_index=Fitness.objects.get(fitness_index=fitness_index),
-          user_index=User.objects.get(user_index=user_index),
-          stage=stage
-      )
+            option=option,
+            rank_fitness_name=fitness_name,
+            rank_user_name=user_name,
+            fitness_index=Fitness.objects.get(fitness_index=fitness_index),
+            user_index=User.objects.get(user_index=user_index),
+            stage=stage
+        )
       rank.save()
 
-    index_data = {
-      'user_index': user_index
+    context = {
+      'user_index': user_index,
+      'message': message
     }
 
-    return render(request, 'fitness/result.html', index_data)
+    return render(request, 'fitness/result.html', context)
     
   return HttpResponseRedirect('fitness:index')
 
